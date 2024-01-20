@@ -44,12 +44,12 @@
 
 # Stats
 
-<p align="center" float="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=cartagogit&show_icons=true&theme=github_dark&border_radius=10&rank_icon=github&line_height=20&bg_color=0,000000,130F40" style="height:200px;"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut&theme=github_dark&border_radius=10&bg_color=0,000000,130F40&size_weight=0&count_weight=1" style="height:200px;"/>
+<p  style="display: flex; width:100%; align-items: center;justify-content: center">
+  <img src="https://github-readme-stats.vercel.app/api?username=cartagogit&show_icons=true&theme=github_dark&border_radius=10&rank_icon=github&line_height=20&bg_color=0,000000,130F40" style=""/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut&theme=github_dark&border_radius=10&bg_color=0,000000,130F40&size_weight=0&count_weight=1" style=""/>
 </p>
 
-<p align="center">
+<p style="display: flex; width:100%; align-items: center;justify-content: center">
     <img src="https://github-profile-trophy.vercel.app/?username=cartagogit&theme=algolia&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C"/>
 
 </p>

@@ -40,18 +40,19 @@
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![RxJS](https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white)
 
-
-
 ---
 
 # Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=cartagogit&show_icons=true&theme=github_dark&border_radius=10&rank_icon=github&line_height=20&bg_color=0,000000,130F40" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut&theme=github_dark&border_radius=10&bg_color=0,000000,130F40&size_weight=0&count_weight=1" />
+<p align="center" float="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=cartagogit&show_icons=true&theme=github_dark&border_radius=10&rank_icon=github&line_height=20&bg_color=0,000000,130F40" style="height:200px;"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut&theme=github_dark&border_radius=10&bg_color=0,000000,130F40&size_weight=0&count_weight=1" style="height:200px;"/>
 </p>
 
-![trophy](https://github-profile-trophy.vercel.app/?username=cartagogit&theme=onedark)
+<p align="center">
+    <img src="https://github-profile-trophy.vercel.app/?username=cartagogit&theme=algolia&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C"/>
+
+</p>
 
 ---
 

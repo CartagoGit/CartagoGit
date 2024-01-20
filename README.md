@@ -1,6 +1,7 @@
 <p align="center">
 <img src="./assets/github-header-image.png" alt="Cartago's Profile Image"/>
 </p>
+
 ![Web viewers](https://komarev.com/ghpvc/?username=cartagogit&color=blueviolet)
 
 ## Social networks

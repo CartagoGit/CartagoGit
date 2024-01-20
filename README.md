@@ -118,3 +118,5 @@
 # Stats
 
 ![CartagoNova's GitHub stats](https://github-readme-stats.vercel.app/api?username=cartagogit)
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=cartagogit&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)

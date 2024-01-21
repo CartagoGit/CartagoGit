@@ -43,6 +43,7 @@
 ---
 
 # Stats
+[![Codewars Badge](https://www.codewars.com/users/CartagoGit/badges/large)](https://www.codewars.com/users/CartagoGit)
 
 <p  style="display: flex; width:100%; align-items: center;justify-content: center">
   <img src="https://github-readme-stats.vercel.app/api?username=cartagogit&show_icons=true&theme=github_dark&border_radius=10&rank_icon=github&line_height=20&bg_color=0,000000,130F40" style=""/>

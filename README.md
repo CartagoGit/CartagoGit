@@ -3,11 +3,11 @@
 </p>
 
 ![Web viewers](https://komarev.com/ghpvc/?username=cartagogit&color=blueviolet&abbreviated=true)
+[![Codewars Badge](https://www.codewars.com/users/CartagoGit/badges/small)](https://www.codewars.com/users/CartagoGit)
 
 # Social networks
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mario-cabrero-volarich)
-[![Codewars Badge](https://www.codewars.com/users/CartagoGit/badges/small)](https://www.codewars.com/users/CartagoGit)
 
 
 ---

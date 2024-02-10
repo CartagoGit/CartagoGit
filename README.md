@@ -4,7 +4,6 @@
 
 ![Web viewers](https://komarev.com/ghpvc/?username=cartagogit&color=blueviolet&abbreviated=true)
 [![Codewars Badge](https://www.codewars.com/users/CartagoGit/badges/small)](https://www.codewars.com/users/CartagoGit)
-![GraphActivity](https://github-readme-activity-graph.vercel.app/graph?username={username})
 
 # Social networks
 
@@ -75,6 +74,7 @@
 <p  style="display: flex; width:100%; align-items: center;justify-content: center">
   <img src="https://github-readme-stats.vercel.app/api?username=cartagogit&show_icons=true&theme=github_dark&border_radius=10&rank_icon=github&line_height=20&bg_color=0,000000,130F40" style=""/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut&theme=github_dark&border_radius=10&bg_color=0,000000,130F40&size_weight=0&count_weight=1" style=""/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=cartagogit" />
 </p>
 
 <p style="display: flex; width:100%; align-items: center;justify-content: center">

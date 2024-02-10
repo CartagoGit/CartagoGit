@@ -4,7 +4,7 @@
 
 ![Web viewers](https://komarev.com/ghpvc/?username=cartagogit&color=blueviolet&abbreviated=true)
 [![Codewars Badge](https://www.codewars.com/users/CartagoGit/badges/small)](https://www.codewars.com/users/CartagoGit)
-[GraphActivity](https://github-readme-activity-graph.vercel.app/graph?username={username})
+![GraphActivity](https://github-readme-activity-graph.vercel.app/graph?username={username})
 
 # Social networks
 
@@ -64,8 +64,8 @@
 
 ### Home computer specs
 
-[INTEL](https://img.shields.io/badge/Intel%20Core_i7_10th-0071C5?style=for-the-badge&logo=intel&logoColor=white)
-[NVIDIA](https://img.shields.io/badge/NVIDIA-GTX1800-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![INTEL](https://img.shields.io/badge/Intel%20Core_i7_10th-0071C5?style=for-the-badge&logo=intel&logoColor=white)
+![NVIDIA](https://img.shields.io/badge/NVIDIA-GTX1800-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 
 ---
 

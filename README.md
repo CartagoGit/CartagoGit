@@ -11,13 +11,11 @@
 [![Codewars](https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=codewars&logoColor=grey)](https://www.codewars.com/users/CartagoGit)
 [![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/settings/cartago-git/packages)
 
----
-
-# Open Libraries
+# Libraries
 
 [![Socket Badge](https://socket.dev/api/badge/npm/package/@cartago-git/keyer)](https://socket.dev/npm/package/@cartago-git/keyer)
 
---
+---
 
 # Usual Skills
 

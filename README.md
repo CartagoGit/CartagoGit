@@ -13,6 +13,12 @@
 
 ---
 
+# Open Libraries
+
+[![Socket Badge](https://socket.dev/api/badge/npm/package/@cartago-git/keyer)](https://socket.dev/npm/package/@cartago-git/keyer)
+
+--
+
 # Usual Skills
 
 ### Environments

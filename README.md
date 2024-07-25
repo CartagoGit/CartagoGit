@@ -14,6 +14,8 @@
 # Libraries
 
 [![Socket Badge](https://socket.dev/api/badge/npm/package/@cartago-git/keyer)](https://socket.dev/npm/package/@cartago-git/keyer)
+[![Socket.dev Badge](https://img.shields.io/badge/Socket.dev-Keyer-purple)](https://socket.dev/npm/package/@cartago-git/keyer)
+
 
 ---
 

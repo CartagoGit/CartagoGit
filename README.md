@@ -14,8 +14,8 @@
 # Libraries
 
 
-[![Socket.dev Keyer](https://img.shields.io/badge/Socket.dev-Keyer?labelColor=543C9A)](https://socket.dev/npm/package/@cartago-git/keyer)
-[![Keyer Badge](https://img.shields.io/badge/npm-Keyer-purple?labelColor=CB3837&&logo=npm)](https://www.npmjs.com/package/@cartago-git/keyer)
+[![Socket.dev Keyer](https://img.shields.io/badge/Socket.dev-Keyer-blue?labelColor=543C9A)](https://socket.dev/npm/package/@cartago-git/keyer)
+[![Keyer Badge](https://img.shields.io/badge/npm-Keyer-blue?labelColor=CB3837&&logo=npm)](https://www.npmjs.com/package/@cartago-git/keyer)
 
 ---
 

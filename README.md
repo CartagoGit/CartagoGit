@@ -9,13 +9,16 @@
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mario-cabrero-volarich)
 [![Codewars](https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=codewars&logoColor=grey)](https://www.codewars.com/users/CartagoGit)
+[![Docker](https://img.shields.io/badge/DockerHub-543C9A.svg?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/repository/docker/cartagodocker)
 [![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/settings/cartago-git/packages)
+
 
 # Libraries
 
 
 [![Socket.dev Keyer](https://img.shields.io/badge/Socket.dev-Keyer-blue?labelColor=543C9A)](https://socket.dev/npm/package/@cartago-git/keyer)
 [![Keyer Badge](https://img.shields.io/badge/npm-Keyer-blue?labelColor=CB3837&&logo=npm)](https://www.npmjs.com/package/@cartago-git/keyer)
+[![DockerZsh Badge](https://img.shields.io/badge/Docker-ZSH-purple?labelColor=543C9A&&logo=docker)](https://hub.docker.com/repository/docker/cartagodocker/zsh/general)
 
 ---
 

@@ -14,7 +14,7 @@ while $HAS_MORE; do
     "https://api.github.com/user/repos?per_page=$PER_PAGE&page=$PAGE" | jq -r '.[].full_name')
 
   echo "----------------> Repos <----------------"
-  echo $repos"
+  echo $repos
 
   # Si la respuesta está vacía, significa que hemos llegado al final
   if [ -z "$repos" ]; then

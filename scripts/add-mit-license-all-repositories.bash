@@ -13,6 +13,9 @@ while $HAS_MORE; do
   repos=$(curl -s -H "Authorization: token ${OWN_GITHUB_TOKEN}" \
     "https://api.github.com/user/repos?per_page=$PER_PAGE&page=$PAGE" | jq -r '.[].full_name')
 
+  echo "----------------> Repos <----------------"
+  echo $repos"
+
   # Si la respuesta está vacía, significa que hemos llegado al final
   if [ -z "$repos" ]; then
     HAS_MORE=false
@@ -55,5 +58,5 @@ while $HAS_MORE; do
   fi
 
   # Incrementa el número de página para la siguiente solicitud
-  ((page++))
+  ((PAGE++))
 done

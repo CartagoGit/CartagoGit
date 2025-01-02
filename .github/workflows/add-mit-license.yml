@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Checkout this repository
         uses: actions/checkout@v2
+      - name: Configure Git user
+        run: |
+          git config --global user.name "Cartago - Automatic Workflow"
+          git config --global user.email "cv2mario@gmail.com"
 
       - name: Run script to add MIT License to all repos
         run: |

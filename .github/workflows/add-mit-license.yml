@@ -17,6 +17,11 @@ jobs:
           git config --global user.name "Cartago - Automatic Workflow"
           git config --global user.email "cv2mario@gmail.com"
 
+      - name: Set up Git credentials
+        run: |
+          git remote set-url origin https://github.com/${{ github.repository }}.git
+          git config --global credential.helper 'store'
+          echo "https://${{ secrets.OWN_GITHUB_TOKEN }}:x-oauth-basic" > ~/.git-credentials
       - name: Run script to add MIT License to all repos
         run: |
           chmod +x ${PATH_LICENSE_SCRIPT}  # Da permisos de ejecución al script

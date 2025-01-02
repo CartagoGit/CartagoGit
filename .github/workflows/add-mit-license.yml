@@ -1,0 +1,18 @@
+name: Add MIT License to All Repositories
+
+on:
+  workflow_dispatch:  # Este trigger permite que el flujo de trabajo se ejecute manualmente
+
+jobs:
+  add-license:
+    runs-on: ubuntu-latest  # Usamos un contenedor de Ubuntu
+    env:
+      OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }} 
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v2
+
+      - name: Run script to add MIT License to all repos
+        run: |
+          chmod +x ./scripts/add-mit-license-all-repositories.sh  # Da permisos de ejecución al script
+          ./scripts/add-mit-license.sh  # Ejecuta el script

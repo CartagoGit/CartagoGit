@@ -14,5 +14,5 @@ jobs:
 
       - name: Run script to add MIT License to all repos
         run: |
-          chmod +x ./scripts/add-mit-license-all-repositories.sh  # Da permisos de ejecución al script
-          ./scripts/add-mit-license.sh  # Ejecuta el script
+          chmod +x ./scripts/add-mit-license-all-repositories.bash  # Da permisos de ejecución al script
+          ./scripts/add-mit-license.bash  # Ejecuta el script

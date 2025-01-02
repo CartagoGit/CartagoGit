@@ -8,11 +8,12 @@ jobs:
     runs-on: ubuntu-latest  # Usamos un contenedor de Ubuntu
     env:
       OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }} 
+      PATH_LICENSE_SCRIPT: ./scripts/add-mit-license-all-repositories.bash  # Ruta del script que se ejecutará
     steps:
       - name: Checkout this repository
         uses: actions/checkout@v2
 
       - name: Run script to add MIT License to all repos
         run: |
-          chmod +x ./scripts/add-mit-license-all-repositories.bash  # Da permisos de ejecución al script
-          ./scripts/add-mit-license.bash  # Ejecuta el script
+          chmod +x ${PATH_LICENSE_SCRIPT}  # Da permisos de ejecución al script
+          ${PATH_LICENSE_SCRIPT}  # Ejecuta el script

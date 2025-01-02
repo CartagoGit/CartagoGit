@@ -10,7 +10,7 @@ YEAR=$(date +%Y)
 # Recorre todas las páginas de la API para obtener todos los repositorios
 while $HAS_MORE; do
   # Solicita los repositorios de la página actual
-  repos=$(curl -s -H "Authorization: token ${{ secrets.OWN_GITHUB_TOKEN }}" \
+  repos=$(curl -s -H "Authorization: token ${OWN_GITHUB_TOKEN}" \
     "https://api.github.com/user/repos?per_page=$PER_PAGE&page=$PAGE" | jq -r '.[].full_name')
 
   # Si la respuesta está vacía, significa que hemos llegado al final

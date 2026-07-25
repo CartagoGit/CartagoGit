@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2196" height="601" viewBox="0 0 2196 601" role="img" aria-label="Mario Cabrero Volarich profile header">
+  <defs>
+    <filter id="neon-glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="soft-glow" />
+      <feFlood flood-color="#147dff" flood-opacity="0.9" result="glow-color" />
+      <feComposite in="glow-color" in2="soft-glow" operator="in" result="blue-glow" />
+      <feMerge>
+        <feMergeNode in="blue-glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="header-clip">
+      <rect x="12" y="12" width="2172" height="577" rx="14" />
+    </clipPath>
+  </defs>
+  <rect width="2196" height="601" fill="#05070c" />
+  <image href="github-header-image.jpg" x="12" y="12" width="2172" height="577" preserveAspectRatio="none" clip-path="url(#header-clip)" />
+  <rect x="12" y="12" width="2172" height="577" rx="14" fill="none" stroke="#147dff" stroke-width="3" filter="url(#neon-glow)" />
+</svg>

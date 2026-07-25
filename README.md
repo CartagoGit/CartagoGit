@@ -43,10 +43,11 @@ Published npm library and CLI for secrets, API keys, and environment-file encryp
   <img src="https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&amp;logo=npm&amp;logoColor=white&amp;color=CB3837" alt="Keyer monthly npm downloads">
 </p>
 
+---
+
 <details>
 <summary><strong>Professional Experience and Core Stack</strong></summary>
 
----
 
 ### Professional Frontend Experience
 

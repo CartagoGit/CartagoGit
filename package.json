@@ -1,0 +1,14 @@
+{
+  "name": "cartagogit-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audit:workspace": "bun scripts/audit-workspace.ts /home/cartago/_projects",
+    "licenses:mit": "bun scripts/add-mit-license-all-repositories.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.2",
+    "typescript": "^5.9.3"
+  }
+}

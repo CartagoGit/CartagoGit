@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-El perfil debe presentar a Mario como ingeniero full-stack de TypeScript que entrega software de negocio en produccion y construye herramientas de desarrollo. No debe intentar demostrar conocimiento mediante una lista extensa de tecnologias, insignias o estadisticas de terceros.
+El perfil debe presentar a Mario como ingeniero full-stack de TypeScript que entrega software de negocio en produccion y construye herramientas de desarrollo. Los badges y graficas son utiles cuando refuerzan informacion comprobable: tecnologias principales, publicaciones, actividad y lenguajes. No deben convertirse en una lista extensa de herramientas marginales.
 
 La experiencia profesional se refleja por capacidades, no por nombres de clientes, repositorios internos, capturas, datos de dominio, ni fragmentos de codigo corporativo.
 
@@ -55,4 +55,4 @@ Todo repositorio publico que se mantenga debe tener como minimo:
 3. Un `LICENSE` adecuado y `.gitignore` sin secretos, binarios locales, archivos de agentes ni resultados de pruebas.
 4. Una decision explicita: activo, mantenido, archivado o privado.
 
-La calidad del README, las pruebas y la documentacion de decisiones es mas valiosa en este perfil que añadir mas insignias.
+La calidad del README, las pruebas y la documentacion de decisiones sigue siendo la base del perfil. Los badges y metricas seleccionados deben reforzar esa evidencia visualmente.

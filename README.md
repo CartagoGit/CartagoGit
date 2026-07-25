@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/github-header-image.png" alt="Mario Cabrero Volarich">
+  <img src="./assets/github-header-image.jpg" alt="Mario Cabrero Volarich">
 </p>
 
 # Mario Cabrero Volarich

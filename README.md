@@ -149,10 +149,6 @@ Published npm library and CLI for secrets, API keys, and environment-file encryp
 - [Zoneless Calculator](https://github.com/CartagoGit/zoneless-calculator) - Angular application exploring zoneless architecture through unit and integration tests.
 - [NestGpt](https://github.com/CartagoGit/NestGpt) - NestJS and OpenAI API foundation with test and Docker workflows.
 
-### Learning Experiment
-
-- Chess (in development) - Angular and TypeScript exploration of chess rules, board state, reusable components, and Docker-based development and build environments.
-
 ## Docker Hub Images
 
 Public development images for local environments and repeatable tooling setups. Pull counts are live Docker Hub values. [View all public images on Docker Hub.](https://hub.docker.com/u/cartagodocker)
@@ -173,3 +169,44 @@ Public development images for local environments and repeatable tooling setups. 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=CartagoGit&theme=github-dark&hide_border=true" alt="GitHub contribution activity" width="790">
 </p>
+
+## Learning Games & Concept Demos
+
+Personal, visual projects that complement the tooling above: four Angular/TypeScript learning games and one pre-alpha concept demo for a future game project.
+
+### Learning Games
+
+#### Chess (in development)
+
+Angular and TypeScript exploration of chess rules, board state, reusable components, and Docker-based development and build environments.
+
+[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/chess)
+
+#### Cartago Tetris
+
+Completed desktop-first Angular game exploring a game loop, board state, keyboard controls, and scoring.
+
+[![Live demo](https://img.shields.io/badge/Live_demo-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://cartago-tetris.netlify.app/)
+[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/tetris)
+
+#### Cartago Snake
+
+Completed desktop-first Angular game focused on real-time movement, keyboard input, collision detection, scoring, and game state.
+
+[![Live demo](https://img.shields.io/badge/Live_demo-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://cartago-snake.netlify.app/)
+[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/snake)
+
+#### Cartago Minesweeper
+
+Completed desktop-first Angular game exploring grid interactions, mine generation, state transitions, timers, and score tracking.
+
+[![Live demo](https://img.shields.io/badge/Live_demo-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://cartago-minesweeper.netlify.app/)
+[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/minesweeper)
+
+### Concept Demo
+
+#### DeathBlitz
+
+Pre-alpha concept demo for a future combat-racing project. It currently demonstrates Angular 21 architecture, local persistence with IndexedDB, internationalization, pilot creation, vehicles, progression, upgrades, and game-oriented UI systems.
+
+[![Open concept demo](https://img.shields.io/badge/Open_concept_demo-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://deathblitz.netlify.app/)

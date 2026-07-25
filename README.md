@@ -145,13 +145,15 @@ Published npm library and CLI for secrets, API keys, and environment-file encryp
 
 ### Other Personal Work
 
-- [Print CV](https://github.com/CartagoGit/print-cv) - Vue/TypeScript application with validation, Vitest, Playwright E2E coverage, Docker, and GitHub Actions deployment.
-- [Zoneless Calculator](https://github.com/CartagoGit/zoneless-calculator) - Angular application exploring zoneless architecture through unit and integration tests.
-- [NestGpt](https://github.com/CartagoGit/NestGpt) - NestJS and OpenAI API foundation with test and Docker workflows.
+- **Print CV** - Vue/TypeScript application with validation, Vitest, Playwright E2E coverage, Docker, and GitHub Actions deployment. [![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/print-cv)
+- **Zoneless Calculator** - Angular application exploring zoneless architecture through unit and integration tests. [![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/zoneless-calculator)
+- **NestGpt** - NestJS and OpenAI API foundation with test and Docker workflows. [![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/NestGpt)
 
 ## Docker Hub Images
 
-Public development images for local environments and repeatable tooling setups. Pull counts are live Docker Hub values. [View all public images on Docker Hub.](https://hub.docker.com/u/cartagodocker)
+Public development images for local environments and repeatable tooling setups. Pull counts are live Docker Hub values.
+
+[![Open Docker Hub](https://img.shields.io/badge/Open_Docker_Hub-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
 
 - **Most used:** [![nodebun](https://img.shields.io/badge/nodebun-Node%20%2B%20Bun%20%2B%20Zsh-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nodebun) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/nodebun)
 - **Most used:** [![zsh](https://img.shields.io/badge/zsh-Shell%20environment-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/zsh) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/zsh?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/zsh)

@@ -9,7 +9,7 @@ I build Angular, Ionic, and Capacitor interfaces, and develop libraries and deve
 This GitHub is a personal portfolio: the work below is independent, not client or employer source code.
 
 <p>
-  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/linkedin-badge.svg" alt="Visit Mario Cabrero Volarich on LinkedIn" height="20"></a>
+  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/linkedin-badge.svg?v=c03b30c" alt="Visit Mario Cabrero Volarich on LinkedIn" height="20"></a>
   <a href="https://hub.docker.com/u/cartagodocker"><img src="https://img.shields.io/badge/Docker_Hub_%E2%86%97-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker Hub"></a>
   <a href="https://www.npmjs.com/~cartago-git"><img src="https://img.shields.io/badge/npm_packages_%E2%86%97-CB3837?style=flat-square&amp;logo=npm&amp;logoColor=white" alt="npm packages"></a>
 </p>

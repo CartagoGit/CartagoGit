@@ -46,6 +46,8 @@ Published npm library and CLI for secrets, API keys, and environment-file encryp
 <details>
 <summary><strong>Professional Experience and Core Stack</strong></summary>
 
+---
+
 ### Professional Frontend Experience
 
 - **Operational applications:** Angular interfaces for business workflows with complex, repeated-use interaction and long-lived product rules.

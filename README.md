@@ -8,13 +8,13 @@ Frontend engineer focused on operational web and Android products, plus independ
 I build Angular, Ionic, and Capacitor interfaces, and develop libraries and developer tools in my own time.<br>
 This GitHub is a personal portfolio: the work below is independent, not client or employer source code.
 
-[<img src="./assets/linkedin-badge.svg" alt="Visit Mario Cabrero Volarich on LinkedIn" height="20">](https://www.linkedin.com/in/mario-cabrero-volarich)
+<p>
+  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/linkedin-badge.svg" alt="Visit Mario Cabrero Volarich on LinkedIn" height="20"></a>
+  <a href="https://hub.docker.com/u/cartagodocker"><img src="https://img.shields.io/badge/Docker_Hub_%E2%86%97-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker Hub"></a>
+  <a href="https://www.npmjs.com/~cartago-git"><img src="https://img.shields.io/badge/npm_packages_%E2%86%97-CB3837?style=flat-square&amp;logo=npm&amp;logoColor=white" alt="npm packages"></a>
+</p>
 
-[![Docker Hub](https://img.shields.io/badge/Docker_Hub_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
-
-[![npm packages](https://img.shields.io/badge/npm_packages_%E2%86%97-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/~cartago-git)
-
-## Featured Personal Projects
+## Featured Independent Projects
 
 #### <img src="./assets/mcp-vertex.svg" alt="MCP Vertex" width="28" height="28" align="absmiddle"> MCP Vertex
 
@@ -36,11 +36,12 @@ TypeScript model tooling with validation integrations, security tests, benchmark
 
 Published npm library and CLI for secrets, API keys, and environment-file encryption.
 
-[![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/Keyer)
-[![npm package](https://img.shields.io/badge/npm_%E2%86%97-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/@cartago-git/keyer)
-
-![npm version](https://img.shields.io/npm/v/%40cartago-git%2Fkeyer?label=%40cartago-git%2Fkeyer&logo=npm&logoColor=white&color=CB3837)
-![npm downloads](https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&logo=npm&logoColor=white&color=CB3837)
+<p>
+  <a href="https://github.com/CartagoGit/Keyer"><img src="https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Keyer repository"></a>
+  <a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="https://img.shields.io/badge/npm_%E2%86%97-CB3837?style=flat-square&amp;logo=npm&amp;logoColor=white" alt="Keyer npm package"></a>
+  <img src="https://img.shields.io/npm/v/%40cartago-git%2Fkeyer?label=%40cartago-git%2Fkeyer&amp;logo=npm&amp;logoColor=white&amp;color=CB3837" alt="Keyer npm version">
+  <img src="https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&amp;logo=npm&amp;logoColor=white&amp;color=CB3837" alt="Keyer monthly npm downloads">
+</p>
 
 <details>
 <summary><strong>Professional Experience and Core Stack</strong></summary>
@@ -91,7 +92,7 @@ Published npm library and CLI for secrets, API keys, and environment-file encryp
 </details>
 
 <details>
-<summary><strong>Additional Skills</strong></summary>
+<summary><strong>Additional Skills and Technology Index</strong></summary>
 
 | Area | Technologies |
 | --- | --- |
@@ -103,10 +104,7 @@ Published npm library and CLI for secrets, API keys, and environment-file encryp
 | AI platforms and agents | ![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white) ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white) ![MiniMax](https://img.shields.io/badge/MiniMax-1C1C1C?style=flat-square&logo=minimax&logoColor=white) ![Grok](https://img.shields.io/badge/Grok-000000?style=flat-square&logo=grok&logoColor=white) ![OpenCode](https://img.shields.io/badge/OpenCode-1C1C1C?style=flat-square&logo=opencode&logoColor=white) ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white) |
 | Developer tooling | ![Model Context Protocol](https://img.shields.io/badge/Model_Context_Protocol-111111?style=flat-square&logo=modelcontextprotocol&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white) |
 
-</details>
-
-<details>
-<summary><strong>Technology Index</strong></summary>
+### Searchable Technology Index
 
 Frontend and mobile: TypeScript, Angular, RxJS, Ionic, Capacitor, Angular Material, and Sass.
 
@@ -119,7 +117,7 @@ Data, platform, and AI tooling: MongoDB, Mongoose, Prisma, Zod, Firebase, Docker
 </details>
 
 <details>
-<summary><strong>More Personal Work</strong></summary>
+<summary><strong>More Independent Work</strong></summary>
 
 | Project | Focus | Link |
 | --- | --- | --- |
@@ -148,7 +146,7 @@ Public development images for local environments and repeatable tooling setups. 
 </details>
 
 <details>
-<summary><strong>Learning Games and Concept Demo</strong></summary>
+<summary><strong>Learning Games and Experiments</strong></summary>
 
 | Project | Scope | Links |
 | --- | --- | --- |

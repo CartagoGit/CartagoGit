@@ -45,7 +45,7 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-<img src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=F9F1E1" alt="Bun" height="20" align="absmiddle"> <strong>Bun</strong> is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
+<img src="./assets/bun-icon.svg" alt="Bun" width="20" height="20" align="absmiddle"> <strong>Bun</strong> is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
 
 **Quality and delivery**
 

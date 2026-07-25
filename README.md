@@ -8,7 +8,7 @@
 
 I build web and Android interfaces for operational products, and I develop TypeScript libraries and tooling in my own time. This GitHub is a personal portfolio: the repositories below are independent work, not client or employer projects.
 
-[<img src="./assets/linkedin.svg" alt="LinkedIn" width="24" height="24" align="absmiddle"> LinkedIn](https://www.linkedin.com/in/mario-cabrero-volarich)
+[<img src="./assets/linkedin-badge.svg" alt="LinkedIn: Mario Cabrero Volarich" height="28">](https://www.linkedin.com/in/mario-cabrero-volarich)
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-cartagodocker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
 [![npm](https://img.shields.io/badge/npm-%40cartago--git%2Fkeyer-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@cartago-git/keyer)
 
@@ -81,6 +81,10 @@ I build web and Android interfaces for operational products, and I develop TypeS
 
 ![Model Context Protocol](https://img.shields.io/badge/Model_Context_Protocol-111111?style=flat-square&logo=modelcontextprotocol&logoColor=white)
 ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![MiniMax](https://img.shields.io/badge/MiniMax-1C1C1C?style=flat-square&logo=minimax&logoColor=white)
+![OpenCode](https://img.shields.io/badge/OpenCode-1C1C1C?style=flat-square&logo=opencode&logoColor=white)
+![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
@@ -133,7 +137,6 @@ Public development images for local environments and repeatable tooling setups. 
 - [![nestjs-cover](https://img.shields.io/badge/nestjs--cover-NestJS%20development-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nestjs-cover) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/nestjs-cover)
 - [![angular](https://img.shields.io/badge/angular-Angular%20development-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/angular?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/angular)
 - [![docker-graphql](https://img.shields.io/badge/docker--graphql-GraphQL%20environment-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/docker-graphql) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/docker-graphql?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/docker-graphql)
-- [![teslo-shop](https://img.shields.io/badge/teslo--shop-Application%20image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/teslo-shop) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/teslo-shop?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/teslo-shop)
 
 ## GitHub Activity
 

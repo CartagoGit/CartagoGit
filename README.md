@@ -18,6 +18,12 @@ I build web and Android interfaces for operational products, and I develop TypeS
 - **Web and Android delivery:** Ionic applications, Capacitor packaging, and UI work with TypeScript, RxJS, Angular Material, and Sass.
 - **Delivery practice:** Docker-based development environments, Git/GitLab workflows, CI/CD jobs, and focused testing and maintenance work.
 
+## Portfolio Scope
+
+**Personal work on this GitHub:** the repositories, packages, Docker images, and experiments documented here are independent projects built in my own time.
+
+**Professional work:** separate, non-public work on operational web and Android products. My contribution is centered on Angular/RxJS interfaces, Ionic/Capacitor delivery, Sass and Angular Material UI systems, Kotlin/Java Capacitor plugins, Docker development environments, and GitLab CI/CD. Employer and client source code are intentionally not included in this portfolio.
+
 ## Core Stack
 
 **Frontend and mobile**
@@ -27,16 +33,19 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=flat-square&logo=reactivex&logoColor=white)
 ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=flat-square&logo=ionic&logoColor=white)
 ![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
+![Angular Material](https://img.shields.io/badge/Angular_Material-757575?style=flat-square&logo=angular&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
 
 **Personal TypeScript runtime and tooling**
 
+![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=F9F1E1)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=F9F1E1) is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
+<img src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=F9F1E1" alt="Bun" height="20" align="absmiddle"> <strong>Bun</strong> is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
 
 **Quality and delivery**
 
@@ -56,10 +65,8 @@ I build web and Android interfaces for operational products, and I develop TypeS
 
 **Styling and UI systems**
 
-![Angular Material](https://img.shields.io/badge/Angular_Material-757575?style=flat-square&logo=angular&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![PrimeNG](https://img.shields.io/badge/PrimeNG-DD0031?style=flat-square&logo=primeng&logoColor=white)
-![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
 ![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=storybook&logoColor=white)
 
 **Build and workspace tooling**
@@ -86,9 +93,10 @@ I build web and Android interfaces for operational products, and I develop TypeS
 
 **AI platforms and agents**
 
-![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![MiniMax](https://img.shields.io/badge/MiniMax-1C1C1C?style=flat-square&logo=minimax&logoColor=white)
+![Grok](https://img.shields.io/badge/Grok-000000?style=flat-square&logo=grok&logoColor=white)
 ![OpenCode](https://img.shields.io/badge/OpenCode-1C1C1C?style=flat-square&logo=opencode&logoColor=white)
 ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)
 
@@ -105,9 +113,6 @@ I build web and Android interfaces for operational products, and I develop TypeS
 Everything in this section was built independently in my own time. It is separate from my professional work.
 
 ### Featured Projects
-
-[![npm version](https://img.shields.io/npm/v/%40cartago-git%2Fkeyer?label=%40cartago-git%2Fkeyer&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
-[![npm downloads](https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
 
 #### <img src="./assets/mcp-vertex.svg" alt="MCP Vertex" width="28" height="28" align="absmiddle"> MCP Vertex
 
@@ -130,6 +135,9 @@ TypeScript model tooling with validation integrations, security tests, benchmark
 Published npm library and CLI for secrets, API keys, and environment-file encryption.
 
 [![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/Keyer)
+
+[![npm version](https://img.shields.io/npm/v/%40cartago-git%2Fkeyer?label=%40cartago-git%2Fkeyer&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
+[![npm downloads](https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
 
 ### Other Personal Work
 

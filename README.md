@@ -10,9 +10,9 @@ I build web and Android interfaces for operational products, and I develop TypeS
 
 [<img src="./assets/linkedin-badge.svg" alt="LinkedIn: Mario Cabrero Volarich" height="28">](https://www.linkedin.com/in/mario-cabrero-volarich)
 
-[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-cartagodocker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
+[![Docker Hub](https://img.shields.io/badge/Docker_Hub-Visit_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
 
-[![npm](https://img.shields.io/badge/npm-%40cartago--git%2Fkeyer-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@cartago-git/keyer)
+[![npm](https://img.shields.io/badge/npm-View_Keyer_%E2%86%97-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@cartago-git/keyer)
 
 ## Professional Frontend Experience
 
@@ -120,7 +120,7 @@ Everything in this section was built independently in my own time. It is separat
 
 Language- and framework-agnostic MCP tooling platform, implemented in TypeScript/Bun, with a CLI, plugins, tests, quality gates, and documentation.
 
-[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/mcp-vertex)
+[![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/mcp-vertex)
 
 ---
 
@@ -128,7 +128,7 @@ Language- and framework-agnostic MCP tooling platform, implemented in TypeScript
 
 TypeScript model tooling with validation integrations, security tests, benchmarks, and MCP support.
 
-[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/quickmodel)
+[![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/quickmodel)
 
 ---
 
@@ -136,31 +136,33 @@ TypeScript model tooling with validation integrations, security tests, benchmark
 
 Published npm library and CLI for secrets, API keys, and environment-file encryption.
 
-[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/Keyer)
+[![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/Keyer)
 
-[![npm version](https://img.shields.io/npm/v/%40cartago-git%2Fkeyer?label=%40cartago-git%2Fkeyer&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
-[![npm downloads](https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
+[![View Keyer on npm](https://img.shields.io/badge/npm-View_package_%E2%86%97-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@cartago-git/keyer)
+
+![npm version](https://img.shields.io/npm/v/%40cartago-git%2Fkeyer?label=%40cartago-git%2Fkeyer&logo=npm&logoColor=white&color=CB3837)
+![npm downloads](https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&logo=npm&logoColor=white&color=CB3837)
 
 ---
 
 ### Other Personal Work
 
-- **Print CV** - Vue/TypeScript application with validation, Vitest, Playwright E2E coverage, Docker, and GitHub Actions deployment. [![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/print-cv)
-- **Zoneless Calculator** - Angular application exploring zoneless architecture through unit and integration tests. [![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/zoneless-calculator)
-- **NestGpt** - NestJS and OpenAI API foundation with test and Docker workflows. [![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/NestGpt)
+- **Print CV** - Vue/TypeScript application with validation, Vitest, Playwright E2E coverage, Docker, and GitHub Actions deployment. [![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/print-cv)
+- **Zoneless Calculator** - Angular application exploring zoneless architecture through unit and integration tests. [![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/zoneless-calculator)
+- **NestGpt** - NestJS and OpenAI API foundation with test and Docker workflows. [![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/NestGpt)
 
 ## Docker Hub Images
 
 Public development images for local environments and repeatable tooling setups. Pull counts are live Docker Hub values.
 
-[![Open Docker Hub](https://img.shields.io/badge/Open_Docker_Hub-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
+[![Visit Docker Hub](https://img.shields.io/badge/Docker_Hub-Visit_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
 
-- **Most used:** [![nodebun](https://img.shields.io/badge/nodebun-Node%20%2B%20Bun%20%2B%20Zsh-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nodebun) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/nodebun)
-- **Most used:** [![zsh](https://img.shields.io/badge/zsh-Shell%20environment-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/zsh) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/zsh?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/zsh)
-- [![ionic-cover](https://img.shields.io/badge/ionic--cover-Ionic%20%2B%20Android-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/ionic-cover) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/ionic-cover?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/ionic-cover)
-- [![nestjs-cover](https://img.shields.io/badge/nestjs--cover-NestJS%20development-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nestjs-cover) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/nestjs-cover)
-- [![angular](https://img.shields.io/badge/angular-Angular%20development-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/angular?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/angular)
-- [![docker-graphql](https://img.shields.io/badge/docker--graphql-GraphQL%20environment-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/docker-graphql) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/docker-graphql?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/docker-graphql)
+- **Most used:** ![nodebun](https://img.shields.io/badge/nodebun-Node%20%2B%20Bun%20%2B%20Zsh-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/Docker-View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nodebun)
+- **Most used:** ![zsh](https://img.shields.io/badge/zsh-Shell%20environment-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/zsh?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/Docker-View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/zsh)
+- ![ionic-cover](https://img.shields.io/badge/ionic--cover-Ionic%20%2B%20Android-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/ionic-cover?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/Docker-View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/ionic-cover)
+- ![nestjs-cover](https://img.shields.io/badge/nestjs--cover-NestJS%20development-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/Docker-View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nestjs-cover)
+- ![angular](https://img.shields.io/badge/angular-Angular%20development-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/angular?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/Docker-View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular)
+- ![docker-graphql](https://img.shields.io/badge/docker--graphql-GraphQL%20environment-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/docker-graphql?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/Docker-View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/docker-graphql)
 
 ## GitHub Activity
 
@@ -182,28 +184,28 @@ Personal, visual projects that complement the tooling above: four Angular/TypeSc
 
 Angular and TypeScript exploration of chess rules, board state, reusable components, and Docker-based development and build environments.
 
-[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/chess)
+[![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/chess)
 
 #### Cartago Tetris
 
 Completed desktop-first Angular game exploring a game loop, board state, keyboard controls, and scoring.
 
-[![Live demo](https://img.shields.io/badge/Live_demo-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://cartago-tetris.netlify.app/)
-[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/tetris)
+[![Launch live demo](https://img.shields.io/badge/Netlify-Launch_demo_%E2%86%97-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://cartago-tetris.netlify.app/)
+[![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/tetris)
 
 #### Cartago Snake
 
 Completed desktop-first Angular game focused on real-time movement, keyboard input, collision detection, scoring, and game state.
 
-[![Live demo](https://img.shields.io/badge/Live_demo-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://cartago-snake.netlify.app/)
-[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/snake)
+[![Launch live demo](https://img.shields.io/badge/Netlify-Launch_demo_%E2%86%97-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://cartago-snake.netlify.app/)
+[![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/snake)
 
 #### Cartago Minesweeper
 
 Completed desktop-first Angular game exploring grid interactions, mine generation, state transitions, timers, and score tracking.
 
-[![Live demo](https://img.shields.io/badge/Live_demo-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://cartago-minesweeper.netlify.app/)
-[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/minesweeper)
+[![Launch live demo](https://img.shields.io/badge/Netlify-Launch_demo_%E2%86%97-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://cartago-minesweeper.netlify.app/)
+[![View repository](https://img.shields.io/badge/GitHub-View_repository_%E2%86%97-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CartagoGit/minesweeper)
 
 ### Concept Demo
 
@@ -211,4 +213,4 @@ Completed desktop-first Angular game exploring grid interactions, mine generatio
 
 Pre-alpha concept demo for a future combat-racing project. It currently demonstrates Angular 21 architecture, local persistence with IndexedDB, internationalization, pilot creation, vehicles, progression, upgrades, and game-oriented UI systems.
 
-[![Open concept demo](https://img.shields.io/badge/Open_concept_demo-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://deathblitz.netlify.app/)
+[![Launch concept demo](https://img.shields.io/badge/Netlify-Launch_concept_demo_%E2%86%97-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://deathblitz.netlify.app/)

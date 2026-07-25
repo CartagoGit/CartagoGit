@@ -8,7 +8,7 @@
 
 I build web and Android interfaces for operational products, and I develop TypeScript libraries and tooling in my own time. This GitHub is a personal portfolio: the repositories below are independent work, not client or employer projects.
 
-[<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" alt="LinkedIn" width="26" height="26" align="absmiddle"> LinkedIn](https://www.linkedin.com/in/mario-cabrero-volarich)
+[<img src="./assets/linkedin.svg" alt="LinkedIn" width="24" height="24" align="absmiddle"> LinkedIn](https://www.linkedin.com/in/mario-cabrero-volarich)
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-cartagodocker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
 [![npm](https://img.shields.io/badge/npm-%40cartago--git%2Fkeyer-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@cartago-git/keyer)
 
@@ -29,19 +29,16 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
 
-**Bun runtime and tooling**
-
-![Bun runtime and tooling](https://img.shields.io/badge/Bun-Runtime%20%26%20tooling-F9F1E1?style=for-the-badge&logo=bun&logoColor=000000)
-
-`Bun` is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
-
-**Personal TypeScript services and tooling**
+**Personal TypeScript runtime and tooling**
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=F9F1E1)
 ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+`Bun` is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
 
 **Quality and delivery**
 
@@ -98,23 +95,27 @@ Everything in this section was built independently in my own time. It is separat
 [![npm version](https://img.shields.io/npm/v/%40cartago-git%2Fkeyer?label=%40cartago-git%2Fkeyer&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
 [![npm downloads](https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
 
-<p>
-  <img src="./assets/mcp-vertex.svg" alt="MCP Vertex" width="28" height="28" align="absmiddle">
-  <a href="https://github.com/CartagoGit/mcp-vertex"><strong>MCP Vertex</strong></a><br>
-  Language- and framework-agnostic MCP tooling platform, implemented in TypeScript/Bun, with a CLI, plugins, tests, quality gates, and documentation.
-</p>
+#### <img src="./assets/mcp-vertex.svg" alt="MCP Vertex" width="28" height="28" align="absmiddle"> MCP Vertex
 
-<p>
-  <img src="./assets/quickmodel.png" alt="QuickModel" width="28" height="28" align="absmiddle">
-  <a href="https://github.com/CartagoGit/quickmodel"><strong>QuickModel</strong></a><br>
-  TypeScript model tooling with validation integrations, security tests, benchmarks, and MCP support.
-</p>
+Language- and framework-agnostic MCP tooling platform, implemented in TypeScript/Bun, with a CLI, plugins, tests, quality gates, and documentation.
 
-<p>
-  <a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/npm.svg" alt="npm" width="24" height="24" align="absmiddle"></a>
-  <a href="https://github.com/CartagoGit/Keyer"><strong>Keyer</strong></a><br>
-  Published npm library and CLI for secrets, API keys, and environment-file encryption.
-</p>
+[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/mcp-vertex)
+
+---
+
+#### <img src="./assets/quickmodel.png" alt="QuickModel" width="28" height="28" align="absmiddle"> QuickModel
+
+TypeScript model tooling with validation integrations, security tests, benchmarks, and MCP support.
+
+[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/quickmodel)
+
+---
+
+#### <img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm" height="24" align="absmiddle"> Keyer
+
+Published npm library and CLI for secrets, API keys, and environment-file encryption.
+
+[![Open repository](https://img.shields.io/badge/Open_repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/Keyer)
 
 ### Other Personal Work
 
@@ -133,7 +134,6 @@ Public development images for local environments and repeatable tooling setups. 
 - [![angular](https://img.shields.io/badge/angular-Angular%20development-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/angular?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/angular)
 - [![docker-graphql](https://img.shields.io/badge/docker--graphql-GraphQL%20environment-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/docker-graphql) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/docker-graphql?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/docker-graphql)
 - [![teslo-shop](https://img.shields.io/badge/teslo--shop-Application%20image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/teslo-shop) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/teslo-shop?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/teslo-shop)
-- [![curso-cron-ticker](https://img.shields.io/badge/curso--cron--ticker-Application%20image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/curso-cron-ticker) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/curso-cron-ticker?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/curso-cron-ticker)
 
 ## GitHub Activity
 

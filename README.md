@@ -38,6 +38,8 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![Angular Material](https://img.shields.io/badge/Angular_Material-757575?style=flat-square&logo=angular&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
 
+**Technologies:** TypeScript, Angular, RxJS, Ionic, Capacitor, Angular Material, and Sass.
+
 **Personal TypeScript runtime and tooling**
 
 ![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=F9F1E1)
@@ -46,6 +48,8 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+**Technologies:** Bun, Node.js, NestJS, npm, Docker, and Git.
 
 <strong>Bun</strong> is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
 
@@ -57,6 +61,8 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
+**Technologies:** GitLab CI/CD, Vitest, Playwright, Jest, and GitHub Actions.
+
 ## Additional Skills
 
 **Product interfaces**
@@ -65,16 +71,22 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
 
+**Technologies:** Vue, React, and Electron.
+
 **Styling and UI systems**
 
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![PrimeNG](https://img.shields.io/badge/PrimeNG-DD0031?style=flat-square&logo=primeng&logoColor=white)
 ![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=storybook&logoColor=white)
 
+**Technologies:** Tailwind CSS, PrimeNG, and Storybook.
+
 **Build and workspace tooling**
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Nx](https://img.shields.io/badge/Nx-143055?style=flat-square&logo=nx&logoColor=white)
+
+**Technologies:** Vite and Nx.
 
 **Data and application tooling**
 
@@ -87,11 +99,15 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![WSL](https://img.shields.io/badge/WSL-0078D4?style=flat-square&logo=windows&logoColor=white)
 
+**Technologies:** MongoDB, Mongoose, Prisma, Zod, Firebase, Docker Compose, Linux, and WSL.
+
 **Mobile platform plugins**
 
 ![Capacitor](https://img.shields.io/badge/Capacitor_plugins-119EFF?style=flat-square&logo=capacitor&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
+**Technologies:** Capacitor plugins, Kotlin, and Java.
 
 **AI platforms and agents**
 
@@ -102,6 +118,8 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![OpenCode](https://img.shields.io/badge/OpenCode-1C1C1C?style=flat-square&logo=opencode&logoColor=white)
 ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)
 
+**Technologies:** Codex, Claude, MiniMax, Grok, OpenCode, and GitHub Copilot.
+
 **Developer tooling**
 
 ![Model Context Protocol](https://img.shields.io/badge/Model_Context_Protocol-111111?style=flat-square&logo=modelcontextprotocol&logoColor=white)
@@ -109,6 +127,8 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+
+**Technologies:** Model Context Protocol (MCP), ESLint, Prettier, GitHub, and GitLab.
 
 ## Independent Personal Projects
 
@@ -165,12 +185,29 @@ Public development images for local environments and repeatable tooling setups. 
 
 [![Visit Docker Hub](https://img.shields.io/badge/Visit_Docker_Hub_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
 
-- **Most used:** ![nodebun](https://img.shields.io/badge/nodebun-Node%20%2B%20Bun%20%2B%20Zsh-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nodebun)
-- **Most used:** ![zsh](https://img.shields.io/badge/zsh-Shell%20environment-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/zsh?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/zsh)
-- ![ionic-cover](https://img.shields.io/badge/ionic--cover-Ionic%20%2B%20Android-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/ionic-cover?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/ionic-cover)
-- ![nestjs-cover](https://img.shields.io/badge/nestjs--cover-NestJS%20development-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nestjs-cover)
-- ![angular](https://img.shields.io/badge/angular-Angular%20development-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/angular?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular)
-- ![docker-graphql](https://img.shields.io/badge/docker--graphql-GraphQL%20environment-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/docker-graphql?style=flat-square&logo=docker&label=pulls) [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/docker-graphql)
+- **Most used:** ![nodebun](https://img.shields.io/badge/nodebun-Node%20%2B%20Bun%20%2B%20Zsh-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=flat-square&logo=docker&label=pulls)
+
+  [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nodebun)
+
+- **Most used:** ![zsh](https://img.shields.io/badge/zsh-Shell%20environment-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/zsh?style=flat-square&logo=docker&label=pulls)
+
+  [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/zsh)
+
+- ![ionic-cover](https://img.shields.io/badge/ionic--cover-Ionic%20%2B%20Android-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/ionic-cover?style=flat-square&logo=docker&label=pulls)
+
+  [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/ionic-cover)
+
+- ![nestjs-cover](https://img.shields.io/badge/nestjs--cover-NestJS%20development-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=flat-square&logo=docker&label=pulls)
+
+  [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nestjs-cover)
+
+- ![angular](https://img.shields.io/badge/angular-Angular%20development-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/angular?style=flat-square&logo=docker&label=pulls)
+
+  [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular)
+
+- ![docker-graphql](https://img.shields.io/badge/docker--graphql-GraphQL%20environment-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/docker-graphql?style=flat-square&logo=docker&label=pulls)
+
+  [![View image](https://img.shields.io/badge/View_image_%E2%86%97-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/docker-graphql)
 
 ## GitHub Activity
 

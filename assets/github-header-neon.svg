@@ -14,6 +14,6 @@
     </clipPath>
   </defs>
   <rect width="2196" height="601" fill="#05070c" />
-  <image href="github-header-image.jpg" x="12" y="12" width="2172" height="577" preserveAspectRatio="none" clip-path="url(#header-clip)" />
+  <image href="https://raw.githubusercontent.com/CartagoGit/CartagoGit/main/assets/github-header-image.jpg" x="12" y="12" width="2172" height="577" preserveAspectRatio="none" clip-path="url(#header-clip)" />
   <rect x="12" y="12" width="2172" height="577" rx="14" fill="none" stroke="#147dff" stroke-width="3" filter="url(#neon-glow)" />
 </svg>

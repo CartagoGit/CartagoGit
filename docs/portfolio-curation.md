@@ -40,7 +40,7 @@ GitHub no ofrece repositorios publicos no listados. Para ocultar realmente uno h
 
 ## Ajustes del perfil de GitHub
 
-- Nombre: `Mario Cabrero`.
+- Nombre: `Mario Cabrero Volarich`.
 - Bio: `Full-stack TypeScript Engineer | Angular, NestJS, Laravel, Bun & MCP`.
 - Ubicacion: `Seville, Spain`.
 - Mantener solo LinkedIn como enlace principal si no hay un portfolio desplegado y actualizado.

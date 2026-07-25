@@ -8,14 +8,14 @@
 
 I build web and Android interfaces for operational products, and I develop TypeScript libraries and tooling in my own time. This GitHub is a personal portfolio: the repositories below are independent work, not client or employer projects.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mario%20Cabrero%20Volarich-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mario-cabrero-volarich)
+[<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" alt="LinkedIn" width="26" height="26" align="absmiddle"> LinkedIn](https://www.linkedin.com/in/mario-cabrero-volarich)
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-cartagodocker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
 [![npm](https://img.shields.io/badge/npm-%40cartago--git%2Fkeyer-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@cartago-git/keyer)
 
 ## Professional Frontend Experience
 
 - **Operational applications:** Angular interfaces for business workflows with complex, repeated-use interaction and long-lived product rules.
-- **Web and Android delivery:** Ionic applications, Capacitor and Cordova packaging, and UI work with TypeScript, RxJS, Angular Material, and Sass.
+- **Web and Android delivery:** Ionic applications, Capacitor packaging, and UI work with TypeScript, RxJS, Angular Material, and Sass.
 - **Delivery practice:** Docker-based development environments, Git/GitLab workflows, CI/CD jobs, and focused testing and maintenance work.
 
 ## Core Stack
@@ -27,20 +27,25 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=flat-square&logo=reactivex&logoColor=white)
 ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=flat-square&logo=ionic&logoColor=white)
 ![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
-![Cordova](https://img.shields.io/badge/Cordova-2C2A3D?style=flat-square&logo=apachecordova&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
 
-**Personal TypeScript, runtime, and tooling**
+**Bun runtime and tooling**
+
+![Bun runtime and tooling](https://img.shields.io/badge/Bun-Runtime%20%26%20tooling-F9F1E1?style=for-the-badge&logo=bun&logoColor=000000)
+
+`Bun` is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
+
+**Personal TypeScript services and tooling**
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
-![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 **Quality and delivery**
 
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
 ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 ![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
@@ -69,6 +74,12 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![WSL](https://img.shields.io/badge/WSL-0078D4?style=flat-square&logo=windows&logoColor=white)
 
+**Mobile platform plugins**
+
+![Capacitor](https://img.shields.io/badge/Capacitor_plugins-119EFF?style=flat-square&logo=capacitor&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
 **AI and developer tooling**
 
 ![Model Context Protocol](https://img.shields.io/badge/Model_Context_Protocol-111111?style=flat-square&logo=modelcontextprotocol&logoColor=white)
@@ -77,8 +88,6 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
-
-`Bun` is my regular runtime and tooling choice. I do not present it as a production server platform.
 
 ## Independent Personal Projects
 
@@ -92,7 +101,7 @@ Everything in this section was built independently in my own time. It is separat
 <p>
   <img src="./assets/mcp-vertex.svg" alt="MCP Vertex" width="28" height="28" align="absmiddle">
   <a href="https://github.com/CartagoGit/mcp-vertex"><strong>MCP Vertex</strong></a><br>
-  TypeScript/Bun MCP tooling platform with CLI, plugins, tests, quality gates, and documentation.
+  Language- and framework-agnostic MCP tooling platform, implemented in TypeScript/Bun, with a CLI, plugins, tests, quality gates, and documentation.
 </p>
 
 <p>
@@ -102,7 +111,7 @@ Everything in this section was built independently in my own time. It is separat
 </p>
 
 <p>
-  <a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="https://cdn.simpleicons.org/npm/CB3837" alt="npm" width="24" height="24" align="absmiddle"></a>
+  <a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/npm.svg" alt="npm" width="24" height="24" align="absmiddle"></a>
   <a href="https://github.com/CartagoGit/Keyer"><strong>Keyer</strong></a><br>
   Published npm library and CLI for secrets, API keys, and environment-file encryption.
 </p>
@@ -115,13 +124,16 @@ Everything in this section was built independently in my own time. It is separat
 
 ## Docker Hub Images
 
-Public development images for local environments and repeatable tooling setups. [View all public images on Docker Hub.](https://hub.docker.com/u/cartagodocker)
+Public development images for local environments and repeatable tooling setups. Pull counts are live Docker Hub values. [View all public images on Docker Hub.](https://hub.docker.com/u/cartagodocker)
 
-[![nodebun](https://img.shields.io/badge/nodebun-Node%20%2B%20Bun%20%2B%20Zsh-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nodebun)
-[![ionic-cover](https://img.shields.io/badge/ionic--cover-Ionic%20%2B%20Android-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/ionic-cover)
-[![nestjs-cover](https://img.shields.io/badge/nestjs--cover-NestJS%20development-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nestjs-cover)
-[![angular](https://img.shields.io/badge/angular-Angular%20development-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular)
-[![zsh](https://img.shields.io/badge/zsh-Shell%20environment-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/zsh)
+- **Most used:** [![nodebun](https://img.shields.io/badge/nodebun-Node%20%2B%20Bun%20%2B%20Zsh-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nodebun) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/nodebun)
+- **Most used:** [![zsh](https://img.shields.io/badge/zsh-Shell%20environment-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/zsh) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/zsh?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/zsh)
+- [![ionic-cover](https://img.shields.io/badge/ionic--cover-Ionic%20%2B%20Android-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/ionic-cover) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/ionic-cover?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/ionic-cover)
+- [![nestjs-cover](https://img.shields.io/badge/nestjs--cover-NestJS%20development-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nestjs-cover) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/nestjs-cover)
+- [![angular](https://img.shields.io/badge/angular-Angular%20development-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/angular?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/angular)
+- [![docker-graphql](https://img.shields.io/badge/docker--graphql-GraphQL%20environment-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/docker-graphql) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/docker-graphql?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/docker-graphql)
+- [![teslo-shop](https://img.shields.io/badge/teslo--shop-Application%20image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/teslo-shop) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/teslo-shop?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/teslo-shop)
+- [![curso-cron-ticker](https://img.shields.io/badge/curso--cron--ticker-Application%20image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/curso-cron-ticker) [![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/curso-cron-ticker?style=flat-square&logo=docker&label=pulls)](https://hub.docker.com/r/cartagodocker/curso-cron-ticker)
 
 ## GitHub Activity
 

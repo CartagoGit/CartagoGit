@@ -9,7 +9,9 @@
 I build web and Android interfaces for operational products, and I develop TypeScript libraries and tooling in my own time. This GitHub is a personal portfolio: the repositories below are independent work, not client or employer projects.
 
 [<img src="./assets/linkedin-badge.svg" alt="LinkedIn: Mario Cabrero Volarich" height="28">](https://www.linkedin.com/in/mario-cabrero-volarich)
+
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-cartagodocker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
+
 [![npm](https://img.shields.io/badge/npm-%40cartago--git%2Fkeyer-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@cartago-git/keyer)
 
 ## Professional Frontend Experience
@@ -45,7 +47,7 @@ I build web and Android interfaces for operational products, and I develop TypeS
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-<img src="./assets/bun-icon.svg" alt="Bun" width="20" height="20" align="absmiddle"> <strong>Bun</strong> is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
+<strong>Bun</strong> is my regular runtime for scripts, test flows, and workspace tooling. I do not present it as a primary production server platform.
 
 **Quality and delivery**
 
@@ -138,6 +140,8 @@ Published npm library and CLI for secrets, API keys, and environment-file encryp
 
 [![npm version](https://img.shields.io/npm/v/%40cartago-git%2Fkeyer?label=%40cartago-git%2Fkeyer&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
 [![npm downloads](https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@cartago-git/keyer)
+
+---
 
 ### Other Personal Work
 

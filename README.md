@@ -149,6 +149,10 @@ Published npm library and CLI for secrets, API keys, and environment-file encryp
 - [Zoneless Calculator](https://github.com/CartagoGit/zoneless-calculator) - Angular application exploring zoneless architecture through unit and integration tests.
 - [NestGpt](https://github.com/CartagoGit/NestGpt) - NestJS and OpenAI API foundation with test and Docker workflows.
 
+### Learning Experiment
+
+- Chess (in development) - Angular and TypeScript exploration of chess rules, board state, reusable components, and Docker-based development and build environments.
+
 ## Docker Hub Images
 
 Public development images for local environments and repeatable tooling setups. Pull counts are live Docker Hub values. [View all public images on Docker Hub.](https://hub.docker.com/u/cartagodocker)

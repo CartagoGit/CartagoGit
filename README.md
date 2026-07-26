@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/github-header-neon.png" alt="Mario Cabrero Volarich">
+  <img src="./assets/banner-03-neon.png" alt="Mario Cabrero Volarich">
 </p>
 
 # Mario Cabrero Volarich

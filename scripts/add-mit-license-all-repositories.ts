@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, stat, writeFile } from "node:fs/promises";
 import { basename, join, resolve } from "node:path";
 
 const token = process.env.OWN_GITHUB_TOKEN ?? process.env.GITHUB_TOKEN;
@@ -40,22 +40,42 @@ SOFTWARE.
 `;
 
 async function run(command: string[], cwd = workspace): Promise<string> {
-  const process = Bun.spawn(command, { cwd, stdout: "pipe", stderr: "pipe" });
+  const child = Bun.spawn(command, { cwd, stdout: "pipe", stderr: "pipe" });
   const [stdout, stderr, exitCode] = await Promise.all([
-    new Response(process.stdout).text(),
-    new Response(process.stderr).text(),
-    process.exited,
+    new Response(child.stdout).text(),
+    new Response(child.stderr).text(),
+    child.exited,
   ]);
   if (exitCode !== 0) throw new Error(`${command.join(" ")} failed: ${stderr.trim()}`);
   return stdout.trim();
 }
 
-const response = await fetch("https://api.github.com/user/repos?per_page=100&affiliation=owner", {
-  headers: { Accept: "application/vnd.github+json", Authorization: `Bearer ${token}` },
-});
-if (!response.ok) throw new Error(`GitHub API request failed: ${response.status} ${response.statusText}`);
+async function isDirectory(path: string): Promise<boolean> {
+  try {
+    return (await stat(path)).isDirectory();
+  } catch {
+    return false;
+  }
+}
 
-const repositories = (await response.json()) as Array<{ clone_url: string; full_name: string; name: string }>;
+/** Every repository the token owns, following pagination. */
+async function listRepositories(): Promise<Array<{ clone_url: string; full_name: string; name: string }>> {
+  const repositories: Array<{ clone_url: string; full_name: string; name: string }> = [];
+  for (let page = 1; ; page += 1) {
+    const response = await fetch(
+      `https://api.github.com/user/repos?per_page=100&affiliation=owner&page=${page}`,
+      { headers: { Accept: "application/vnd.github+json", Authorization: `Bearer ${token}` } },
+    );
+    if (!response.ok) throw new Error(`GitHub API request failed: ${response.status} ${response.statusText}`);
+
+    const batch = (await response.json()) as Array<{ clone_url: string; full_name: string; name: string }>;
+    repositories.push(...batch);
+    if (batch.length < 100) break;
+  }
+  return repositories;
+}
+
+const repositories = await listRepositories();
 for (const repository of repositories) {
   const directory = join(workspace, basename(repository.name));
   const licensePath = join(directory, "LICENSE");
@@ -71,7 +91,9 @@ for (const repository of repositories) {
     continue;
   }
 
-  if (!(await Bun.file(join(directory, ".git")).exists())) {
+  // A clone is a directory, so it needs a directory check — `Bun.file` only
+  // reports regular files and would always answer "missing" here.
+  if (!(await isDirectory(join(directory, ".git")))) {
     await mkdir(directory, { recursive: true });
     await run(["git", "clone", repository.clone_url, directory]);
   }

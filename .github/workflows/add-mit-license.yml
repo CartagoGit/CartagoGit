@@ -1,28 +1,58 @@
 name: Add MIT License to All Repositories
 
+# The script is TypeScript and runs on Bun, so the job runs inside the same
+# image used for local development: cartagodocker/nodebun. It already carries
+# Bun, Node, npm, fnm and git, so nothing else has to be installed.
+#
+# The image tags are exact and there is no `latest`: see
+# https://hub.docker.com/r/cartagodocker/nodebun. Bump the tag when a new
+# matrix is published.
+
 on:
-  workflow_dispatch:  # Este trigger permite que el flujo de trabajo se ejecute manualmente
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Write, commit and push the LICENSE files (off = dry run)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
 
 jobs:
   add-license:
-    runs-on: ubuntu-latest  # Usamos un contenedor de Ubuntu
+    runs-on: ubuntu-latest
+    container:
+      image: cartagodocker/nodebun:v2.0.2_n26.3.1_b1.4.2
     env:
-      OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }} 
-      PATH_LICENSE_SCRIPT: ./scripts/add-mit-license-all-repositories.bash  # Ruta del script que se ejecutará
+      OWN_GITHUB_TOKEN: ${{ secrets.OWN_GITHUB_TOKEN }}
+      WORKSPACE: /tmp/license-workspace
     steps:
       - name: Checkout this repository
-        uses: actions/checkout@v2
-      - name: Configure Git user
+        uses: actions/checkout@v4
+
+      - name: Report runtime versions
+        run: |
+          echo "node: $(node --version)"
+          echo "bun:  $(bun --version)"
+          echo "git:  $(git --version)"
+
+      - name: Configure Git identity
         run: |
           git config --global user.name "Cartago - Automatic Workflow"
           git config --global user.email "cv2mario@gmail.com"
 
-      - name: Set up Git credentials
+      - name: Configure Git credentials
         run: |
-          git remote set-url origin https://github.com/${{ github.repository }}.git
           git config --global credential.helper store
-          echo "https://x-access-token:${OWN_GITHUB_TOKEN}@github.com" > ~/.git-credentials
-      - name: Run script to add MIT License to all repos
+          printf 'https://x-access-token:%s@github.com\n' "$OWN_GITHUB_TOKEN" > ~/.git-credentials
+          chmod 600 ~/.git-credentials
+
+      - name: Run the MIT license script
         run: |
-          chmod +x ${PATH_LICENSE_SCRIPT}  # Da permisos de ejecución al script
-          ${PATH_LICENSE_SCRIPT}  # Ejecuta el script
+          mkdir -p "$WORKSPACE"
+          if [ "${{ inputs.apply }}" = "true" ]; then
+            bun scripts/add-mit-license-all-repositories.ts --workspace="$WORKSPACE" --apply
+          else
+            bun scripts/add-mit-license-all-repositories.ts --workspace="$WORKSPACE"
+          fi

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cartago">
+        <!-- The Cartago mark: a "C." monogram in a filled disc. The disc keeps
+             the mark legible at favicon size and gives every product icon in
+             the profile the same silhouette. -->
+        <defs>
+                <linearGradient id="cartago-disc" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#1678ff"/>
+                        <stop offset="1" stop-color="#0a3a91"/>
+                </linearGradient>
+        </defs>
+        <circle cx="32" cy="32" r="30" fill="url(#cartago-disc)"/>
+        <circle cx="32" cy="32" r="30" fill="none" stroke="#32c8ff" stroke-width="2" opacity=".85"/>
+        <text x="30" y="42" text-anchor="middle" fill="#9aeaff"
+                font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700">C</text>
+        <circle cx="45" cy="42" r="3.4" fill="#b9ef73"/>
+</svg>

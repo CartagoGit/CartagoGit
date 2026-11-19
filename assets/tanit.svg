@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tanit">
+        <!-- Tanit: the crescent of the Carthaginian goddess, drawn in the
+             product's own copper so it matches the app's brand tile.
+             The strokes are thick and the shape is closed, so the mark still
+             reads when it is scaled down to a favicon. -->
+        <defs>
+                <linearGradient id="tanit-copper" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#df895f"/>
+                        <stop offset="1" stop-color="#b45f3c"/>
+                </linearGradient>
+        </defs>
+        <rect width="64" height="64" rx="14" fill="#171a1d"/>
+        <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="url(#tanit-copper)" stroke-width="2" opacity=".55"/>
+        <!-- the crescent: the outer rim of a disc, closed by the inner rim of a
+             disc that sits further right, so the horns open to the right -->
+        <path fill="url(#tanit-copper)"
+                d="M45 9 A 23 23 0 1 0 45 55 A 21 23 0 0 1 45 9 Z"/>
+        <!-- the bar: the horizontal stroke under the crescent in the Punic sign -->
+        <rect x="16" y="45" width="32" height="4.6" rx="2.3" fill="#df895f"/>
+        <!-- the two descending points of the sign -->
+        <path d="M23 50 L17 59 L29 50 Z" fill="#df895f"/>
+        <path d="M41 50 L35 59 L47 50 Z" fill="#df895f"/>
+</svg>

@@ -125,16 +125,23 @@ es un cambio de codigo, no de documentacion.
 
 ## Iconos
 
-Cada producto usa su propia marca, no un emoji ni un avatar generico:
+Cada producto usa su propia marca, en **SVG**, dentro de la misma ficha: fondo oscuro, esquinas
+redondeadas, borde del color del producto y tamano optico igual. Una fila de ellas se lee como
+un conjunto, y todas siguen siendo legibles a 16 px.
 
 | Fichero | Origen |
 | --- | --- |
-| `assets/delendai.svg` | `apps/shared/brand/logo.svg` de DelendAI (el mismo hexagono que antes se llamaba `mcp-vertex.svg`) |
-| `assets/tanit.png` | `packages/desktop/icons/icon.png` de api-source-tanit, escalado a 256 px |
-| `assets/quickmodel.png` | `assets/quickmodel.png` de quickmodel |
-| `assets/steam-keys.png` | `apps/desktop/public/favicon.png` de steam-keys, escalado a 512 px |
-| `assets/portfolio.png` | `public/favicon.ico` de portfolio, escalado a 256 px |
-| `assets/print-cv.svg` | marca propia: una hoja con lineas de texto en el verde del producto (`#3cb878`) |
+| `assets/delendai.svg` | El hexagono de DelendAI (`apps/shared/brand/logo.svg`), con los nodos de plugin y el nucleo. |
+| `assets/tanit.svg` | **Marca nueva.** La media luna y la barra de la diosa Tanit, en el cobre que usa la propia app (`#df895f` / `#b45f3c`). Los trazos son gruesos para que se lean como favicon. |
+| `assets/quickmodel.svg` | `assets/quickmodel.png` de quickmodel, dentro de la ficha. |
+| `assets/steam-keys.svg` | `apps/desktop/public/favicon.png` de steam-keys, dentro de la ficha. |
+| `assets/print-cv.svg` | **Marca nueva.** Una hoja con lineas de texto y el pliegue, en el verde del producto (`#3cb878`). |
+| `assets/cartago.svg` | **Marca nueva.** El monograma "C." sobre un disco azul, que es el logo del portfolio y su favicon. |
+| `assets/keyer.svg` | **Marca nueva.** Una llave, para el paquete de secretos. |
+| `assets/docker.svg` | La ballena de Docker con sus contenedores, para la tarjeta de imagenes. |
+
+Los logotipos que eran PNG se embeben dentro de la ficha SVG, cuantizados a 128 colores: el
+repositorio del perfil pesa unos pocos kilobytes por icono en vez de varios megabytes.
 
 El favicon de print-cv es un icono de Font Awesome con licencia CC BY 4.0; no se copia al
 perfil. Se dibuja una marca equivalente en SVG propio.
@@ -160,8 +167,23 @@ Los README reparados en esta pasada:
 | `print-cv` | El README de la plantilla de Vue. Sustituido por el real, con el estado del proyecto, los comandos y la estructura. |
 | `zoneless-calculator` | Notas de instalacion de Chrome en WSL2. Sustituido por un README que explica la decision zoneless y sus tests. |
 | `NestGpt` | Solo instrucciones de instalacion y un enlace a otro repositorio. Sustituido por un README con los endpoints, los DTOs y los comandos. |
-| `portfolio` | Nombres obsoletos (`mcp-vertex`) y posicionamiento antiguo en el titulo y la meta descripcion. Actualizado. |
+| `portfolio` | Nombres obsoletos (`mcp-vertex`) y posicionamiento antiguo en el titulo y la meta descripcion. Actualizado. Ademas, el favicon era el logo de Angular: ahora es el monograma "C." del sitio. |
 | `api-source-tanit` | La descripcion de GitHub decia 21 frameworks; el README dice 25. Corregida. |
+
+## El sitio estatico
+
+`CartagoGit.github.io` se rehizo sobre un unico conjunto de tokens —color, tipografia, escala de
+espaciado y de radios— para que todas las secciones esten espaciadas igual. Cambios:
+
+- La ficha de marca del encabezado es ahora el monograma "C." y el favicon es el mismo fichero.
+- Las tarjetas de proyecto ponen el icono **encima** del titulo, para que el icono pertenezca al
+  producto y no flote a la izquierda del texto.
+- Los enlaces a GitHub, LinkedIn, npm y Docker Hub estan como enlaces con icono SVG.
+- El bloque de contacto es una tarjeta coral, para que el final de la pagina tenga peso.
+- Se anadieron los enlaces reales a los productos que funcionan: la app de Print CV y la
+  documentacion de QuickModel.
+
+El sitio sigue sin dependencias: se publica desde `main` tal cual en GitHub Pages.
 
 ## Trabajo pendiente
 

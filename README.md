@@ -1,168 +1,229 @@
 <p align="center">
-  <img src="./assets/banner-03-neon.png" alt="Mario Cabrero Volarich">
+  <img src="./assets/banner-03-neon.png" alt="Mario Cabrero Volarich" width="100%">
 </p>
 
-# Mario Cabrero Volarich
+<h1 align="center">Mario Cabrero Volarich</h1>
 
-Frontend engineer focused on operational web and Android products, plus independent TypeScript tooling.<br>
-I build Angular, Ionic, and Capacitor interfaces, and develop libraries and developer tools in my own time.<br>
-This GitHub is a personal portfolio: the work below is independent, not client or employer source code.
-
-<p>
-  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/linkedin-profile-badge.svg" alt="Visit Mario Cabrero Volarich on LinkedIn"></a>
-  <a href="https://hub.docker.com/u/cartagodocker"><img src="https://img.shields.io/badge/Docker_Hub_%E2%86%97-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker Hub"></a>
-  <a href="https://www.npmjs.com/~cartago-git"><img src="https://img.shields.io/badge/npm_packages_%E2%86%97-CB3837?style=flat-square&amp;logo=npm&amp;logoColor=white" alt="npm packages"></a>
+<p align="center">
+  <strong>Full-stack TypeScript engineer building developer tooling, AI infrastructure and product software.</strong><br>
+  <sub>Angular · Vue · React · NestJS · Bun · Rust/Tauri · Godot · Docker</sub>
 </p>
 
-## Featured Independent Projects
-
-#### <img src="./assets/mcp-vertex.svg" alt="MCP Vertex" width="28" height="28" align="absmiddle"> MCP Vertex
-
-Language- and framework-agnostic MCP tooling platform, implemented in TypeScript/Bun, with a CLI, plugins, tests, quality gates, and documentation.
-
-[![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/mcp-vertex)
+<p align="center">
+  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/linkedin-profile-badge.svg" alt="LinkedIn profile" height="28"></a>
+  <a href="https://www.npmjs.com/~cartago-git"><img src="https://img.shields.io/badge/npm-%40cartago--git-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm packages" height="28"></a>
+  <a href="https://hub.docker.com/u/cartagodocker"><img src="https://img.shields.io/badge/Docker%20Hub-%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker Hub images" height="28"></a>
+  <a href="https://github.com/CartagoGit?tab=repositories"><img src="https://img.shields.io/badge/GitHub-%E2%86%97-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub repositories" height="28"></a>
+</p>
 
 ---
 
-#### <img src="./assets/quickmodel.png" alt="QuickModel" width="28" height="28" align="absmiddle"> QuickModel
+## How to read this profile
 
-TypeScript model tooling with validation integrations, security tests, benchmarks, and MCP support.
+The products I build move fast and get renamed as they mature — a repository name is today's
+label, not the point. So this page describes my work **by the capability it proves**, and links
+to the repository that carries it. If a project changes name tomorrow, the capability still stands
+and only the link changes.
+
+Everything below is **independent work**: repositories, libraries, images and experiments built
+in my own time. My professional work is not published here.
+
+---
+
+## What I work on
+
+| Capability | What it means in practice | Where the evidence is |
+| --- | --- | --- |
+| **AI infrastructure & developer tooling** | An MCP runtime with a lazily-loaded plugin surface, hermetic execution, typed public errors, a CLI-first workflow and a proposal-driven release process. | [MCP runtime core](https://github.com/CartagoGit/DelendAI) · [Model serialization library](https://github.com/CartagoGit/quickmodel) · [Secret manager CLI](https://github.com/CartagoGit/Keyer) |
+| **Static analysis & developer experience** | Recovering an API from source code — no server, no annotations — across 25 frameworks, exported to Postman, Bruno, Insomnia, HAR, OpenAPI or cURL. | [API discovery engine](https://github.com/CartagoGit/api-source-tanit) |
+| **Product engineering** | Full-stack delivery with Angular (zoneless SSR), Vue and React on the front, NestJS and Bun on the back, with unit, integration and end-to-end coverage. | [Angular SSR site](https://github.com/CartagoGit/portfolio) · [Vue CV application](https://github.com/CartagoGit/print-cv) · [NestJS AI API](https://github.com/CartagoGit/NestGpt) |
+| **Desktop, game & content engineering** | Local-first desktop apps (Tauri 2 + Rust + SQLite), games in Godot/C#, and schema-validated content pipelines with localisation. | [Local-first desktop manager](https://github.com/CartagoGit/steam-keys) · [Game content pipeline](https://github.com/CartagoGit/aoe2-mods) · [AI-assisted game delivery](https://github.com/CartagoGit/player-club-dynasty) |
+| **Infrastructure & delivery** | Bun-first workspaces, reproducible Docker images, CI quality gates, and releases driven by machine-checked proposals. | [Docker images](#docker-images) · [Angular workspace template](https://github.com/CartagoGit/template-angular) |
+
+---
+
+## Featured work
+
+#### 🧩 MCP runtime core — extensible server core and CLI plugin loader
+
+A project-agnostic core for building MCP servers, and the plugin loader that feeds them.
+Tools are named capabilities resolved at runtime; the surface is lazy, the errors are public and
+the data stays private. Around it sits a full delivery pipeline: proposals, worktrees, agent
+locks, coverage ratchets and release gates.
+
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Bun](https://img.shields.io/badge/runtime-Bun-000000?style=flat-square&logo=bun&logoColor=F9F1E1)](https://bun.sh)
+[![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-111111?style=flat-square&logo=modelcontextprotocol&logoColor=white)](https://modelcontextprotocol.io)
+[![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://github.com/CartagoGit/DelendAI/blob/develop/LICENSE)
+
+[![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/DelendAI)
+
+---
+
+#### 🔎 API discovery engine — recover an API from source code
+
+Points at a project directory and produces a ready-to-import API description. The framework is
+detected from the code itself, request bodies are recovered from validation schemas, and the
+result is exported to the tools teams already use. Ships as CLI, desktop builds for Linux, macOS
+and Windows, and containers.
+
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![OpenAPI](https://img.shields.io/badge/OpenAPI-6BA539?style=flat-square&logo=openapi&logoColor=white)](https://swagger.io/specification/)
+[![MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/CartagoGit/api-source-tanit/blob/main/LICENSE)
+
+[![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/api-source-tanit)
+
+---
+
+#### 🧱 Model serialization library — typed models, SOLID architecture
+
+Automatic type transformation, validation adapters, security tests and benchmarks, published as a
+library with an MCP server on top so it can be used from an editor or an agent. The test suite is
+larger than the source on purpose.
+
+[![npm](https://img.shields.io/badge/npm-v1.0.0-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/quickmodel)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3.4+-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/quickmodel)
 
 ---
 
-#### <img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm" height="24" align="absmiddle"> Keyer
+#### 🖥️ Local-first desktop manager — game keys that never leave the machine
 
-Published npm library and CLI for secrets, API keys, and environment-file encryption.
+A Tauri 2 desktop application (Rust + React + SQLite) to keep, organise and audit game keys.
+No accounts, no cloud, no telemetry: the database and the exports live next to the executable,
+and the repository never contains a real key.
 
-<p>
-  <a href="https://github.com/CartagoGit/Keyer"><img src="https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Keyer repository"></a>
-  <a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="https://img.shields.io/badge/npm_%E2%86%97-CB3837?style=flat-square&amp;logo=npm&amp;logoColor=white" alt="Keyer npm package"></a>
-  <img src="https://img.shields.io/npm/v/%40cartago-git%2Fkeyer?label=%40cartago-git%2Fkeyer&amp;logo=npm&amp;logoColor=white&amp;color=CB3837" alt="Keyer npm version">
-  <img src="https://img.shields.io/npm/dm/%40cartago-git%2Fkeyer?label=npm%20downloads&amp;logo=npm&amp;logoColor=white&amp;color=CB3837" alt="Keyer monthly npm downloads">
-</p>
+[![Tauri](https://img.shields.io/badge/Tauri-2-FFC131?style=flat-square&logo=tauri&logoColor=black)](https://tauri.app)
+[![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org)
+[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org)
+
+[![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/steam-keys)
+
+---
+
+## Evidence
+
+Measured on the repositories linked above — source lines exclude tests, fixtures and generated
+files; test lines are the test suites themselves.
+
+| Repository | Commits | Source lines | Test lines | Test files | Packages |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| [MCP runtime core](https://github.com/CartagoGit/DelendAI) | 17,484 | 628,712 | 460,854 | 2,709 | 84 |
+| [API discovery engine](https://github.com/CartagoGit/api-source-tanit) | 1,876 | 99,398 | 73,489 | 362 | 53 |
+| [Model serialization library](https://github.com/CartagoGit/quickmodel) | 550 | 58,636 | 100,258 | 407 | 1 |
+| [AI-assisted game delivery](https://github.com/CartagoGit/player-club-dynasty) | 294 | 36,041 | 13,628 | 9 | 2 |
+| [Local-first desktop manager](https://github.com/CartagoGit/steam-keys) | 117 | 33,518 | 11,462 | 50 | 2 |
+| [Game content pipeline](https://github.com/CartagoGit/aoe2-mods) | 1,123 | 31,838 | 7,382 | 19 | 1 |
+| [Angular SSR site](https://github.com/CartagoGit/portfolio) | 162 | 6,352 | 1,047 | 21 | 2 |
+| [Vue CV application](https://github.com/CartagoGit/print-cv) | 132 | 2,179 | 230 | 7 | 1 |
+
+---
+
+## How I work
+
+- **Proposals before code.** Every non-trivial change starts as a written proposal with a goal,
+  a design, slices, an acceptance criteria and a risk section. Nothing lands without a machine
+  checkable acceptance test.
+- **Tests as a ratchet.** Coverage thresholds only ever move upwards, and the script that enforces
+  it fails the build when they slip.
+- **Quality gates, not opinions.** Lint, typecheck, tests, generated-file drift, catalogue
+  consistency and i18n parity run in CI — 18 workflows in the runtime core alone.
+- **Documentation as code.** Architecture decisions are numbered and committed next to the code
+  they explain; the runtime core carries more than 2,000 Markdown files.
+- **AI-assisted delivery, human-owned decisions.** Work is routed through a proposal → implement →
+  review → release pipeline where the agent proposes and the gates decide.
+- **Bun first.** `bun` is the daily runtime for scripts, tests and workspaces; Node.js remains
+  supported where production demands it.
+- **Local-first and private by default.** Keys, databases and secrets stay on the machine, and
+  repositories ship the `.gitignore` that guarantees it.
 
 ---
 
 <details>
-<summary><strong>Professional Experience and Core Stack</strong></summary>
+<summary><strong>Core stack</strong></summary>
 
-
-### Professional Frontend Experience
-
-- **Operational applications:** Angular interfaces for business workflows with complex, repeated-use interaction and long-lived product rules.
-- **Web and Android delivery:** Ionic applications, Capacitor packaging, and UI work with TypeScript, RxJS, Angular Material, and Sass.
-- **Delivery practice:** Docker-based development environments, Git/GitLab workflows, CI/CD jobs, and focused testing and maintenance work.
-
-### Portfolio Scope
-
-**Personal work on this GitHub:** repositories, packages, Docker images, and experiments built independently in my own time.
-
-**Professional work:** separate, non-public operational web and Android work centered on Angular/RxJS, Ionic/Capacitor, Sass, Angular Material, Kotlin/Java Capacitor plugins, Docker, and GitLab CI/CD.
-
-### Core Stack
-
-**Frontend and mobile**
+**Languages & runtimes**
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=F9F1E1)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+
+**Front-end**
+
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=flat-square&logo=reactivex&logoColor=white)
 ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=flat-square&logo=ionic&logoColor=white)
 ![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
-![Angular Material](https://img.shields.io/badge/Angular_Material-757575?style=flat-square&logo=angular&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
 
-**Personal TypeScript runtime and tooling**
+**Back-end, data & tooling**
 
-![Bun](https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=F9F1E1)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
+![OpenAPI](https://img.shields.io/badge/OpenAPI-6BA539?style=flat-square&logo=openapi&logoColor=white)
+![Model Context Protocol](https://img.shields.io/badge/Model_Context_Protocol-111111?style=flat-square&logo=modelcontextprotocol&logoColor=white)
+![Tauri](https://img.shields.io/badge/Tauri-2-FFC131?style=flat-square&logo=tauri&logoColor=black)
+![Godot](https://img.shields.io/badge/Godot-478CBF?style=flat-square&logo=godotengine&logoColor=white)
 
-**Bun** is my regular runtime for scripts, test flows, and workspace tooling; not my primary production server platform.
+**Quality & delivery**
 
-**Quality and delivery**
-
-![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
 ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
-![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white)
+![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
 </details>
 
 <details>
-<summary><strong>Additional Skills and Technology Index</strong></summary>
+<summary><strong>Docker images</strong></summary>
 
-| Area | Technologies |
-| --- | --- |
-| Product interfaces | ![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white) |
-| Styling and UI systems | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![PrimeNG](https://img.shields.io/badge/PrimeNG-DD0031?style=flat-square&logo=primeng&logoColor=white) ![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=storybook&logoColor=white) |
-| Build and workspace | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![Nx](https://img.shields.io/badge/Nx-143055?style=flat-square&logo=nx&logoColor=white) |
-| Data and application tooling | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=flat-square&logo=mongoose&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white) ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white) ![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![WSL](https://img.shields.io/badge/WSL-0078D4?style=flat-square&logo=windows&logoColor=white) |
-| Mobile platform plugins | ![Capacitor](https://img.shields.io/badge/Capacitor_plugins-119EFF?style=flat-square&logo=capacitor&logoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
-| AI platforms and agents | ![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white) ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white) ![MiniMax](https://img.shields.io/badge/MiniMax-1C1C1C?style=flat-square&logo=minimax&logoColor=white) ![Grok](https://img.shields.io/badge/Grok-000000?style=flat-square&logo=grok&logoColor=white) ![OpenCode](https://img.shields.io/badge/OpenCode-1C1C1C?style=flat-square&logo=opencode&logoColor=white) ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white) |
-| Developer tooling | ![Model Context Protocol](https://img.shields.io/badge/Model_Context_Protocol-111111?style=flat-square&logo=modelcontextprotocol&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white) |
-
-### Searchable Technology Index
-
-Frontend and mobile: TypeScript, Angular, RxJS, Ionic, Capacitor, Angular Material, and Sass.
-
-Runtime, quality, and delivery: Bun, Node.js, NestJS, npm, Docker, Git, GitLab CI/CD, Vitest, Playwright, Jest, and GitHub Actions.
-
-Interfaces and workspace: Vue, React, Electron, Tailwind CSS, PrimeNG, Storybook, Vite, and Nx.
-
-Data, platform, and AI tooling: MongoDB, Mongoose, Prisma, Zod, Firebase, Docker Compose, Linux, WSL, Kotlin, Java, Codex, Claude, MiniMax, Grok, OpenCode, GitHub Copilot, Model Context Protocol (MCP), ESLint, Prettier, GitHub, and GitLab.
-
-</details>
-
-<details>
-<summary><strong>More Independent Work</strong></summary>
-
-| Project | Focus | Link |
-| --- | --- | --- |
-| Print CV | Vue/TypeScript, validation, Vitest, Playwright E2E, Docker, and GitHub Actions. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/print-cv) |
-| Zoneless Calculator | Angular zoneless architecture explored through unit and integration tests. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/zoneless-calculator) |
-| NestGpt | NestJS and OpenAI API foundation with test and Docker workflows. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/NestGpt) |
-
-</details>
-
-<details>
-<summary><strong>Docker Hub Images</strong></summary>
-
-Public development images for local environments and repeatable tooling setups. Pull counts are live Docker Hub values.
+Public development images for reproducible environments. Pull counts are live Docker Hub values.
 
 | Image | Pulls | Link |
 | --- | --- | --- |
-| **Most used:** nodebun | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nodebun) |
-| **Most used:** zsh | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/zsh?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/zsh) |
-| ionic-cover | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/ionic-cover?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/ionic-cover) |
-| nestjs-cover | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nestjs-cover) |
-| angular | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/angular?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular) |
-| docker-graphql | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/docker-graphql?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/docker-graphql) |
+| **nodebun** — Node.js + Bun | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nodebun) |
+| **zsh** — batteries-included shell | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/zsh?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/zsh) |
+| **ionic-cover** | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/ionic-cover?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/ionic-cover) |
+| **nestjs-cover** | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/nestjs-cover) |
+| **angular** | ![Docker Pulls](https://img.shields.io/docker/pulls/cartagodocker/angular?style=flat-square&logo=docker&label=pulls) | [![Image](https://img.shields.io/badge/Image_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/cartagodocker/angular) |
 
 [![Docker Hub](https://img.shields.io/badge/Docker_Hub_%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/u/cartagodocker)
 
 </details>
 
 <details>
-<summary><strong>Learning Games and Experiments</strong></summary>
+<summary><strong>Also worth a look</strong></summary>
 
-| Project | Scope | Links |
+| Project | Focus | Link |
 | --- | --- | --- |
-| Chess | Angular and TypeScript learning project for chess rules, board state, components, and Docker environments. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/chess) |
-| Cartago Tetris | Completed desktop-first Angular learning game: game loop, board state, keyboard controls, and scoring. | [![Demo](https://img.shields.io/badge/Demo_%E2%86%97-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://cartago-tetris.netlify.app/) [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/tetris) |
-| Cartago Snake | Completed desktop-first Angular learning game: real-time movement, keyboard input, collisions, scoring, and game state. | [![Demo](https://img.shields.io/badge/Demo_%E2%86%97-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://cartago-snake.netlify.app/) [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/snake) |
-| Cartago Minesweeper | Completed desktop-first Angular learning game: grid interactions, mine generation, timers, and score tracking. | [![Demo](https://img.shields.io/badge/Demo_%E2%86%97-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://cartago-minesweeper.netlify.app/) [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/minesweeper) |
-| DeathBlitz | Pre-alpha concept demo for a future combat-racing project: Angular 21, IndexedDB, i18n, pilots, vehicles, progression, upgrades, and game UI systems. | [![Concept demo](https://img.shields.io/badge/Concept_demo_%E2%86%97-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://deathblitz.netlify.app/) |
+| Secret manager CLI | Published npm package to encrypt keys, API keys and `.env` files. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/Keyer) |
+| NestJS AI API | Typed DTOs, file uploads, Docker-based delivery for AI-enabled apps. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/NestGpt) |
+| React front-end | The client that talks to the NestJS AI API. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/ReactGpt) |
+| Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/zoneless-calculator) |
+| Static portfolio | Dependency-free site published from GitHub Pages. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/CartagoGit.github.io) |
+| Workspace template | The Angular workspace every new app starts from. | [![Repository](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/template-angular) |
+| Practice repositories | Daily puzzles and katas, one commit per solution. | [![codember-dev](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/codember-dev) [![codewars](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/codewars) |
 
 </details>
 
 <details>
-<summary><strong>GitHub Activity</strong></summary>
+<summary><strong>GitHub activity</strong></summary>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=CartagoGit&theme=github-dark-blue&hide_border=true" alt="GitHub contribution streak" width="495">
@@ -173,3 +234,10 @@ Public development images for local environments and repeatable tooling setups. 
 </p>
 
 </details>
+
+---
+
+<p align="center">
+  <sub>Independent work, published in my own time. Professional and client work is not published here.<br>
+  <a href="https://www.linkedin.com/in/mario-cabrero-volarich">LinkedIn</a> · <a href="https://github.com/CartagoGit?tab=repositories">All repositories</a></sub>
+</p>

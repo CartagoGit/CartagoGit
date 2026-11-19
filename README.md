@@ -240,7 +240,7 @@ Public development images for reproducible environments. Pull counts are live Do
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=CartagoGit&show_icons=true&theme=github-dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub statistics" width="520">
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=CartagoGit&show_icons=true&theme=github-dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub statistics" width="520">
 </p>
 
 ---

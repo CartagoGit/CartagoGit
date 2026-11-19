@@ -195,7 +195,26 @@ El sitio sigue sin dependencias: se publica desde `main` tal cual en GitHub Page
 3. **Documentacion de DelendAI.** `pages.yml` solo se dispara en `main`. Hay que decidir si el
    sitio se publica desde `develop` (lo natural, porque es donde vive el codigo) o si `main` debe
    recibir merges periodicos. El repositorio impone su propia gobernanza de ramas y propuestas,
-   asi que la decision es de Mario.
+   asi que la decision es de Mario. La propuesta `x01103` esta escrita y pasa el linter.
 4. **Repositorios pequenos sin README**: `parse-xml-json`, `script-comparar-csv`,
    `tablon-tareas-cartago`, `codember-dev` y `codewars`. Son utiles, pero con un README minimo
    —problema, uso y estado— o archivados.
+5. **Logo y banner definitivos del portfolio.** Pendiente de que se entregue la marca; el sitio
+   usa ahora el monograma "C." y el banner `banner-03-neon.png`.
+
+## Servicios de badges del README
+
+Comprobado el 2026-11-20. El servicio publico `github-readme-stats.vercel.app` devuelve un
+error 500 (`FUNCTION_INVOCATION_FAILED`), asi que el enlace salia roto. Se cambio por el espejo
+`github-readme-stats-fast.vercel.app`, que responde 200 con SVG valido.
+
+Los otros dos si funcionan:
+
+| Servicio | Estado |
+| --- | --- |
+| `github-readme-activity-graph.vercel.app` | correcto, devuelve SVG |
+| `streak-stats.demolab.com` | correcto |
+| `github-readme-stats.vercel.app` | **error 500**, sustituido por el espejo `-fast` |
+
+Si el espejo tambien cae, la alternativa honesta es quitar el badge y dejar solo el grafico de
+actividad y la racha, que ya demuestran la actividad reciente.

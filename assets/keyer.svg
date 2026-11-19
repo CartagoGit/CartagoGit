@@ -1,18 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Keyer">
-        <!-- Keyer: a key over a lock, in the product's own blue. -->
+        <!-- Keyer: a brass key on a deep navy badge. The key is drawn as one
+             silhouette with a real hole in the bow, so the mark reads as a key
+             even at favicon size. -->
         <defs>
-                <linearGradient id="keyer-blue" x1="12" y1="10" x2="52" y2="54" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#4aa8ff"/>
-                        <stop offset="1" stop-color="#1f6fd0"/>
+                <linearGradient id="keyer-brass" x1="14" y1="10" x2="50" y2="54" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ffd166"/>
+                        <stop offset="1" stop-color="#d99413"/>
                 </linearGradient>
         </defs>
-        <rect width="64" height="64" rx="14" fill="#0d1117"/>
-        <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="url(#keyer-blue)" stroke-width="2" opacity=".6"/>
-        <!-- the key, tilted across the shackle -->
-        <g fill="url(#keyer-blue)">
-                <circle cx="26" cy="26" r="9"/>
-                <circle cx="26" cy="26" r="3.6" fill="#0d1117"/>
-                <path d="M32 31 L50 49 L45 54 L40 49 L37 52 L32 47 Z"/>
-                <path d="M44 43 L48 47 L45 50 L41 46 Z" fill="#0d1117"/>
+        <rect width="64" height="64" rx="14" fill="#0e1a2b"/>
+        <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#ffd166" stroke-width="2" opacity=".5"/>
+        <g transform="translate(32 32) rotate(-38) scale(0.8) translate(-32 -32)">
+                <!-- the bow: a ring with the hole cut out -->
+                <path fill="url(#keyer-brass)" fill-rule="evenodd"
+                        d="M32 4 a12 12 0 1 0 0 24 a12 12 0 0 0 0 -24 Z
+                           M32 10 a6 6 0 1 1 0 12 a6 6 0 0 1 0 -12 Z"/>
+                <!-- the shaft -->
+                <rect x="28" y="24" width="8" height="30" rx="2" fill="url(#keyer-brass)"/>
+                <!-- the teeth -->
+                <rect x="36" y="38" width="11" height="7" rx="2" fill="url(#keyer-brass)"/>
+                <rect x="36" y="48" width="8" height="6" rx="2" fill="url(#keyer-brass)"/>
         </g>
 </svg>

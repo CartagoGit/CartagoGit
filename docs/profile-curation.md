@@ -125,20 +125,46 @@ es un cambio de codigo, no de documentacion.
 
 ## Iconos
 
-Cada producto usa su propia marca, en **SVG**, dentro de la misma ficha: fondo oscuro, esquinas
-redondeadas, borde del color del producto y tamano optico igual. Una fila de ellas se lee como
-un conjunto, y todas siguen siendo legibles a 16 px.
+Cada producto usa su propia marca. **No se envuelven en una ficha**: el logo de DelendAI y el
+de QuickModel ya son marcas completas y anadirles un fondo los deforma. Los que no tenian marca
+propia (Keyer, Print CV, Cartago) si llevan la suya, dibujada para leerse a 16 px.
 
 | Fichero | Origen |
 | --- | --- |
-| `assets/delendai.svg` | El hexagono de DelendAI (`apps/shared/brand/logo.svg`), con los nodos de plugin y el nucleo. |
-| `assets/tanit.svg` | **Marca nueva.** La media luna y la barra de la diosa Tanit, en el cobre que usa la propia app (`#df895f` / `#b45f3c`). Los trazos son gruesos para que se lean como favicon. |
-| `assets/quickmodel.svg` | `assets/quickmodel.png` de quickmodel, dentro de la ficha. |
-| `assets/steam-keys.svg` | `apps/desktop/public/favicon.png` de steam-keys, dentro de la ficha. |
+| `assets/delendai.svg` | El logo original de DelendAI (`apps/shared/brand/logo.svg`), sin tocar. |
+| `assets/tanit.svg` | **La marca del autor:** la diosa con el tocado radiado, en terracota `#da5b33` sobre verde azulado `#04343d`. |
+| `assets/quickmodel.png` | `assets/quickmodel.png` de quickmodel, sin tocar. |
 | `assets/print-cv.svg` | **Marca nueva.** Una hoja con lineas de texto y el pliegue, en el verde del producto (`#3cb878`). |
 | `assets/cartago.svg` | **Marca nueva.** El monograma "C." sobre un disco azul, que es el logo del portfolio y su favicon. |
-| `assets/keyer.svg` | **Marca nueva.** Una llave, para el paquete de secretos. |
+| `assets/keyer.svg` | **Marca nueva.** Una llave de laton sobre azul marino, para el paquete de secretos. |
 | `assets/docker.svg` | La ballena de Docker con sus contenedores, para la tarjeta de imagenes. |
+| `assets/steam-keys.png` | El favicon real de la aplicacion, dentro de una ficha. |
+
+**Steam Keys no aparece en las tarjetas destacadas del perfil**: el producto que se publica es
+**Keyer**, con enlace a npm. En el sitio estatico si aparece, con su icono real.
+
+### Iconos de destino
+
+Cada enlace dice adonde lleva con el icono de lo que es, no con la palabra suelta:
+
+| Destino | Icono | Fichero |
+| --- | --- | --- |
+| Repositorio | El logotipo de GitHub | `assets/github.svg` |
+| Releases | Una etiqueta | `assets/releases.svg` |
+| Documentación | Un libro | `assets/docs.svg` |
+| Aplicación en vivo | Un globo | `assets/live.svg` |
+| Paquete npm | Una caja | `assets/package.svg` |
+
+Los cuatro últimos vienen de Iconify en blanco y azul (`mdi:tag`, `mdi:book-open-variant`,
+`mdi:earth`, `mdi:package-variant`) con el color explicito, porque `currentColor` no se
+resuelve dentro de un `<img>`.
+
+**Ojo con `width="1em"`:** los SVG de Iconify lo traen, y GitHub escala entonces el icono al
+tamano de la linea, con lo que queda casi invisible junto a la etiqueta. Se quita el atributo y
+manda el `width` del `img`.
+
+Los iconos del repositorio del perfil y los del sitio estatico son el mismo juego: asi una
+marca no cambia de aspecto depending de donde aparezca.
 
 Los logotipos que eran PNG se embeben dentro de la ficha SVG, cuantizados a 128 colores: el
 repositorio del perfil pesa unos pocos kilobytes por icono en vez de varios megabytes.

@@ -93,8 +93,8 @@ Vue 3 and TypeScript, with the curriculum modelled as validated data, internatio
 <td width="33%" align="center" valign="top">
 <img src="./assets/cartago.svg" width="72" height="72" alt="Cartago"><br>
 <strong>Cartago</strong><br>
-<sub>Angular 22 zoneless SSR portfolio</sub><br><br>
-The live site behind this profile: zoneless, server-rendered, with unit and integration tests and an MCP server wired into the build.
+<sub>The site behind this profile</sub><br><br>
+An Angular application with server-side rendering, unit and integration tests and an MCP server wired into the build. Bilingual, it follows the system theme.
 <br><br>
 <a href="https://github.com/CartagoGit/portfolio"><img src="./assets/github.svg" width="15" height="15" alt="" valign="-3"> Repository</a> ·
 <a href="https://cartagogit.github.io"><img src="./assets/live.svg" width="15" height="15" alt="" valign="-3"> Live site</a>
@@ -158,7 +158,7 @@ Measured on the repositories linked above. Source lines exclude tests, fixtures 
 | NestJS AI API | Typed DTOs, file uploads, streaming and Docker-based delivery for AI-enabled apps. | <a href="https://github.com/CartagoGit/NestGpt"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
 | React front-end | The client that talks to the NestJS AI API. | <a href="https://github.com/CartagoGit/ReactGpt"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
 | Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | <a href="https://github.com/CartagoGit/zoneless-calculator"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
-| Game content pipeline | Schema-validated campaign content for Age of Empires II, en + es-ES. | <a href="https://github.com/CartagoGit/aoe2-mods"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
+| Modding and content | Tools and content for modifying games: binary formats, localisation and automation. | <a href="https://github.com/CartagoGit/aoe2-mods"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> · <a href="https://github.com/CartagoGit/pcfutbol6-mod"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
 | AI-assisted game delivery | A Godot/C# football manager built through a proposal → implement → review → release pipeline. | <a href="https://github.com/CartagoGit/player-club-dynasty"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
 | Local-first desktop app | A Tauri 2 + Rust + SQLite manager that keeps game keys off the cloud. | <a href="https://github.com/CartagoGit/steam-keys"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
 | Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |

@@ -135,10 +135,12 @@ propia (Keyer, Print CV, Cartago) si llevan la suya, dibujada para leerse a 16 p
 | `assets/tanit.svg` | **La marca del autor:** la diosa con el tocado radiado, en terracota `#da5b33` sobre verde azulado `#04343d`. |
 | `assets/quickmodel.png` | `assets/quickmodel.png` de quickmodel, sin tocar. |
 | `assets/print-cv.svg` | **Marca nueva.** Una hoja con lineas de texto y el pliegue, en el verde del producto (`#3cb878`). |
-| `assets/cartago.svg` | **Marca nueva.** El monograma "C." sobre un disco azul, que es el logo del portfolio y su favicon. |
+| `assets/cartago.svg` | **Marca entregada por Mario.** El globo con continentes azules; sustituye al monograma "C." en el encabezado, en la tarjeta del portfolio y en el favicon. |
+| `assets/cartago-banner.png` | **Banner entregado por Mario.** El mismo globo sobre azul marino. Va **sin tocar**: no se procesa, no se recorta ni se recolorea. |
 | `assets/keyer.svg` | **Marca nueva.** Una llave de laton sobre azul marino, para el paquete de secretos. |
 | `assets/docker.svg` | La ballena de Docker con sus contenedores, para la tarjeta de imagenes. |
-| `assets/steam-keys.png` | El favicon real de la aplicacion, dentro de una ficha. |
+| `assets/brand/steam-keys.svg` | El favicon real de la aplicacion, junto al resto de marcas del sitio. |
+| `assets/brand/mods.svg` | Puzzle de Iconify (`mdi:puzzle`), para la tarjeta de fabricacion de mods. |
 
 **Steam Keys no aparece en las tarjetas destacadas del perfil**: el producto que se publica es
 **Keyer**, con enlace a npm. En el sitio estatico si aparece, con su icono real.
@@ -201,7 +203,8 @@ Los README reparados en esta pasada:
 `CartagoGit.github.io` se rehizo sobre un unico conjunto de tokens —color, tipografia, escala de
 espaciado y de radios— para que todas las secciones esten espaciadas igual. Cambios:
 
-- La ficha de marca del encabezado es ahora el monograma "C." y el favicon es el mismo fichero.
+- La ficha de marca del encabezado es ahora el globo de `assets/cartago.svg` y el favicon es el
+  mismo fichero.
 - Las tarjetas de proyecto ponen el icono **encima** del titulo, para que el icono pertenezca al
   producto y no flote a la izquierda del texto.
 - Los enlaces a GitHub, LinkedIn, npm y Docker Hub estan como enlaces con icono SVG.
@@ -209,7 +212,35 @@ espaciado y de radios— para que todas las secciones esten espaciadas igual. Ca
 - Se anadieron los enlaces reales a los productos que funcionan: la app de Print CV y la
   documentacion de QuickModel.
 
+### El banner
+
+Decisiones de Mario, que se aplican tal cual:
+
+1. **La imagen no se toca.** Ni recortes, ni Glow, ni recoloreado, ni `mix-blend-mode` sobre el
+   fichero. `assets/cartago-banner.png` entra en el repositorio tal cual lo entrega.
+2. **Va encima de "En una linea"**, no detras de la pagina: un bloque `.hero__aside` con la
+   imagen por encima del panel de datos.
+3. **Es discreto.** Se muestra a media opacidad, con una mascara radial que disuelve los bordes
+   y deja solo el globo. En tema claro se multiplica contra el fondo, para que el azul marino se
+   funda con la pagina en vez de recortarse como un parche.
+4. **No esta en el fondo del encabezado.** Se elimino la capa `.site-header::before` que lo
+   repetia detras de la navegacion: alli no significaba nada y ensuciaba la barra.
+
 El sitio sigue sin dependencias: se publica desde `main` tal cual en GitHub Pages.
+
+## Redaccion de los proyectos
+
+Los textos de cada proyecto dicen **que es el repositorio**, no para que sirve en general. Y no
+anuncian lo que no esta terminado:
+
+- La tarjeta de fabricacion de mods es **generica** —herramientas y contenido para modificar
+  juegos: formatos binarios, localizacion y automatizacion— sin nombrar juegos ni campañas
+  concretas, porque esos proyectos siguen en desarrollo.
+- La tarjeta del portfolio **no dice "Angular 22 zoneless"**. Dice lo que hay: una pagina estatica
+  generada desde un script, en dos idiomas y con el tema del sistema, con una aplicacion Angular
+  con render en servidor detras.
+- La ficha de Keyer se queda con lo suyo —cifrar credenciales desde la terminal— y no absorbe la
+  de Steam Keys, que es otra cosa: un gestor local de claves de escritorio, en Tauri y SQLite.
 
 ## Trabajo pendiente
 
@@ -225,8 +256,9 @@ El sitio sigue sin dependencias: se publica desde `main` tal cual en GitHub Page
 4. **Repositorios pequenos sin README**: `parse-xml-json`, `script-comparar-csv`,
    `tablon-tareas-cartago`, `codember-dev` y `codewars`. Son utiles, pero con un README minimo
    —problema, uso y estado— o archivados.
-5. **Logo y banner definitivos del portfolio.** Pendiente de que se entregue la marca; el sitio
-   usa ahora el monograma "C." y el banner `banner-03-neon.png`.
+5. ~~**Logo y banner definitivos del portfolio.**~~ Resuelto: la marca entregada (el globo) y el
+   banner estan ya en el repositorio del perfil y en el sitio. El README del perfil usa
+   `banner-03-neon.png` como cabecera y el sitio usa `cartago-banner.png` sobre "En una linea".
 
 ## Servicios de badges del README
 

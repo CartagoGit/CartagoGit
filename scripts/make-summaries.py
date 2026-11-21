@@ -46,7 +46,7 @@ RIGHT_PAD = 12
 # (section icon, label, compact hint, output name)
 # Every heading has a fresh -v4 asset name to bypass GitHub's image cache.
 SECTIONS = [
-    ("angular.svg", "What I build", "Delivery", "what-i-build-v4"),
+    ("section-work.svg", "What I build", "Delivery", "what-i-build-v5"),
     ("section-more-projects.svg", "Featured Projects", "6 highlighted", "featured-projects-v4"),
     ("package.svg", "Professional experience", "10+ years", "professional-experience-v4"),
     ("model-context-protocol.svg", "Beyond the front-end", "Tools + runtime", "beyond-front-end-v4"),

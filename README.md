@@ -21,7 +21,7 @@
 
 ---
 
-<p id="what-i-build"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/what-i-build-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/what-i-build-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/what-i-build-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/what-i-build-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/what-i-build-v4.svg"><img src="./assets/summary/what-i-build-v4.svg" alt="What I build" height="44"></picture></p>
+<p id="what-i-build"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/what-i-build-v5.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/what-i-build-v5.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/what-i-build-v5.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/what-i-build-v5.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/what-i-build-v5.svg"><img src="./assets/summary/what-i-build-v5.svg" alt="What I build" height="44"></picture></p>
 
 **Front-end for operational systems.** ERP, warehouse logistics, workforce and attendance: the same
 screens eight hours a day, with role-based permissions, complex validated forms and listings that
@@ -266,8 +266,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-gemini.svg?v=3"><img height="30" alt="Gemini" src="./assets/btn/tech-gemini.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-qwen.svg?v=3"><img height="30" alt="Qwen" src="./assets/btn/tech-qwen.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-glm.svg?v=3"><img height="30" alt="GLM" src="./assets/btn/tech-glm.svg?v=3"></picture>
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mimo.svg?v=3"><img height="30" alt="MiMo" src="./assets/btn/tech-mimo.svg?v=3"></picture>
-<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mai.svg?v=3"><img height="30" alt="MAI Code" src="./assets/btn/tech-mai.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mimo.svg?v=3"><img height="30" alt="MAI Code" src="./assets/btn/tech-mai.svg?v=3"></picture>
 
 <p id="docker-images"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/docker-images-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/docker-images-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/docker-images-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/docker-images-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v4.svg"><img src="./assets/summary/docker-images-v4.svg" alt="Docker images" height="44"></picture></p>
 

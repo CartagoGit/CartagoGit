@@ -46,10 +46,12 @@ HINT_SIZE = 11
 MARKER = 24
 
 # (section icon, label, hint, output name)
+# Names carry a -v2 suffix: GitHub's image proxy caches by full URL and
+# ignores query strings, so a changed asset must be renamed to be seen.
 SECTIONS = [
-    ("section-more-projects.svg", "More projects", "8 repositories", "more-projects"),
-    ("section-core-stack.svg", "Core stack", "40+ technologies", "core-stack"),
-    ("section-docker-images.svg", "Docker images", "5 public images", "docker-images"),
+    ("section-more-projects.svg", "More projects", "8 repositories", "more-projects-v2"),
+    ("section-core-stack.svg", "Core stack", "40+ technologies", "core-stack-v2"),
+    ("section-docker-images.svg", "Docker images", "5 public images", "docker-images-v2"),
 ]
 
 

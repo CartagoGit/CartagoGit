@@ -9,12 +9,13 @@ the bottom of the README and these bars are premium link buttons:
 gradient tile, icon chip, bold label and a content-count badge pinned to
 the right edge. No arrows anywhere.
 
-The bar is drawn at two fixed sizes, served through <picture media>:
-820px for desktop columns and 280px for phones. Fixed sizes matter: an
-SVG without a viewBox served through <img> is stretched by the browser
-when CSS resizes it, which distorts the text; with a viewBox everything
-scales uniformly and the text shrinks on phones. Two hand-laid sizes
-keep every glyph at its intended pixel size on every screen.
+The bar is drawn at three fixed sizes, served through <picture media>:
+820px for desktop columns, 600px for tablet-width columns and 340px for
+phones. Fixed sizes matter: an SVG without a viewBox served through
+<img> is stretched by the browser when CSS resizes it, which distorts
+the text; with a viewBox everything scales uniformly and the text
+shrinks on phones. Hand-laid sizes keep every glyph at its intended
+pixel size on every screen.
 
     python3 scripts/make-summaries.py
 """
@@ -131,9 +132,10 @@ def bar(icon_file: str, label: str, hint: str, light: bool, width: int) -> str:
     )
 
 
-# Desktop bars fill the profile column; phone bars fit a 390px viewport
-# (293px of content) without any downscaling.
-WIDTHS = [("", 820), ("narrow/", 280)]
+# One hand-laid size per layout breakpoint, so glyphs are never scaled
+# below ~80%: phones (<500px viewport), tablet/laptop (500-1199px) and
+# desktop (>=1200px, where the profile column is ~831-846px).
+WIDTHS = [("", 820), ("mid/", 480), ("narrow/", 340)]
 
 
 def main() -> None:

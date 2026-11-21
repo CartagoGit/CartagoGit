@@ -140,27 +140,28 @@ def action_dock(icon_path: str, light: bool, height: int) -> str:
 
 def card_cap(light: bool, height: int) -> str:
     bottom, border = (LIGHT_BOTTOM, LIGHT_BORDER) if light else (DARK_BOTTOM, DARK_BORDER)
-    radius = 11 if height > 100 else 9
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="6" height="{height}" viewBox="0 0 6 {height}" aria-hidden="true"><path d="M0 .5H{6-radius}Q5.5 .5 5.5 {radius}V{height-radius}Q5.5 {height-.5} {6-radius} {height-.5}H0Z" fill="{bottom}" stroke="{border}"/></svg>'''
+    radius = 12 if height > 100 else 10
+    svg_width = radius + 8
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{height}" viewBox="0 0 {svg_width} {height}" aria-hidden="true"><path d="M0 .5H0Q{radius-.5} .5 {radius-.5} {radius}V{height-radius}Q{radius-.5} {height-.5} 0 {height-.5}Z" fill="{bottom}" stroke="{border}"/></svg>'''
 
 
 def main() -> None:
     for prefix, total_width, action_count in [("", 390, 2), ("mid/", 350, 2), ("narrow/", 293, 2), ("tiny/", 223, 2)]:
         out = OUT / prefix if prefix else OUT
         (out / "light").mkdir(parents=True, exist_ok=True)
-        body_width = total_width - action_count * 34 - 6
+        body_width = total_width - action_count * 34 - 20
         for p in PROJECTS:
-            (out / f"project-{p[0]}-v4.svg").write_text(project_card(*p, light=False, width=body_width))
-            (out / "light" / f"project-{p[0]}-v4.svg").write_text(project_card(*p, light=True, width=body_width))
-        compact_width = total_width - 34 - 6
+            (out / f"project-{p[0]}-v5.svg").write_text(project_card(*p, light=False, width=body_width))
+            (out / "light" / f"project-{p[0]}-v5.svg").write_text(project_card(*p, light=True, width=body_width))
+        compact_width = total_width - 34 - 18
         for card in MORE_PROJECTS:
             name, title, subtitle, detail, asset = card
-            (out / f"more-{name}-v2.svg").write_text(compact_card(title, subtitle, detail, asset, False, compact_width))
-            (out / "light" / f"more-{name}-v2.svg").write_text(compact_card(title, subtitle, detail, asset, True, compact_width))
+            (out / f"more-{name}-v3.svg").write_text(compact_card(title, subtitle, detail, asset, False, compact_width))
+            (out / "light" / f"more-{name}-v3.svg").write_text(compact_card(title, subtitle, detail, asset, True, compact_width))
         for card in DOCKER_IMAGES:
             name, title, subtitle, detail = card
-            (out / f"docker-{name}-v2.svg").write_text(docker_card(title, subtitle, detail, False, compact_width))
-            (out / "light" / f"docker-{name}-v2.svg").write_text(docker_card(title, subtitle, detail, True, compact_width))
+            (out / f"docker-{name}-v3.svg").write_text(docker_card(title, subtitle, detail, False, compact_width))
+            (out / "light" / f"docker-{name}-v3.svg").write_text(docker_card(title, subtitle, detail, True, compact_width))
     for e in EVIDENCE:
         (OUT / f"evidence-{e[0]}-v3.svg").write_text(evidence_card(*e, light=False))
         (OUT / "light" / f"evidence-{e[0]}-v3.svg").write_text(evidence_card(*e, light=True))
@@ -177,8 +178,8 @@ def main() -> None:
             (ASSETS / "btn" / f"{name}-{suffix}-dock-v4.svg").write_text(action_dock(icon_path, False, height))
             (ASSETS / "btn" / "light" / f"{name}-{suffix}-dock-v4.svg").write_text(action_dock(icon_path, True, height))
     for height, suffix in [(124, "project"), (92, "compact")]:
-        (ASSETS / "btn" / f"card-cap-{suffix}-v4.svg").write_text(card_cap(False, height))
-        (ASSETS / "btn" / "light" / f"card-cap-{suffix}-v4.svg").write_text(card_cap(True, height))
+        (ASSETS / "btn" / f"card-cap-{suffix}-v5.svg").write_text(card_cap(False, height))
+        (ASSETS / "btn" / "light" / f"card-cap-{suffix}-v5.svg").write_text(card_cap(True, height))
     for name, label, icon_path in [
         ("open-repository-v2", "Repository", "assets/brand/github.svg"),
         ("open-docker-v2", "Docker Hub", "assets/brand/docker.svg"),

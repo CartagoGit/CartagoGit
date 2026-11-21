@@ -10,7 +10,7 @@ La experiencia profesional se refleja por capacidades, no por nombres de cliente
 
 Fijar los seis repositorios en este orden desde la pestana **Repositories** del perfil:
 
-1. `mcp-vertex`: el trabajo publico mas actual y con mayor profundidad tecnica; posiciona MCP, Bun, tooling y calidad de ingenieria.
+1. `DelendAI`: el trabajo publico mas actual y con mayor profundidad tecnica; posiciona MCP, Bun, tooling y calidad de ingenieria.
 2. `quickmodel`: libreria TypeScript con arquitectura, documentacion, pruebas y publicacion.
 3. `Keyer`: utilidad publicada en npm, con caso de uso claro y CLI.
 4. `print-cv`: aplicacion moderna en Vue/TypeScript con pruebas de extremo a extremo.

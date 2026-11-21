@@ -36,13 +36,14 @@ LIGHT_LABEL = "#12233f"
 LIGHT_HINT = "#1c5ed4"
 
 HEIGHT = 38
-PAD = 14
+PAD = 12
 ICON = 18
-GAP = 9
+GAP = 8
 FONT_SIZE = 14
+HINT_SIZE = 11
 # Room for GitHub's native disclosure marker, which sits on the same line
 # at the right edge of the bar (summary dir="rtl" + img width="97%").
-MARKER = 26
+MARKER = 24
 
 # (section icon, label, hint, output name)
 SECTIONS = [
@@ -52,7 +53,9 @@ SECTIONS = [
 ]
 
 
-def text_width(text: str) -> float:
+def text_width(text: str, size: float = FONT_SIZE) -> float:
+    # Per-character advance widths measured from Liberation Sans Bold
+    # (metric-compatible with Arial/Segoe UI), as a fraction of the size.
     wide = "mwMW@"
     narrow = "iljtfrI.,:;'|"
     total = 0.0
@@ -60,7 +63,7 @@ def text_width(text: str) -> float:
         if ch in wide:
             total += 0.86
         elif ch in narrow:
-            total += 0.34
+            total += 0.28
         elif ch == " ":
             total += 0.28
         elif ch.isupper():
@@ -69,7 +72,7 @@ def text_width(text: str) -> float:
             total += 0.56
         else:
             total += 0.55
-    return total * FONT_SIZE * 1.22 + 4
+    return total * size + 4
 
 
 def icon_inner(name: str) -> tuple[str, str]:
@@ -91,10 +94,11 @@ def bar(icon_file: str, label: str, hint: str, light: bool) -> str:
 
     inner, view_box = icon_inner(icon_file)
     label_w = text_width(label)
-    hint_w = text_width(hint) * 0.82
-    # Intrinsic width: content plus the marker slot. No viewBox on the
-    # root: user units == CSS pixels, so when the README stretches the
-    # image to the column width only the background rect grows.
+    hint_w = text_width(hint, HINT_SIZE)
+    # Intrinsic width: content plus the marker slot. Kept under ~270px so
+    # a 390px phone (284px column at 97%) never scales the image down.
+    # No viewBox on the root: user units == CSS pixels, so when the README
+    # stretches the image to the column width only the background rect grows.
     width = PAD + ICON + GAP + label_w + GAP + hint_w + MARKER + PAD
     baseline = HEIGHT / 2 + FONT_SIZE * 0.35
     hint_x = PAD + ICON + GAP + label_w + GAP
@@ -108,7 +112,7 @@ def bar(icon_file: str, label: str, hint: str, light: bool) -> str:
         f'font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="{FONT_SIZE}" '
         f'font-weight="700">{label}</text>'
         f'<text x="{hint_x:.1f}" y="{baseline:.1f}" fill="{hint_colour}" '
-        f'font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="{FONT_SIZE * 0.82:.1f}" '
+        f'font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="{HINT_SIZE}" '
         f'font-weight="600">{hint}</text>'
         f"</svg>"
     )

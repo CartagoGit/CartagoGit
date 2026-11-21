@@ -28,14 +28,14 @@ screens eight hours a day, with permissions that shift by role and forms that ha
 different way of working every shift. My base is **Angular with SCSS**, **Ionic** when it needs to
 reach Android, **Material** for the design system.
 
-**The part around it.** Mentoring the team, deciding what stays in the front-end and what moves to
+**Around the front-end.** Mentoring the team, deciding what stays in the front-end and what moves to
 a service, deciding what gets a quality gate and what gets a written decision. GitLab CI,
 GitHub Actions, Docker images with the versions pinned — the same environment on the laptop and
 on the runner.
 
-**The part I do alone.** Developer tooling I needed and could not find: an MCP server with 62
-capabilities, a static analysis engine for APIs, a serialization library, a secret manager. All of
-it came out of one of my own problems on a Tuesday afternoon.
+**Independent tooling.** Developer tools I needed and could not find: an MCP server with 62
+capabilities, a static analysis engine for APIs, a serialization library, a secret manager. Each
+one started from a concrete need in my own work.
 
 Everything published here is **independent work** — repositories, libraries, images and
 experiments built in my own time. My professional work is not published here.

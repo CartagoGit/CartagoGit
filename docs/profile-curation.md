@@ -187,15 +187,17 @@ color de la marca, asi que todos quedaban del mismo color.
 La solucion tiene dos partes:
 
 1. **El color va en el fichero.** `scripts/normalize-brand-icons.py` escribe el color de la
-   marca en el `<svg>` raiz y quita los `fill` de los `path`, para que hereden del raiz.
-   Angular sale rojo, Vue verde, React azul claro, Sass rosa. Se ejecuta sobre
-   `assets/brand` de los dos repositorios.
-2. **La ficha no cambia con el tema.** El icono pequeno va sobre un fondo navy fijo
-   (`--icon-tile: #0e1a2b`) con borde `#2b4786`, igual en el tema claro y en el oscuro. Asi
-   el blanco de GitHub sigue siendo visible en claro, y el color de cada marca se lee igual
-   en los dos.
+   marca en el `<svg>` raiz y quita los `fill` de los `path` **solo en el cuerpo** (si se
+   quitan en todo el fichero, se borra el que se acaba de poner). Angular sale rojo, Vue
+   verde, React azul claro, Sass rosa. Se ejecuta sobre `assets/brand` de los dos repos.
+2. **En el sitio no hay ficha.** Los iconos pequenos van directos, mas grandes (16–19 px),
+   sobre la superficie de la tarjeta. Las marcas blancas o palidas (GitHub, MCP, OpenAI,
+   Grok, Bun, Tauri, Prettier, Linux) llevan un filtro de oscurecido **solo en el tema
+   claro**, para que no desaparezcan sobre blanco. En oscuro se ven tal cual.
 
 Los iconos grandes de las tarjetas de proyecto son marcas completas y siguen sin ficha.
+**QuickModel** se redondea en un derivado raster (`quickmodel-rounded.png`, esquinas
+recortadas con alpha) porque GitHub borra el `style` que hacia el redondeado.
 
 ### Los botones del README
 
@@ -204,10 +206,18 @@ el oscuro. Un enlace suelto siempre sale morado y no se puede convertir en boton
 markdown. La salida es una **imagen que lleva su propio contraste**: una ficha redondeada con
 fondo fijo, el icono dentro y la etiqueta al lado.
 
-`scripts/make-buttons.py` los genera en `assets/btn/`. La etiqueta lleva el **nombre del
-proyecto**, no la palabra "Repository": con el icono de GitHub ya se sabe que es un repositorio.
-El ancho de la etiqueta se calcula caractero a caractero (`text_width`) porque una media unica
-recortaba las etiquetas largas.
+`scripts/make-buttons.py` los genera en `assets/btn/`. Cubren:
+
+- **Repositorios** (con el nombre del proyecto, no la palabra "Repository"), releases, docs,
+  live, npm, LinkedIn, Docker Hub y el portfolio (con el logo de Cartago dentro).
+- **Tecnologias** (`tech-*`): la misma ficha con el color de cada marca, para el Core stack.
+- **Imagenes Docker** (`img-*`): la misma ficha con el nombre de la imagen.
+- Los contadores de pulls de shields.io se recolorean a la paleta de la ficha
+  (`labelColor=0e1a2b&color=2b4786`, `for-the-badge`) para que convivan con los botones.
+
+La etiqueta lleva el **nombre del proyecto**. El ancho se calcula caractero a caractero
+(`text_width`) con un 22% de holgura, porque la fuente del lector puede ser Segoe UI,
+Helvetica o Arial, mas anchas que Inter, y recortaban las etiquetas largas.
 
 **Alineacion:** los botones van en una fila `<tr>` propia, debajo de la fila de contenido. Si
 van dentro de la misma celda que el texto, cada celda acaba a una altura distinta y los enlaces
@@ -216,7 +226,15 @@ no cuadran. Con la fila aparte, las tres celdas empiezan los botones a la misma 
 **Cache del proxy:** GitHub sirve las imagenes del README a traves de un proxy que cachea por
 URL completa y **ignora el `?v=2`**. Cuando se cambia un boton ya publicado, hay que renombrar
 el fichero; cambiar el contenido o la query no basta. Por eso `repo-tanit.svg` paso a
-`tanit.svg`.
+`tanit.svg`. Para los cambios de ancho se uso `?v=3` en todas las referencias, que al ser una
+URL nueva si fuerza la recarga.
+
+### El logo de Cartago en el README
+
+El logo entregado (`assets/cartago.svg`) preside el README: va dentro del `<h1>`, encima del
+nombre, enlazado al portfolio. Para el boton pequeno se rasteriza a 128 px
+(`scripts/make-cartago-thumb.py` → `cartago-128.png`, ~10 KB) porque el SVG original pesa
+290 KB y a 15 px ese detalle no se ve.
 
 ## Trabajo profesional: donde va y donde no
 
@@ -281,15 +299,38 @@ Decisiones de Mario, que se aplican tal cual:
    fichero. `assets/cartago-banner.png` entra en el repositorio tal cual lo entrega.
 2. **Va encima de "En una linea"**, no detras de la pagina: un bloque `.hero__aside` con la
    imagen por encima del panel de datos.
-3. **Es discreto, pero el globo se lee.** Opacidad .72 y una mascara radial amplia centrada
-   hacia la derecha (`ellipse 82% 92% at 54% 50%`), para que el globo no se coma el difuminado.
-   En tema claro la imagen se queda como lo que es —una imagen enmarcada con borde y sombra—
-   porque multiplicarla contra el fondo claro la volvia plateada.
+3. **Se funde con el fondo, sin forma propia.** El difuminado son **dos mascaras lineales
+   intersectadas** (una por eje): cada borde se disuelve en su propio eje y las esquinas en
+   los dos. Nada de elipses — una mascara radial se leia como un huevo. Los nucleos solidos
+   son largos (22–78% en horizontal, 24–76% en vertical) para que el logo se lea entero.
+   Sin borde, sin sombra, en los dos temas.
 4. **No esta en el fondo del encabezado ni del hero.** Se elimino la capa `.site-header::before`
    que lo repetia detras de la navegacion, y tambien la del `.hero` en tema claro. La imagen
    solo vive en el `.hero__aside`.
 5. **Los iconos pequenos no llevan `loading="lazy"`.** Son SVG de menos de un kilobyte y el
    navegador integrado no los cargaba hasta hacer scroll sobre ellos. Cargan con la pagina.
+
+### Interaccion
+
+- La **barra de acento** de las tarjetas (pillars y projects) vive **dentro** del padding
+  (`left: var(--s5); top: var(--s3)`), con radio propio: pertenece a la tarjeta redondeada,
+  no corre por encima del borde. En reposo es corta y tenue; en hover crece hasta el ancho
+  interior con transicion.
+- Tarjetas, pills, botones e iconos tienen transiciones de ~.2s y un estado `:active`
+  (escala .96–.99) que reconoce la pulsacion.
+- Los **chips de tecnologia** de las tarjetas profesionales van al final del cuerpo
+  (`margin-top: auto` dentro de un `project__body` flex), asi todas las tarjetas de una fila
+  los muestran a la misma altura.
+- `:focus-visible` con outline de 2px y offset 3px en todo lo interactivo.
+
+### Idiomas
+
+Cada texto visible lleva su par `(es, en)` y se emite con `i18n()`. La auditoria con el
+navegador (buscar nodos de texto fuera de `[data-lang]` y spans del idioma equivocado
+visibles) destapo tres fugas que ya estan corregidas: los **titulos de las tarjetas
+profesionales** salian siempre en ingles, las **notas de evidencia** solo en español, y el
+**skip-link** estaba fijado en ingles. Los valores del panel "En una linea" tambien son
+bilingues ahora.
 
 El sitio sigue sin dependencias: se publica desde `main` tal cual en GitHub Pages.
 

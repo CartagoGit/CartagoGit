@@ -69,7 +69,11 @@ _GLYPH_W = {
 
 
 def text_width(text: str) -> float:
-    """Width of a label in pixels, close enough to not clip it."""
+    """Width of a label in pixels, with slack so no font can clip it.
+
+    The reader's browser may fall back to Segoe UI, Helvetica or Arial, all
+    wider than Inter. The estimate is padded so the label always fits.
+    """
     total = 0.0
     for ch in text:
         if ch in _GLYPH_W:
@@ -84,7 +88,7 @@ def text_width(text: str) -> float:
             total += 0.56
         else:
             total += 0.55
-    return total * FONT_SIZE
+    return total * FONT_SIZE * 1.22 + 4
 
 # (icon file, label, output name)
 BUTTONS = [
@@ -109,16 +113,65 @@ BUTTONS = [
     ("live.svg", "Live", "live"),
     ("package.svg", "npm", "npm"),
     ("brand/github.svg", "GitHub", "github"),
-    ("live.svg", "Portfolio", "portfolio"),
-    ("brand/launch.svg", "Activity", "activity"),
+    ("cartago-128.png", "Portfolio", "portfolio"),
     ("brand/linkedin.svg", "LinkedIn", "linkedin"),
     ("brand/npm.svg", "npm", "npm-brand"),
     ("brand/docker.svg", "Docker Hub", "docker"),
+    # ---- Docker images ----
+    ("brand/docker.svg", "nodebun", "img-nodebun"),
+    ("brand/docker.svg", "zsh", "img-zsh"),
+    ("brand/docker.svg", "ionic-cover", "img-ionic"),
+    ("brand/docker.svg", "nestjs-cover", "img-nestjs"),
+    ("brand/docker.svg", "angular", "img-angular"),
+    # ---- stack badges: same tile, each brand's own colour ----
+    ("brand/angular.svg", "Angular", "tech-angular"),
+    ("brand/ionic.svg", "Ionic", "tech-ionic"),
+    ("brand/material.svg", "Material", "tech-material"),
+    ("brand/sass.svg", "Sass", "tech-sass"),
+    ("brand/typescript.svg", "TypeScript", "tech-typescript"),
+    ("brand/rxjs.svg", "RxJS", "tech-rxjs"),
+    ("brand/capacitor.svg", "Capacitor", "tech-capacitor"),
+    ("brand/tailwindcss.svg", "Tailwind", "tech-tailwind"),
+    ("brand/vue.svg", "Vue", "tech-vue"),
+    ("brand/react.svg", "React", "tech-react"),
+    ("brand/nestjs.svg", "NestJS", "tech-nestjs"),
+    ("brand/bun.svg", "Bun", "tech-bun"),
+    ("brand/nodejs.svg", "Node.js", "tech-nodejs"),
+    ("brand/postgresql.svg", "PostgreSQL", "tech-postgresql"),
+    ("brand/sqlite.svg", "SQLite", "tech-sqlite"),
+    ("brand/mongodb.svg", "MongoDB", "tech-mongodb"),
+    ("brand/zod.svg", "Zod", "tech-zod"),
+    ("brand/openapi.svg", "OpenAPI", "tech-openapi"),
+    ("brand/model-context-protocol.svg", "MCP", "tech-mcp"),
+    ("brand/tauri.svg", "Tauri 2", "tech-tauri"),
+    ("brand/rust.svg", "Rust", "tech-rust"),
+    ("brand/godot.svg", "Godot", "tech-godot"),
+    ("brand/python.svg", "Python", "tech-python"),
+    ("brand/storybook.svg", "Storybook", "tech-storybook"),
+    ("brand/prime-ng.svg", "PrimeNG", "tech-primeng"),
+    ("brand/vitest.svg", "Vitest", "tech-vitest"),
+    ("brand/jest.svg", "Jest", "tech-jest"),
+    ("brand/playwright.svg", "Playwright", "tech-playwright"),
+    ("brand/eslint.svg", "ESLint", "tech-eslint"),
+    ("brand/prettier.svg", "Prettier", "tech-prettier"),
+    ("brand/docker.svg", "Docker", "tech-docker"),
+    ("brand/gitlab.svg", "GitLab CI", "tech-gitlab"),
+    ("brand/github-actions.svg", "GitHub Actions", "tech-actions"),
+    ("brand/linux.svg", "Linux", "tech-linux"),
 ]
 
 
 def icon_markup(name: str) -> tuple[str, str, str]:
     """Return (content, view_box, colour) of an existing icon file."""
+    if name.endswith(".png"):
+        import base64
+
+        data = base64.b64encode((ASSETS / name).read_bytes()).decode()
+        inner = (
+            f'<image width="128" height="128" '
+            f'href="data:image/png;base64,{data}"/>'
+        )
+        return inner, "0 0 128 128", ICON_COLOR
     raw = (ASSETS / name).read_text()
     view_box = re.search(r'viewBox="([^"]+)"', raw)
     box = view_box.group(1).split() if view_box else ["0", "0", "24", "24"]

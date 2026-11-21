@@ -84,7 +84,7 @@ def action_button(label: str, icon_path: str, light: bool) -> str:
 
 
 def main() -> None:
-    for prefix, width in [("", 520), ("mid/", 480), ("narrow/", 293)]:
+    for prefix, width in [("", 520), ("mid/", 480), ("narrow/", 293), ("tiny/", 223)]:
         out = OUT / prefix if prefix else OUT
         (out / "light").mkdir(parents=True, exist_ok=True)
         for p in PROJECTS:

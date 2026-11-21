@@ -352,6 +352,20 @@ Una revision externa del portafolio señalo varios puntos; se aplicaron por orde
 Pendiente de la misma revision (no aplicado, requiere decision de Mario): reducir el volumen
 inicial de tarjetas, y SEO bilingue con URLs diferenciadas por idioma.
 
+### Los desplegables del README
+
+Un `<summary>` suelto se leia como texto plano y nadie sabia que se podia abrir. Ahora cada
+desplegable lleva una **barra-ficha** (imagen SVG generada por `scripts/make-summaries.py`):
+icono de la seccion, etiqueta, una pista de contenido ("8 repositories", "40+ technologies",
+"5 public images") y un chevron hacia abajo. En los dos temas, servida con `<picture>`.
+
+**Limitacion de GitHub:** el sanitizador del markdown **elimina `class` y `data-*`**, asi que
+no se puede condicionar el chevron al estado abierto/cerrado desde el README (se intento con
+`details[open] .when-open` y con `data-fold`, y ambos atributos desaparecen). La barra lleva
+un chevron fijo hacia abajo; el triangulo nativo de GitHub a la izquierda ya indica el
+estado. **Transicion al desplegar:** tampoco es posible inyectar CSS en el README de GitHub;
+en el portafolio los `<details>` de caso si tienen una animacion de entrada (`fold-in`).
+
 ### Tablet y seccion profesional compacta
 
 - **Tablet (761–1000px):** el header completo (marca + seis enlaces + toggles + cuatro iconos

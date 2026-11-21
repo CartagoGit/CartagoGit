@@ -33,7 +33,7 @@ EVIDENCE = [
     ("quickmodel", "QuickModel", "550 commits", "49K source", "104K tests", "213%", "assets/quickmodel-rounded.png"),
     ("pcd", "Player Club Dynasty", "294 commits", "37K source", "14K tests", "38%", "assets/brand/godot.svg"),
     ("steam-keys", "Steam Keys", "117 commits", "34K source", "12K tests", "34%", "assets/brand/steam-keys.svg"),
-    ("aoe2", "Aoe2 mods", "1,123 commits", "32K source", "7K tests", "23%", "assets/brand/mods.svg"),
+    ("aoe2", "Aoe2 mods", "1,123 commits", "32K source", "7K tests", "23%", "assets/projects/age-of-empires-ii.png"),
     ("portfolio", "Cartago", "164 commits", "12K source", "1K tests", "9%", "assets/cartago.svg"),
     ("print-cv", "Print CV", "133 commits", "3K source", "230 tests", "8%", "assets/print-cv.svg"),
 ]
@@ -49,15 +49,15 @@ PROJECTS = [
 
 MORE_PROJECTS = [
     ("nestgpt", "NestGpt", "AI-enabled NestJS API", "DTOs · uploads · streaming · Docker", "assets/brand/nestjs.svg"),
-    ("reactgpt", "ReactGpt", "React front-end", "Client for the NestJS AI API", "assets/brand/react.svg"),
+    ("reactgpt", "ReactGpt", "React front-end", "Client for the NestJS AI API", "assets/projects/react-gpt.png"),
     ("zoneless", "Zoneless Angular", "Angular without zone.js", "Unit and integration tests", "assets/brand/angular.svg"),
-    ("aoe2", "Aoe2 mods", "Game modding tools", "Binary formats · localisation · automation", "assets/brand/mods.svg"),
-    ("pcfutbol", "PC Fútbol 6 mods", "Game content pipeline", "Schemas · assets · automation", "assets/brand/mods.svg"),
+    ("aoe2", "Aoe2 mods", "Game modding tools", "Binary formats · localisation · automation", "assets/projects/age-of-empires-ii.png"),
+    ("pcfutbol", "PC Fútbol 6 mods", "Game content pipeline", "Schemas · assets · automation", "assets/projects/pc-futbol.png"),
     ("pcd", "Player Club Dynasty", "Godot/C# football manager", "Proposal → implement → review", "assets/brand/godot.svg"),
     ("steam-keys", "Steam Keys", "Local-first desktop app", "Tauri 2 · Rust · SQLite", "assets/brand/steam-keys.svg"),
     ("template-angular", "Angular template", "Workspace starter", "Architecture ready for new apps", "assets/brand/angular.svg"),
-    ("codember", "Codember", "Daily puzzle solutions", "Consistent small challenges", "assets/brand/typescript.svg"),
-    ("codewars", "Codewars", "Practice repository", "Focused katas and one solution per commit", "assets/brand/typescript.svg"),
+    ("codember", "Codember", "Daily puzzle solutions", "Consistent small challenges", "assets/projects/codember.svg"),
+    ("codewars", "Codewars", "Practice repository", "Focused katas and one solution per commit", "assets/projects/codewars.svg"),
 ]
 
 DOCKER_IMAGES = [
@@ -69,13 +69,15 @@ DOCKER_IMAGES = [
 ]
 
 
-def embedded_asset(path: str, x: int, y: int, size: int) -> str:
+def embedded_asset(path: str, x: int, y: int, size: int, width: int | None = None, height: int | None = None) -> str:
     """Embed the complete original image so no nested SVG styles are lost."""
     import base64
     source = ROOT / path
     mime = "image/png" if source.suffix == ".png" else "image/svg+xml"
     data = base64.b64encode(source.read_bytes()).decode("ascii")
-    return f'<image href="data:{mime};base64,{data}" x="{x}" y="{y}" width="{size}" height="{size}" preserveAspectRatio="xMidYMid meet"/>'
+    width = size if width is None else width
+    height = size if height is None else height
+    return f'<image href="data:{mime};base64,{data}" x="{x}" y="{y}" width="{width}" height="{height}" preserveAspectRatio="xMidYMid meet"/>'
 
 
 def evidence_card(name: str, title: str, commits: str, source: str, tests: str, ratio: str, asset: str, light: bool) -> str:
@@ -111,7 +113,13 @@ def compact_card(title: str, subtitle: str, detail: str, asset: str, light: bool
     compact = width < 240
     icon_size = 34 if compact else 42
     text_x = 55 if compact else 68
-    icon = embedded_asset(asset, 12, 12, icon_size)
+    if asset.endswith(("age-of-empires-ii.png", "pc-futbol.png")):
+        icon_width = 50 if compact else 58
+        icon_height = 34 if compact else 42
+        icon = embedded_asset(asset, 8, 12, icon_size, width=icon_width, height=icon_height)
+        text_x = 64 if compact else 74
+    else:
+        icon = embedded_asset(asset, 12, 12, icon_size)
     height = 92
     canvas_height = height + 8
     title_size = 12.5 if compact else 15
@@ -165,15 +173,15 @@ def main() -> None:
         compact_width = total_width - 34 - 18
         for card in MORE_PROJECTS:
             name, title, subtitle, detail, asset = card
-            (out / f"more-{name}-v4.svg").write_text(compact_card(title, subtitle, detail, asset, False, compact_width))
-            (out / "light" / f"more-{name}-v4.svg").write_text(compact_card(title, subtitle, detail, asset, True, compact_width))
+            (out / f"more-{name}-v5.svg").write_text(compact_card(title, subtitle, detail, asset, False, compact_width))
+            (out / "light" / f"more-{name}-v5.svg").write_text(compact_card(title, subtitle, detail, asset, True, compact_width))
         for card in DOCKER_IMAGES:
             name, title, subtitle, detail = card
             (out / f"docker-{name}-v4.svg").write_text(docker_card(title, subtitle, detail, False, compact_width))
             (out / "light" / f"docker-{name}-v4.svg").write_text(docker_card(title, subtitle, detail, True, compact_width))
     for e in EVIDENCE:
-        (OUT / f"evidence-{e[0]}-v4.svg").write_text(evidence_card(*e, light=False))
-        (OUT / "light" / f"evidence-{e[0]}-v4.svg").write_text(evidence_card(*e, light=True))
+        (OUT / f"evidence-{e[0]}-v5.svg").write_text(evidence_card(*e, light=False))
+        (OUT / "light" / f"evidence-{e[0]}-v5.svg").write_text(evidence_card(*e, light=True))
     dock_icons = {
         "repository": "assets/brand/github.svg",
         "releases": "assets/brand/releases.svg",

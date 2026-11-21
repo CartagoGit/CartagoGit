@@ -140,7 +140,12 @@ propia (Keyer, Print CV, Cartago) si llevan la suya, dibujada para leerse a 16 p
 | `assets/keyer.svg` | **Marca nueva.** Una llave de laton sobre azul marino, para el paquete de secretos. |
 | `assets/docker.svg` | La ballena de Docker con sus contenedores, para la tarjeta de imagenes. |
 | `assets/brand/steam-keys.svg` | El favicon real de la aplicacion, junto al resto de marcas del sitio. |
-| `assets/brand/mods.svg` | Puzzle de Iconify (`mdi:puzzle`), para la tarjeta de fabricacion de mods. |
+| `assets/projects/react-gpt.png` | Logo propio publicado en `ReactGpt/public/react-gpt-logo.png`. |
+| `assets/projects/age-of-empires-ii.png` | Recorte de la portada oficial de Age of Empires II, normalizado a un badge cuadrado. |
+| `assets/projects/pc-futbol.png` | Logo de la serie PC Futbol procedente de su imagen de Wikipedia, con fondo eliminado. |
+| `assets/projects/codember.svg` | Favicon oficial de `codember.dev`. |
+| `assets/projects/codewars.svg` | Logomark oficial publicado en la web de Codewars. |
+| `assets/brand/mods.svg` | Puzzle de Iconify (`mdi:puzzle`), reservado para herramientas sin marca propia. |
 
 **Steam Keys no aparece en las tarjetas destacadas del perfil**: el producto que se publica es
 **Keyer**, con enlace a npm. En el sitio estatico si aparece, con su icono real.

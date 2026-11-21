@@ -1,0 +1,16 @@
+	<svg
+			xmlns='http://www.w3.org/2000/svg'
+			viewBox='-0.5 -0.5 24 24'
+			height='24'
+			width='24'
+		>
+			<g fill='none'>
+				<path
+					d='M1.093 6.57h20.815v14.238H23V2.192h-1.092v3.285H1.092V2.192H0v18.616h1.093V6.569zM1.093 20.808h20.815v1.1H1.092Z'
+				></path>
+				<path
+					d='M3.285 8.762v9.86h16.43v-9.86Zm6.57 5.476H8.761v1.093H7.669v1.1h-1.1v-1.1h1.1v-1.093h1.093v-1.092H7.669v-1.1h-1.1v-1.092h1.1v1.092h1.093v1.1h1.092Zm6.576 0h-4.385v-1.092h4.385ZM6.57 3.285h1.1v1.1h-1.1ZM4.384 3.285h1.093v1.1H4.384ZM2.192 3.285h1.093v1.1H2.192ZM1.093 1.093h20.815v1.1H1.092Z'
+				></path>
+      </g>
+		<style>path{fill:#000000}@media (prefers-color-scheme:dark){path{fill:#ffffff}}</style>
+  </svg>

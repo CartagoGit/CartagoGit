@@ -54,6 +54,7 @@ experiments built in my own time. My professional work is not published here.
 </p>
 
 <table width="100%">
+<tr><td colspan="2"><img src="./assets/brand/table-spacer.svg" width="820" height="1" alt=""></td></tr>
 <tr><td width="58%"><strong>DelendAI</strong><br><sub>Release notes and versions</sub></td><td width="42%" align="right"><a href="https://github.com/CartagoGit/DelendAI/releases"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/releases.svg?v=3"><img height="30" alt="Open DelendAI releases" src="./assets/btn/releases.svg?v=3"></picture></a></td></tr>
 <tr><td><strong>API Source Tanit</strong><br><sub>Release notes and versions</sub></td><td align="right"><a href="https://github.com/CartagoGit/api-source-tanit/releases"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/releases.svg?v=3"><img height="30" alt="Open API Source Tanit releases" src="./assets/btn/releases.svg?v=3"></picture></a></td></tr>
 <tr><td><strong>QuickModel</strong><br><sub>Documentation site</sub></td><td align="right"><a href="https://cartagogit.github.io/quickmodel/"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/docs.svg?v=3"><img height="30" alt="Open QuickModel documentation" src="./assets/btn/docs.svg?v=3"></picture></a></td></tr>
@@ -145,6 +146,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <p id="more-projects"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/more-projects-v7.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/more-projects-v7.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/more-projects-v7.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/more-projects-v7.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-v7.svg"><img src="./assets/summary/more-projects-v7.svg" alt="More projects" height="44"></picture></p>
 
 <table width="100%">
+<tr><td colspan="2"><img src="./assets/brand/table-spacer.svg" width="820" height="1" alt=""></td></tr>
 <tr><td colspan="2"><strong>Project</strong></td></tr>
 <tr><td width="58%"><strong>NestJS AI API</strong><br><sub>Typed DTOs, file uploads, streaming and Docker delivery for AI-enabled apps.</sub></td><td width="42%" align="right"><a href="https://github.com/CartagoGit/NestGpt"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/open-repository-v2.svg"><img height="32" alt="Open NestGpt repository" src="./assets/btn/open-repository-v2.svg"></picture></a></td></tr>
 <tr><td><strong>React front-end</strong><br><sub>The client that talks to the NestJS AI API.</sub></td><td align="right"><a href="https://github.com/CartagoGit/ReactGpt"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/open-repository-v2.svg"><img height="32" alt="Open ReactGpt repository" src="./assets/btn/open-repository-v2.svg"></picture></a></td></tr>
@@ -243,6 +245,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
   <img src="./assets/summary/docker-images-v7.svg" alt="Docker images" height="44"></picture></p>
 
 <table width="100%">
+<tr><td colspan="2"><img src="./assets/brand/table-spacer.svg" width="820" height="1" alt=""></td></tr>
 <tr><td colspan="2"><strong>Public images</strong></td></tr>
 <tr><td width="58%"><strong>nodebun</strong><br><sub>Node.js + Bun + fnm</sub><br><img src="https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="24" alt="nodebun pulls"></td><td width="42%" align="right"><a href="https://hub.docker.com/r/cartagodocker/nodebun"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/open-docker-v2.svg"><img height="32" alt="Open nodebun on Docker Hub" src="./assets/btn/open-docker-v2.svg"></picture></a></td></tr>
 <tr><td><strong>zsh</strong><br><sub>Batteries-included shell</sub><br><img src="https://img.shields.io/docker/pulls/cartagodocker/zsh?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="24" alt="zsh pulls"></td><td align="right"><a href="https://hub.docker.com/r/cartagodocker/zsh"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/open-docker-v2.svg"><img height="32" alt="Open zsh on Docker Hub" src="./assets/btn/open-docker-v2.svg"></picture></a></td></tr>

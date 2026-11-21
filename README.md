@@ -169,13 +169,13 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 | Project | Focus | Link |
 | --- | --- | --- |
-| NestJS AI API | Typed DTOs, file uploads, streaming and Docker-based delivery for AI-enabled apps. | <a href="https://github.com/CartagoGit/NestGpt"><img src="./assets/btn/repo.svg?v=2" height="30" alt="NestGpt repository"></a> |
-| React front-end | The client that talks to the NestJS AI API. | <a href="https://github.com/CartagoGit/ReactGpt"><img src="./assets/btn/repo.svg?v=2" height="30" alt="ReactGpt repository"></a> |
-| Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | <a href="https://github.com/CartagoGit/zoneless-calculator"><img src="./assets/btn/repo.svg?v=2" height="30" alt="zoneless-calculator repository"></a> |
+| NestJS AI API | Typed DTOs, file uploads, streaming and Docker-based delivery for AI-enabled apps. | <a href="https://github.com/CartagoGit/NestGpt"><img src="./assets/btn/repo-nestgpt.svg" height="30" alt="NestGpt repository"></a> |
+| React front-end | The client that talks to the NestJS AI API. | <a href="https://github.com/CartagoGit/ReactGpt"><img src="./assets/btn/repo-reactgpt.svg" height="30" alt="ReactGpt repository"></a> |
+| Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | <a href="https://github.com/CartagoGit/zoneless-calculator"><img src="./assets/btn/repo-zoneless.svg" height="30" alt="zoneless-calculator repository"></a> |
 | Modding and content | Tools and content for modifying games: binary formats, localisation and automation. | <a href="https://github.com/CartagoGit/aoe2-mods"><img src="./assets/btn/repo-aoe2.svg?v=2" height="30" alt="Aoe2 mods repository"></a> <a href="https://github.com/CartagoGit/pcfutbol6-mod"><img src="./assets/btn/repo-pcfutbol.svg?v=2" height="30" alt="PC Fútbol 6 mods repository"></a> |
 | AI-assisted game delivery | A Godot/C# football manager built through a proposal → implement → review → release pipeline. | <a href="https://github.com/CartagoGit/player-club-dynasty"><img src="./assets/btn/repo-pcd.svg?v=2" height="30" alt="Player Club Dynasty repository"></a> |
 | Local-first desktop app | A Tauri 2 + Rust + SQLite manager that keeps game keys off the cloud. | <a href="https://github.com/CartagoGit/steam-keys"><img src="./assets/btn/repo-steam-keys.svg?v=2" height="30" alt="Steam Keys repository"></a> |
-| Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><img src="./assets/btn/repo.svg?v=2" height="30" alt="template-angular repository"></a> |
+| Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><img src="./assets/btn/repo-template.svg" height="30" alt="template-angular repository"></a> |
 | Practice repositories | Daily puzzles and katas, one commit per solution. | [![codember-dev](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/codember-dev) [![codewars](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/codewars) |
 
 </details>

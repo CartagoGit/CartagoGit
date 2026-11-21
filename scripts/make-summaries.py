@@ -99,10 +99,9 @@ def bar(icon_file: str, label: str, hint: str, direction: str, light: bool) -> s
     inner, view_box = icon_inner(icon_file, hint_colour)
     label_w = text_width(label)
     hint_w = text_width(hint) * 0.82
-    width = PAD + ICON + GAP + label_w + GAP + hint_w + CHEVRON_GAP + CHEVRON + PAD
+    width = PAD + ICON + GAP + label_w + GAP + hint_w + PAD
     baseline = HEIGHT / 2 + FONT_SIZE * 0.35
     hint_x = PAD + ICON + GAP + label_w + GAP
-    chev_x = width - PAD - CHEVRON
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width:.0f}" height="{HEIGHT}" '
         f'viewBox="0 0 {width:.0f} {HEIGHT}" role="img" aria-label="{label}">'
@@ -116,9 +115,6 @@ def bar(icon_file: str, label: str, hint: str, direction: str, light: bool) -> s
         f'<text x="{hint_x:.1f}" y="{baseline:.1f}" fill="{hint_colour}" '
         f'font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="{FONT_SIZE * 0.82:.1f}" '
         f'font-weight="600">{hint}</text>'
-        f'<g transform="translate({chev_x:.1f},{(HEIGHT - CHEVRON) / 2})">'
-        + chevron(direction, hint_colour)
-        + "</g>"
         f"</svg>"
     )
 

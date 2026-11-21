@@ -331,6 +331,11 @@ Una revision externa del portafolio señalo varios puntos; se aplicaron por orde
    de menu (44×44) que abre un panel con todas las secciones y una accion **Contactar**
    visible. Se cierra con Escape o al navegar. Ojo: `.mobile-nav[hidden] { display: none }`
    es necesario porque el `display: grid` de la clase pisa el atributo `hidden`.
+   **Cache del CSS:** GitHub Pages sirve `styles.css` con cache larga; un visitante podia
+   cargar el HTML nuevo (con el boton) contra el CSS viejo (sin sus reglas) y ver un boton
+   sin estilos en escritorio. El enlace al CSS lleva ahora un **hash de su contenido**
+   (`styles.css?v=<sha1[:10]>`, calculado en el generador), asi la URL cambia exactamente
+   cuando cambia el fichero.
 2. **CTAs de conversion.** El hero tenia "Ver el trabajo" y "Que hago" (explorar). Ahora:
    **Ver proyectos** (primario), **Contactar** y **Ver CV ↗** (enlaza a print-cv).
 3. **Contraste AA.** El boton primario `#4d8dff` con blanco daba 3.2:1. Se oscurecio a

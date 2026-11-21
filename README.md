@@ -21,7 +21,7 @@
 
 ---
 
-<p id="what-i-build"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/what-i-build-v5.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/what-i-build-v5.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/what-i-build-v5.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/what-i-build-v5.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/what-i-build-v5.svg"><img src="./assets/summary/what-i-build-v5.svg" alt="What I build" height="44"></picture></p>
+<p id="what-i-build"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/what-i-build-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/what-i-build-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/what-i-build-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/what-i-build-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/what-i-build-v6.svg"><img src="./assets/summary/what-i-build-v6.svg" alt="What I build" height="44"></picture></p>
 
 **Front-end for operational systems.** ERP, warehouse logistics, workforce and attendance: the same
 screens eight hours a day, with role-based permissions, complex validated forms and listings that
@@ -42,7 +42,7 @@ experiments built in my own time. My professional work is not published here.
 
 ---
 
-<p id="featured-projects"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/featured-projects-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/featured-projects-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/featured-projects-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/featured-projects-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/featured-projects-v4.svg"><img src="./assets/summary/featured-projects-v4.svg" alt="Featured Projects" height="44"></picture></p>
+<p id="featured-projects"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/featured-projects-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/featured-projects-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/featured-projects-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/featured-projects-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/featured-projects-v6.svg"><img src="./assets/summary/featured-projects-v6.svg" alt="Featured Projects" height="44"></picture></p>
 
 <table>
 <tr>
@@ -117,7 +117,7 @@ An Angular application with server-side rendering, unit and integration tests an
 
 ---
 
-<p id="professional-experience"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/professional-experience-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/professional-experience-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/professional-experience-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/professional-experience-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/professional-experience-v4.svg"><img src="./assets/summary/professional-experience-v4.svg" alt="Professional experience" height="44"></picture></p>
+<p id="professional-experience"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/professional-experience-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/professional-experience-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/professional-experience-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/professional-experience-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/professional-experience-v6.svg"><img src="./assets/summary/professional-experience-v6.svg" alt="Professional experience" height="44"></picture></p>
 
 - **Operational front-end delivery.** Business applications for commercial, financial, inventory, logistics and workforce processes. Complex states, role-based permissions, reporting and business rules that must not break between releases.
 - **Web and Android.** Angular and Ionic applications, packaged for Android with Capacitor, plus Vue and Quasar for the management panels and progressive web apps for what has to work without being installed. Interfaces designed for repeated, high-context use.
@@ -125,7 +125,7 @@ An Angular application with server-side rendering, unit and integration tests an
 - **Delivery foundations.** Dockerised development environments, GitLab CI and GitHub Actions pipelines, container images, and focused test coverage on the parts that actually break.
 - **AI-assisted, human-owned.** I use AI assistants for implementation; the architecture decisions, the code review and the acceptance criteria are mine.
 
-<p id="beyond-the-front-end"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/beyond-front-end-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/beyond-front-end-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/beyond-front-end-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/beyond-front-end-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/beyond-front-end-v4.svg"><img src="./assets/summary/beyond-front-end-v4.svg" alt="Beyond the front-end" height="44"></picture></p>
+<p id="beyond-the-front-end"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/beyond-front-end-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/beyond-front-end-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/beyond-front-end-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/beyond-front-end-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/beyond-front-end-v6.svg"><img src="./assets/summary/beyond-front-end-v6.svg" alt="Beyond the front-end" height="44"></picture></p>
 
 - **Developer tooling.** An MCP server with 62 capabilities, a model serialization library and a static analysis engine, built because the tools I wanted did not exist.
 - **Backend and runtime.** NestJS, Bun and Node for the services that sit behind the interfaces; SQLite and PostgreSQL for the data.
@@ -134,7 +134,7 @@ An Angular application with server-side rendering, unit and integration tests an
 
 ---
 
-<p id="evidence"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/evidence-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/evidence-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/evidence-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/evidence-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/evidence-v4.svg"><img src="./assets/summary/evidence-v4.svg" alt="Evidence" height="44"></picture></p>
+<p id="evidence"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/evidence-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/evidence-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/evidence-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/evidence-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/evidence-v6.svg"><img src="./assets/summary/evidence-v6.svg" alt="Evidence" height="44"></picture></p>
 
 **89 repositories** — 68 public and 21 private. **26** of them are active right now, and the
 account has been publishing since October 2021.
@@ -155,7 +155,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 ---
 
-<p id="how-i-work"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/how-i-work-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/how-i-work-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/how-i-work-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/how-i-work-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/how-i-work-v4.svg"><img src="./assets/summary/how-i-work-v4.svg" alt="How I work" height="44"></picture></p>
+<p id="how-i-work"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/how-i-work-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/how-i-work-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/how-i-work-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/how-i-work-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/how-i-work-v6.svg"><img src="./assets/summary/how-i-work-v6.svg" alt="How I work" height="44"></picture></p>
 
 - **Proposals before code.** Every non-trivial change starts as a written proposal with a goal, a design, slices, acceptance criteria and a risk section. Nothing lands without a machine-checkable acceptance test.
 - **Tests as a ratchet.** Coverage thresholds only ever move upwards, and the script that enforces them fails the build when they slip.
@@ -167,7 +167,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 ---
 
-<p id="github-activity"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/github-activity-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/github-activity-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/github-activity-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/github-activity-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/github-activity-v4.svg"><img src="./assets/summary/github-activity-v4.svg" alt="GitHub Activity" height="44"></picture></p>
+<p id="github-activity"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/github-activity-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/github-activity-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/github-activity-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/github-activity-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/github-activity-v6.svg"><img src="./assets/summary/github-activity-v6.svg" alt="GitHub Activity" height="44"></picture></p>
 
 <p align="center">
   <picture>
@@ -196,7 +196,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 ---
 
-<p id="more-projects"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/more-projects-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/more-projects-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/more-projects-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/more-projects-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-v4.svg"><img src="./assets/summary/more-projects-v4.svg" alt="More projects" height="44"></picture></p>
+<p id="more-projects"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/more-projects-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/more-projects-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/more-projects-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/more-projects-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-v6.svg"><img src="./assets/summary/more-projects-v6.svg" alt="More projects" height="44"></picture></p>
 
 | Project | Focus | Link |
 | --- | --- | --- |
@@ -209,7 +209,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 | Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-template.svg?v=3"><img height="30" alt="template-angular repository" src="./assets/btn/repo-template.svg?v=3"></picture></a> |
 | Practice repositories | Daily puzzles and katas, one commit per solution. | <a href="https://github.com/CartagoGit/codember-dev"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-codember.svg?v=3"><img height="30" alt="codember-dev repository" src="./assets/btn/repo-codember.svg?v=3"></picture></a> <a href="https://github.com/CartagoGit/codewars"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-codewars.svg?v=3"><img height="30" alt="codewars repository" src="./assets/btn/repo-codewars.svg?v=3"></picture></a> |
 
-<p id="core-stack"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/core-stack-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/core-stack-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/core-stack-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/core-stack-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v4.svg"><img src="./assets/summary/core-stack-v4.svg" alt="Core stack" height="44"></picture></p>
+<p id="core-stack"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/core-stack-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/core-stack-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/core-stack-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/core-stack-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v6.svg"><img src="./assets/summary/core-stack-v6.svg" alt="Core stack" height="44"></picture></p>
 
 **Front-end — my base**
 
@@ -268,7 +268,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-glm.svg?v=3"><img height="30" alt="GLM" src="./assets/btn/tech-glm.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mimo.svg?v=3"><img height="30" alt="MAI Code" src="./assets/btn/tech-mai.svg?v=3"></picture>
 
-<p id="docker-images"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/docker-images-v4.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/docker-images-v4.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/docker-images-v4.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/docker-images-v4.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v4.svg"><img src="./assets/summary/docker-images-v4.svg" alt="Docker images" height="44"></picture></p>
+<p id="docker-images"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/docker-images-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/docker-images-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/docker-images-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/docker-images-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v6.svg"><img src="./assets/summary/docker-images-v6.svg" alt="Docker images" height="44"></picture></p>
 
 Public development images for reproducible environments. Pull counts are live Docker Hub values.
 

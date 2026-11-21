@@ -44,18 +44,19 @@ BADGE_HEIGHT = 22
 RIGHT_PAD = 12
 
 # (section icon, label, compact hint, output name)
-# Every heading has a fresh -v4 asset name to bypass GitHub's image cache.
+# Every heading has a unique icon and a fresh -v6 asset name so GitHub's
+# image proxy cannot reuse an earlier render with a different symbol.
 SECTIONS = [
-    ("section-work.svg", "What I build", "Delivery", "what-i-build-v5"),
-    ("section-more-projects.svg", "Featured Projects", "6 highlighted", "featured-projects-v4"),
-    ("package.svg", "Professional experience", "10+ years", "professional-experience-v4"),
-    ("model-context-protocol.svg", "Beyond the front-end", "Tools + runtime", "beyond-front-end-v4"),
-    ("github.svg", "Evidence", "89 repositories", "evidence-v4"),
-    ("docs.svg", "How I work", "7 principles", "how-i-work-v4"),
-    ("github-actions.svg", "GitHub Activity", "Live snapshots", "github-activity-v4"),
-    ("section-more-projects.svg", "More projects", "8 repositories", "more-projects-v4"),
-    ("section-core-stack.svg", "Core stack", "40+ technologies", "core-stack-v4"),
-    ("section-docker-images.svg", "Docker images", "5 public images", "docker-images-v4"),
+    ("section-work.svg", "What I build", "Delivery", "what-i-build-v6"),
+    ("section-featured.svg", "Featured Projects", "6 highlighted", "featured-projects-v6"),
+    ("section-experience.svg", "Professional experience", "10+ years", "professional-experience-v6"),
+    ("section-beyond.svg", "Beyond the front-end", "Tools + runtime", "beyond-front-end-v6"),
+    ("section-evidence.svg", "Evidence", "89 repositories", "evidence-v6"),
+    ("section-process.svg", "How I work", "7 principles", "how-i-work-v6"),
+    ("section-activity.svg", "GitHub Activity", "Live snapshots", "github-activity-v6"),
+    ("section-more-projects.svg", "More projects", "8 repositories", "more-projects-v6"),
+    ("section-core-stack.svg", "Core stack", "40+ technologies", "core-stack-v6"),
+    ("section-docker-images.svg", "Docker images", "5 public images", "docker-images-v6"),
 ]
 
 

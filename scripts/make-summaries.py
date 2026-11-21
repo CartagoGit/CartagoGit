@@ -8,7 +8,7 @@ and content hint.
 
 The native disclosure triangle cannot be hidden, but it CAN be moved to
 the right edge — where an accordion's chevron belongs — with
-`<summary dir="rtl" align="left">` plus `width="97%"` on the image:
+`<summary dir="rtl" align="left">` plus `width="93%"` on the image:
 GitHub keeps those three attributes, the marker takes the last ~26px of
 the line and the bar fills the rest. The bar is drawn WITHOUT a viewBox
 so that stretching it to the column width only widens the background
@@ -42,7 +42,7 @@ GAP = 8
 FONT_SIZE = 14
 HINT_SIZE = 11
 # Room for GitHub's native disclosure marker, which sits on the same line
-# at the right edge of the bar (summary dir="rtl" + img width="97%").
+# at the right edge of the bar (summary dir="rtl" + img width="93%").
 MARKER = 24
 
 # (section icon, label, hint, output name)

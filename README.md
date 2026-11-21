@@ -168,7 +168,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 ---
 
 <details>
-<summary dir="rtl" align="left"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-v2.svg"><img src="./assets/summary/more-projects-v2.svg" alt="More projects" width="97%" height="38"></picture></summary>
+<summary dir="rtl" align="left"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-v2.svg"><img src="./assets/summary/more-projects-v2.svg" alt="More projects" width="93%" height="38"></picture></summary>
 
 | Project | Focus | Link |
 | --- | --- | --- |
@@ -184,7 +184,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 </details>
 
 <details>
-<summary dir="rtl" align="left"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v2.svg"><img src="./assets/summary/core-stack-v2.svg" alt="Core stack" width="97%" height="38"></picture></summary>
+<summary dir="rtl" align="left"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v2.svg"><img src="./assets/summary/core-stack-v2.svg" alt="Core stack" width="93%" height="38"></picture></summary>
 
 **Front-end — my base**
 
@@ -247,7 +247,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 </details>
 
 <details>
-<summary dir="rtl" align="left"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v2.svg"><img src="./assets/summary/docker-images-v2.svg" alt="Docker images" width="97%" height="38"></picture></summary>
+<summary dir="rtl" align="left"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v2.svg"><img src="./assets/summary/docker-images-v2.svg" alt="Docker images" width="93%" height="38"></picture></summary>
 
 Public development images for reproducible environments. Pull counts are live Docker Hub values.
 

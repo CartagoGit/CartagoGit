@@ -299,11 +299,11 @@ Decisiones de Mario, que se aplican tal cual:
    fichero. `assets/cartago-banner.png` entra en el repositorio tal cual lo entrega.
 2. **Va encima de "En una linea"**, no detras de la pagina: un bloque `.hero__aside` con la
    imagen por encima del panel de datos.
-3. **Se funde con el fondo, sin forma propia.** El difuminado son **dos mascaras lineales
-   intersectadas** (una por eje): cada borde se disuelve en su propio eje y las esquinas en
-   los dos. Nada de elipses — una mascara radial se leia como un huevo. Los nucleos solidos
-   son largos (22–78% en horizontal, 24–76% en vertical) para que el logo se lea entero.
-   Sin borde, sin sombra, en los dos temas.
+3. **Se funde con el fondo, sin forma propia.** En oscuro, `mix-blend-mode: screen` levanta el
+   navy del arte y deja solo la marca iluminada; una mascara ovalada suave la disuelve en la
+   pagina. En claro, compuesto normal a opacidad .32 con una mascara mas cerrada: una estampa
+   tenue sobre el papel, sin rectangulo y con el wordmark legible. Nada de elipses apretadas —
+   se leian como un huevo. Sin borde, sin sombra, en los dos temas.
 4. **No esta en el fondo del encabezado ni del hero.** Se elimino la capa `.site-header::before`
    que lo repetia detras de la navegacion, y tambien la del `.hero` en tema claro. La imagen
    solo vive en el `.hero__aside`.
@@ -331,6 +331,30 @@ visibles) destapo tres fugas que ya estan corregidas: los **titulos de las tarje
 profesionales** salian siempre en ingles, las **notas de evidencia** solo en español, y el
 **skip-link** estaba fijado en ingles. Los valores del panel "En una linea" tambien son
 bilingues ahora.
+
+### Tema claro y oscuro en el README
+
+GitHub no deja aplicar CSS al README, pero si respeta `<picture>` con
+`media="(prefers-color-scheme: light)"`. Cada boton tiene su variante clara en
+`assets/btn/light/` (ficha `#f2f5fb`, borde `#bfcee6`, etiqueta `#12233f`; las marcas blancas
+pasan a su version oscura — GitHub negro, como en github.com). El README sirve la variante
+correcta por tema con `<picture><source …><img …></picture>`.
+
+Las **graficas de actividad** se guardan en el repositorio (`assets/activity/`), en los dos
+temas, con esquinas redondeadas (12 px) y la paleta de la ficha. `scripts/refresh-activity.py`
+las descarga y **hornea las animaciones de entrada a su estado final** (opacity 1, font-size
+final, sin keyframes): dentro de un `<img>` algunos renderizadores no ejecutan la animacion y
+la grafica se veia en blanco. Un workflow semanal (`refresh-activity.yml`, lunes 06:00 UTC)
+las refresca y solo hace commit si cambiaron.
+
+KPI añadido: **Most Used Languages** (top-langs, layout compact), con la misma ficha y radios
+que el resto.
+
+### Correo
+
+`cv2mario@gmail.com` esta en la tarjeta de contacto (con icono de sobre) y en el footer del
+portafolio, como enlace `mailto:`. En el README de GitHub no hace falta: ya sale en la barra
+lateral del perfil.
 
 El sitio sigue sin dependencias: se publica desde `main` tal cual en GitHub Pages.
 

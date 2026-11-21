@@ -4,6 +4,19 @@ All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 and the project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-11-21
+
+### Added
+
+- `AGENTS.md`: branch model (`develop` to work, `main` to publish),
+  semantic versioning policy with a patch per publish, release
+  checklist and repository conventions for agents and humans.
+
+### Fixed
+
+- The profile banner now lives in `assets/site/` instead of floating
+  at the root of `assets/`.
+
 ## [1.0.0] - 2026-11-21
 
 First stable release of the profile: the README layout, the asset

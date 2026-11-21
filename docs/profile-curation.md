@@ -356,20 +356,35 @@ inicial de tarjetas, y SEO bilingue con URLs diferenciadas por idioma.
 
 Un `<summary>` suelto se leia como texto plano y nadie sabia que se podia abrir. Ahora cada
 desplegable lleva una **barra-ficha** (imagen SVG generada por `scripts/make-summaries.py`):
-icono de la seccion, etiqueta, una pista de contenido ("8 repositories", "40+ technologies",
-"5 public images") y un chevron hacia abajo. En los dos temas, servida con `<picture>`.
+icono de la seccion, etiqueta y una pista de contenido ("8 repositories", "40+ technologies",
+"5 public images"), en los dos temas, servida con `<picture>`.
 
 **Limitacion de GitHub:** el sanitizador del markdown **elimina `class`, `data-*` y `style`**
 de `<summary>`, `<details>` y `<div>` (solo conserva `style` en `<img>`, y lo inyecta su JS
 en runtime). Por tanto **no se puede ocultar el marcador nativo** (`display:list-item` con
-`::marker`) ni condicionar nada al estado abierto/cerrado desde el README. Se probaron:
-`class="details-reset"` (eliminado), `data-fold` (eliminado), `style="display:block"` en
-summary (eliminado), div envolvente con style (eliminado), margen negativo en img (solo
-funciona inyectado en vivo, no en el HTML servido). **Solucion final:** la barra lleva
-icono + etiqueta + pista de contenido, **sin chevron propio**; el triangulo nativo de GitHub
-es la unica flecha y ya indica el estado (▶ cerrado, ▼ abierto). **Transicion al desplegar:**
-imposible en el README de GitHub; en el portafolio los `<details>` de caso si tienen una
-animacion de entrada (`fold-in`).
+`::marker`) ni inyectar transiciones CSS. Se probaron y descartaron: `class="details-reset"`,
+`data-fold`, `style="display:block"` en summary, div envolvente con style, margen negativo en
+img (solo funciona inyectado en vivo, no en el HTML servido).
+
+**Solucion final (verificada en github.com, escritorio y movil 390px):** el sanitizador SI
+conserva `dir`, `align` y `width`. Con `<summary dir="rtl" align="left">` el marcador nativo
+pasa al **extremo derecho de la linea** — donde va el chevron de un acordeon — y con
+`width="93%"` en la imagen la barra ocupa el resto de la linea sin partirse en dos. La barra
+se dibuja **sin `viewBox`** (unidades de usuario = pixeles CSS) y con el fondo
+`<rect width="99%">`: al estirarse al ancho de la columna solo crece el fondo; icono y texto
+no se deforman. El ancho intrinseco se mantiene bajo ~270px (estimador de texto calibrado con
+metricas Liberation Sans Bold) para que en moviles la imagen nunca se escale hacia abajo.
+El marcador usa el color de texto de GitHub, visible en los dos temas. **Transicion al
+desplegar:** imposible en el README de GitHub; en el portafolio los `<details>` de caso si
+tienen una animacion de entrada (`fold-in`).
+
+**Graficas de actividad:** los SVG de los servicios traen animaciones de entrada; en un
+`<img>` de README algunos renderers no las ejecutan y la grafica sale en blanco o a medias.
+`scripts/refresh-activity.py` ahora **hornea cada animacion en su estado final**: lee el
+ultimo frame de cada `@keyframes` (escaner de llaves equilibradas) y aplica esas declaraciones
+a las reglas que la usan, antes de borrar la animacion. Sin esto, la linea de contribucion
+quedaba en `stroke-dashoffset: 5000` (invisible, solo puntos) y la letra del rango quedaba
+descentrada (`translate(-5px, 5px)` lo aplicaba el keyframe, no la regla).
 
 ### Tablet y seccion profesional compacta
 

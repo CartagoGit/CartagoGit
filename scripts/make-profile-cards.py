@@ -33,6 +33,7 @@ EVIDENCE = [
     ("quickmodel", "QuickModel", "550 commits", "49K source", "104K tests", "213%", "assets/quickmodel-rounded.png"),
     ("pcd", "Player Club Dynasty", "294 commits", "37K source", "14K tests", "38%", "assets/brand/godot.svg"),
     ("steam-keys", "Steam Keys", "117 commits", "34K source", "12K tests", "34%", "assets/brand/steam-keys.svg"),
+    ("aoe2", "Aoe2 mods", "1,123 commits", "32K source", "7K tests", "23%", "assets/brand/mods.svg"),
     ("portfolio", "Cartago", "164 commits", "12K source", "1K tests", "9%", "assets/cartago.svg"),
     ("print-cv", "Print CV", "133 commits", "3K source", "230 tests", "8%", "assets/print-cv.svg"),
 ]
@@ -67,17 +68,6 @@ DOCKER_IMAGES = [
     ("angular", "angular", "Angular build environment", "Reproducible front-end delivery"),
 ]
 
-EXTRA_EVIDENCE = [
-    ("keyer", "Keyer", "Published npm CLI", "Security", "assets/keyer.svg"),
-    ("nestgpt", "NestGpt", "Typed AI API", "NestJS", "assets/brand/nestjs.svg"),
-    ("reactgpt", "ReactGpt", "API client", "React", "assets/brand/react.svg"),
-    ("zoneless", "Zoneless Angular", "Unit + integration tests", "Angular", "assets/brand/angular.svg"),
-    ("template", "Angular template", "Reusable workspace", "Tooling", "assets/brand/angular.svg"),
-    ("codember", "Codember", "Daily puzzle work", "Practice", "assets/brand/typescript.svg"),
-    ("codewars", "Codewars", "Focused katas", "Practice", "assets/brand/typescript.svg"),
-    ("keyer-npm", "Keyer on npm", "Public package", "Distribution", "assets/brand/npm.svg"),
-]
-
 
 def embedded_asset(path: str, x: int, y: int, size: int) -> str:
     """Embed the complete original image so no nested SVG styles are lost."""
@@ -98,22 +88,31 @@ def evidence_card(name: str, title: str, commits: str, source: str, tests: str, 
 def project_card(name: str, title: str, subtitle: str, detail: str, asset: str, light: bool, width: int) -> str:
     top, bottom, border, text, muted, accent = (LIGHT_TOP, LIGHT_BOTTOM, LIGHT_BORDER, LIGHT_TEXT, LIGHT_MUTED, LIGHT_ACCENT) if light else (DARK_TOP, DARK_BOTTOM, DARK_BORDER, DARK_TEXT, DARK_MUTED, DARK_ACCENT)
     title, subtitle, detail = map(html.escape, (title, subtitle, detail))
-    icon = embedded_asset(asset, 16, 16, 54)
-    compact = width < 400
-    title_size = 16 if compact else 18
-    subtitle_size = 11 if compact else 12
-    detail_size = 10.5 if compact else 11.5
+    compact = width < 280
+    icon_size = 40 if compact else 54
+    icon_x = 12
+    text_x = 60 if compact else 84
+    icon = embedded_asset(asset, icon_x, 16, icon_size)
+    title_size = 13 if compact else 18
+    subtitle_size = 9.5 if compact else 12
+    detail_size = 9.5 if compact else 11.5
     height = 124
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{title}: {subtitle}"><defs><linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bottom}"/></linearGradient></defs><rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="12" fill="url(#tile)" stroke="{border}"/>{icon}<text x="84" y="37" fill="{text}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{title_size}" font-weight="700">{title}</text><text x="84" y="58" fill="{accent}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{subtitle_size}" font-weight="600">{subtitle}</text><line x1="16" y1="82" x2="{width-16}" y2="82" stroke="{border}"/><text x="18" y="105" fill="{muted}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{detail_size}">{detail}</text></svg>'''
+    body = f'M12 .5H{width-1}V{height-0.5}H12Q.5 {height-0.5} .5 12V12Q.5 .5 12 .5Z'
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{title}: {subtitle}"><defs><linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bottom}"/></linearGradient></defs><path d="{body}" fill="url(#tile)" stroke="{border}"/>{icon}<text x="{text_x}" y="37" fill="{text}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{title_size}" font-weight="700">{title}</text><text x="{text_x}" y="58" fill="{accent}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{subtitle_size}" font-weight="600">{subtitle}</text><line x1="16" y1="82" x2="{width-1}" y2="82" stroke="{border}"/><text x="18" y="105" fill="{muted}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{detail_size}">{detail}</text></svg>'''
 
 
 def compact_card(title: str, subtitle: str, detail: str, asset: str, light: bool, width: int) -> str:
     top, bottom, border, text, muted, accent = (LIGHT_TOP, LIGHT_BOTTOM, LIGHT_BORDER, LIGHT_TEXT, LIGHT_MUTED, LIGHT_ACCENT) if light else (DARK_TOP, DARK_BOTTOM, DARK_BORDER, DARK_TEXT, DARK_MUTED, DARK_ACCENT)
     title, subtitle, detail = map(html.escape, (title, subtitle, detail))
-    icon = embedded_asset(asset, 14, 12, 42)
+    compact = width < 240
+    icon_size = 34 if compact else 42
+    text_x = 55 if compact else 68
+    icon = embedded_asset(asset, 12, 12, icon_size)
     height = 92
-    subtitle_size = 10.5 if width < 400 else 11.5
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{title}: {subtitle}"><defs><linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bottom}"/></linearGradient></defs><rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="10" fill="url(#tile)" stroke="{border}"/>{icon}<text x="68" y="30" fill="{text}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">{title}</text><text x="68" y="49" fill="{accent}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{subtitle_size}" font-weight="600">{subtitle}</text><line x1="14" y1="64" x2="{width-14}" y2="64" stroke="{border}"/><text x="16" y="82" fill="{muted}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10.5">{detail}</text></svg>'''
+    title_size = 12.5 if compact else 15
+    subtitle_size = 9.5 if compact else 11.5
+    body = f'M10 .5H{width-1}V{height-0.5}H10Q.5 {height-0.5} .5 10V10Q.5 .5 10 .5Z'
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{title}: {subtitle}"><defs><linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bottom}"/></linearGradient></defs><path d="{body}" fill="url(#tile)" stroke="{border}"/>{icon}<text x="{text_x}" y="30" fill="{text}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{title_size}" font-weight="700">{title}</text><text x="{text_x}" y="49" fill="{accent}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{subtitle_size}" font-weight="600">{subtitle}</text><line x1="14" y1="64" x2="{width-1}" y2="64" stroke="{border}"/><text x="16" y="82" fill="{muted}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">{detail}</text></svg>'''
 
 
 def docker_card(title: str, subtitle: str, detail: str, light: bool, width: int) -> str:
@@ -132,35 +131,61 @@ def action_button(label: str, icon_path: str, light: bool) -> str:
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="112" height="32" viewBox="0 0 112 32"><rect x=".5" y=".5" width="111" height="31" rx="8" fill="{background}" stroke="{border}"/>{icon}<text x="34" y="21" fill="{colour}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">{html.escape(label)}</text></svg>'''
 
 
+def action_dock(icon_path: str, light: bool, height: int) -> str:
+    top, bottom, border = (LIGHT_TOP, LIGHT_BOTTOM, LIGHT_BORDER) if light else (DARK_TOP, DARK_BOTTOM, DARK_BORDER)
+    colour = LIGHT_ACCENT if light else DARK_ACCENT
+    icon = embedded_asset(icon_path, 8, (height - 18) // 2, 18)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="34" height="{height}" viewBox="0 0 34 {height}" role="img"><rect x="0" y=".5" width="34" height="{height-1}" fill="{bottom}" stroke="{border}"/><line x1="0" y1="1" x2="0" y2="{height-1}" stroke="{colour}" opacity=".35"/>{icon}</svg>'''
+
+
+def card_cap(light: bool, height: int) -> str:
+    bottom, border = (LIGHT_BOTTOM, LIGHT_BORDER) if light else (DARK_BOTTOM, DARK_BORDER)
+    radius = 11 if height > 100 else 9
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="6" height="{height}" viewBox="0 0 6 {height}" aria-hidden="true"><path d="M0 .5H{6-radius}Q5.5 .5 5.5 {radius}V{height-radius}Q5.5 {height-.5} {6-radius} {height-.5}H0Z" fill="{bottom}" stroke="{border}"/></svg>'''
+
+
 def main() -> None:
-    for prefix, width in [("", 520), ("mid/", 480), ("narrow/", 293), ("tiny/", 223)]:
+    for prefix, total_width, action_count in [("", 390, 2), ("mid/", 350, 2), ("narrow/", 293, 2), ("tiny/", 223, 2)]:
         out = OUT / prefix if prefix else OUT
         (out / "light").mkdir(parents=True, exist_ok=True)
+        body_width = total_width - action_count * 34 - 6
         for p in PROJECTS:
-            (out / f"project-{p[0]}-v3.svg").write_text(project_card(*p, light=False, width=width))
-            (out / "light" / f"project-{p[0]}-v3.svg").write_text(project_card(*p, light=True, width=width))
+            (out / f"project-{p[0]}-v4.svg").write_text(project_card(*p, light=False, width=body_width))
+            (out / "light" / f"project-{p[0]}-v4.svg").write_text(project_card(*p, light=True, width=body_width))
+        compact_width = total_width - 34 - 6
         for card in MORE_PROJECTS:
             name, title, subtitle, detail, asset = card
-            (out / f"more-{name}-v1.svg").write_text(compact_card(title, subtitle, detail, asset, False, width))
-            (out / "light" / f"more-{name}-v1.svg").write_text(compact_card(title, subtitle, detail, asset, True, width))
+            (out / f"more-{name}-v2.svg").write_text(compact_card(title, subtitle, detail, asset, False, compact_width))
+            (out / "light" / f"more-{name}-v2.svg").write_text(compact_card(title, subtitle, detail, asset, True, compact_width))
         for card in DOCKER_IMAGES:
             name, title, subtitle, detail = card
-            (out / f"docker-{name}-v1.svg").write_text(docker_card(title, subtitle, detail, False, width))
-            (out / "light" / f"docker-{name}-v1.svg").write_text(docker_card(title, subtitle, detail, True, width))
-        for card in EXTRA_EVIDENCE:
-            name, title, subtitle, detail, asset = card
-            (out / f"evidence-focus-{name}-v1.svg").write_text(evidence_focus_card(title, subtitle, detail, asset, False, width))
-            (out / "light" / f"evidence-focus-{name}-v1.svg").write_text(evidence_focus_card(title, subtitle, detail, asset, True, width))
+            (out / f"docker-{name}-v2.svg").write_text(docker_card(title, subtitle, detail, False, compact_width))
+            (out / "light" / f"docker-{name}-v2.svg").write_text(docker_card(title, subtitle, detail, True, compact_width))
     for e in EVIDENCE:
-        (OUT / f"evidence-{e[0]}-v2.svg").write_text(evidence_card(*e, light=False))
-        (OUT / "light" / f"evidence-{e[0]}-v2.svg").write_text(evidence_card(*e, light=True))
+        (OUT / f"evidence-{e[0]}-v3.svg").write_text(evidence_card(*e, light=False))
+        (OUT / "light" / f"evidence-{e[0]}-v3.svg").write_text(evidence_card(*e, light=True))
+    dock_icons = {
+        "repository": "assets/brand/github.svg",
+        "releases": "assets/brand/releases.svg",
+        "docs": "assets/brand/docs.svg",
+        "npm": "assets/brand/npm.svg",
+        "live": "assets/brand/live.svg",
+        "docker": "assets/brand/docker.svg",
+    }
+    for name, icon_path in dock_icons.items():
+        for height, suffix in [(124, "project"), (92, "compact")]:
+            (ASSETS / "btn" / f"{name}-{suffix}-dock-v4.svg").write_text(action_dock(icon_path, False, height))
+            (ASSETS / "btn" / "light" / f"{name}-{suffix}-dock-v4.svg").write_text(action_dock(icon_path, True, height))
+    for height, suffix in [(124, "project"), (92, "compact")]:
+        (ASSETS / "btn" / f"card-cap-{suffix}-v4.svg").write_text(card_cap(False, height))
+        (ASSETS / "btn" / "light" / f"card-cap-{suffix}-v4.svg").write_text(card_cap(True, height))
     for name, label, icon_path in [
         ("open-repository-v2", "Repository", "assets/brand/github.svg"),
         ("open-docker-v2", "Docker Hub", "assets/brand/docker.svg"),
     ]:
         (ASSETS / "btn" / f"{name}.svg").write_text(action_button(label, icon_path, False))
         (ASSETS / "btn" / "light" / f"{name}.svg").write_text(action_button(label, icon_path, True))
-    print(f"wrote {len(PROJECTS)} featured, {len(MORE_PROJECTS)} more, {len(DOCKER_IMAGES)} docker and {len(EVIDENCE)+len(EXTRA_EVIDENCE)} evidence cards")
+    print(f"wrote {len(PROJECTS)} featured, {len(MORE_PROJECTS)} more, {len(DOCKER_IMAGES)} docker and {len(EVIDENCE)} measured evidence cards")
 
 
 if __name__ == "__main__":

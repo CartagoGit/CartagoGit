@@ -132,6 +132,15 @@ def action_button(label: str, icon_path: str, light: bool) -> str:
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="112" height="32" viewBox="0 0 112 32"><rect x=".5" y=".5" width="111" height="31" rx="8" fill="{background}" stroke="{border}"/>{icon}<text x="34" y="21" fill="{colour}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">{html.escape(label)}</text></svg>'''
 
 
+def compact_action_button(label: str, icon_path: str, light: bool) -> str:
+    background = "#f5f8fd" if light else "#12223a"
+    border = "#bfcee6" if light else "#2b4786"
+    colour = "#1c5ed4" if light else "#7fb2ff"
+    width = max(48, 28 + len(label) * 6)
+    icon = embedded_asset(icon_path, 7, 6, 14)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="28" viewBox="0 0 {width} 28"><rect x=".5" y=".5" width="{width-1}" height="27" rx="7" fill="{background}" stroke="{border}"/>{icon}<text x="27" y="18.5" fill="{colour}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10.5" font-weight="700">{html.escape(label)}</text></svg>'''
+
+
 def main() -> None:
     for prefix, width in [("", 520), ("mid/", 480), ("narrow/", 293), ("tiny/", 223)]:
         out = OUT / prefix if prefix else OUT
@@ -155,11 +164,15 @@ def main() -> None:
         (OUT / f"evidence-{e[0]}-v2.svg").write_text(evidence_card(*e, light=False))
         (OUT / "light" / f"evidence-{e[0]}-v2.svg").write_text(evidence_card(*e, light=True))
     for name, label, icon_path in [
-        ("open-repository-v2", "Repository", "assets/brand/github.svg"),
-        ("open-docker-v2", "Docker Hub", "assets/brand/docker.svg"),
+        ("repo-v3", "Repo", "assets/brand/github.svg"),
+        ("releases-v3", "Release", "assets/brand/releases.svg"),
+        ("docs-v3", "Docs", "assets/brand/docs.svg"),
+        ("npm-v3", "npm", "assets/brand/npm.svg"),
+        ("live-v3", "Live", "assets/brand/live.svg"),
+        ("docker-v3", "Docker", "assets/brand/docker.svg"),
     ]:
-        (ASSETS / "btn" / f"{name}.svg").write_text(action_button(label, icon_path, False))
-        (ASSETS / "btn" / "light" / f"{name}.svg").write_text(action_button(label, icon_path, True))
+        (ASSETS / "btn" / f"{name}.svg").write_text(compact_action_button(label, icon_path, False))
+        (ASSETS / "btn" / "light" / f"{name}.svg").write_text(compact_action_button(label, icon_path, True))
     print(f"wrote {len(PROJECTS)} featured, {len(MORE_PROJECTS)} more, {len(DOCKER_IMAGES)} docker and {len(EVIDENCE)+len(EXTRA_EVIDENCE)} evidence cards")
 
 

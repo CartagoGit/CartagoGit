@@ -185,6 +185,86 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 <p align="center"><picture><source media="(max-width: 350px) and (prefers-color-scheme: light)" srcset="./assets/cards/tiny/light/more-codewars-v1.svg"><source media="(max-width: 350px)" srcset="./assets/cards/tiny/more-codewars-v1.svg"><source media="(max-width: 799px) and (prefers-color-scheme: light)" srcset="./assets/cards/narrow/light/more-codewars-v1.svg"><source media="(max-width: 799px)" srcset="./assets/cards/narrow/more-codewars-v1.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/cards/mid/light/more-codewars-v1.svg"><source media="(max-width: 1199px)" srcset="./assets/cards/mid/more-codewars-v1.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/more-codewars-v1.svg"><img src="./assets/cards/more-codewars-v1.svg" height="92" alt="Codewars — practice repository"></picture><br><a href="https://github.com/CartagoGit/codewars"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/open-repository-v2.svg"><img height="32" alt="Open Codewars repository" src="./assets/btn/open-repository-v2.svg"></picture></a></p>
 
+---
+
+<p id="core-stack"><picture>
+<source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/core-stack-v7.svg">
+<source media="(max-width: 499px)" srcset="./assets/summary/narrow/core-stack-v7.svg">
+<source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/core-stack-v7.svg">
+<source media="(max-width: 1199px)" srcset="./assets/summary/mid/core-stack-v7.svg">
+<source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v7.svg">
+<img src="./assets/summary/core-stack-v7.svg" alt="Core stack" height="44">
+</picture></p>
+
+**Front-end — my base**
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-angular.svg?v=3"><img height="30" alt="Angular" src="./assets/btn/tech-angular.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-ionic.svg?v=3"><img height="30" alt="Ionic" src="./assets/btn/tech-ionic.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-material.svg?v=3"><img height="30" alt="Angular Material" src="./assets/btn/tech-material.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-sass.svg?v=3"><img height="30" alt="Sass" src="./assets/btn/tech-sass.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-typescript.svg?v=3"><img height="30" alt="TypeScript" src="./assets/btn/tech-typescript.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-rxjs.svg?v=3"><img height="30" alt="RxJS" src="./assets/btn/tech-rxjs.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-capacitor.svg?v=3"><img height="30" alt="Capacitor" src="./assets/btn/tech-capacitor.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-tailwind.svg?v=3"><img height="30" alt="Tailwind CSS" src="./assets/btn/tech-tailwind.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-vue.svg?v=3"><img height="30" alt="Vue" src="./assets/btn/tech-vue.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-react.svg?v=3"><img height="30" alt="React" src="./assets/btn/tech-react.svg?v=3"></picture>
+
+**Services, data & runtime**
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-nestjs.svg?v=3"><img height="30" alt="NestJS" src="./assets/btn/tech-nestjs.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-bun.svg?v=3"><img height="30" alt="Bun" src="./assets/btn/tech-bun.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-nodejs.svg?v=3"><img height="30" alt="Node.js" src="./assets/btn/tech-nodejs.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-postgresql.svg?v=3"><img height="30" alt="PostgreSQL" src="./assets/btn/tech-postgresql.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-sqlite.svg?v=3"><img height="30" alt="SQLite" src="./assets/btn/tech-sqlite.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mongodb.svg?v=3"><img height="30" alt="MongoDB" src="./assets/btn/tech-mongodb.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-zod.svg?v=3"><img height="30" alt="Zod" src="./assets/btn/tech-zod.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-openapi.svg?v=3"><img height="30" alt="OpenAPI" src="./assets/btn/tech-openapi.svg?v=3"></picture>
+
+**Tooling & AI infrastructure**
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mcp.svg?v=3"><img height="30" alt="Model Context Protocol" src="./assets/btn/tech-mcp.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-tauri.svg?v=3"><img height="30" alt="Tauri 2" src="./assets/btn/tech-tauri.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-rust.svg?v=3"><img height="30" alt="Rust" src="./assets/btn/tech-rust.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-godot.svg?v=3"><img height="30" alt="Godot" src="./assets/btn/tech-godot.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-python.svg?v=3"><img height="30" alt="Python" src="./assets/btn/tech-python.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-storybook.svg?v=3"><img height="30" alt="Storybook" src="./assets/btn/tech-storybook.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-primeng.svg?v=3"><img height="30" alt="PrimeNG" src="./assets/btn/tech-primeng.svg?v=3"></picture>
+
+**Quality & delivery**
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-vitest.svg?v=3"><img height="30" alt="Vitest" src="./assets/btn/tech-vitest.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-jest.svg?v=3"><img height="30" alt="Jest" src="./assets/btn/tech-jest.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-playwright.svg?v=3"><img height="30" alt="Playwright" src="./assets/btn/tech-playwright.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-eslint.svg?v=3"><img height="30" alt="ESLint" src="./assets/btn/tech-eslint.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-prettier.svg?v=3"><img height="30" alt="Prettier" src="./assets/btn/tech-prettier.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-docker.svg?v=3"><img height="30" alt="Docker" src="./assets/btn/tech-docker.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-gitlab.svg?v=3"><img height="30" alt="GitLab CI" src="./assets/btn/tech-gitlab.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-actions.svg?v=3"><img height="30" alt="GitHub Actions" src="./assets/btn/tech-actions.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-linux.svg?v=3"><img height="30" alt="Linux" src="./assets/btn/tech-linux.svg?v=3"></picture>
+
+**With AI**
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-claude.svg?v=3"><img height="30" alt="Claude" src="./assets/btn/tech-claude.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-codex.svg?v=3"><img height="30" alt="Codex" src="./assets/btn/tech-codex.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-minimax.svg?v=3"><img height="30" alt="MiniMax" src="./assets/btn/tech-minimax.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-grok.svg?v=3"><img height="30" alt="Grok" src="./assets/btn/tech-grok.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-gemini.svg?v=3"><img height="30" alt="Gemini" src="./assets/btn/tech-gemini.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-qwen.svg?v=3"><img height="30" alt="Qwen" src="./assets/btn/tech-qwen.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-glm.svg?v=3"><img height="30" alt="GLM" src="./assets/btn/tech-glm.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mimo.svg?v=3"><img height="30" alt="MiMo" src="./assets/btn/tech-mimo.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mai.svg?v=3"><img height="30" alt="MAI Code" src="./assets/btn/tech-mai.svg?v=3"></picture>
+
+---
+
+<p id="docker-images"><picture>
+<source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/docker-images-v7.svg">
+<source media="(max-width: 499px)" srcset="./assets/summary/narrow/docker-images-v7.svg">
+<source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/docker-images-v7.svg">
+<source media="(max-width: 1199px)" srcset="./assets/summary/mid/docker-images-v7.svg">
+<source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v7.svg">
+<img src="./assets/summary/docker-images-v7.svg" alt="Docker images" height="44">
+</picture></p>
+
 <p align="center"><picture><source media="(max-width: 350px) and (prefers-color-scheme: light)" srcset="./assets/cards/tiny/light/docker-nodebun-v1.svg"><source media="(max-width: 350px)" srcset="./assets/cards/tiny/docker-nodebun-v1.svg"><source media="(max-width: 799px) and (prefers-color-scheme: light)" srcset="./assets/cards/narrow/light/docker-nodebun-v1.svg"><source media="(max-width: 799px)" srcset="./assets/cards/narrow/docker-nodebun-v1.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/cards/mid/light/docker-nodebun-v1.svg"><source media="(max-width: 1199px)" srcset="./assets/cards/mid/docker-nodebun-v1.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/docker-nodebun-v1.svg"><img src="./assets/cards/docker-nodebun-v1.svg" height="92" alt="nodebun — Node.js + Bun + fnm"></picture><br><img src="https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="24" alt="nodebun pulls"><br><a href="https://hub.docker.com/r/cartagodocker/nodebun"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/open-docker-v2.svg"><img height="32" alt="Open nodebun on Docker Hub" src="./assets/btn/open-docker-v2.svg"></picture></a></p>
 
 <p align="center"><picture><source media="(max-width: 350px) and (prefers-color-scheme: light)" srcset="./assets/cards/tiny/light/docker-zsh-v1.svg"><source media="(max-width: 350px)" srcset="./assets/cards/tiny/docker-zsh-v1.svg"><source media="(max-width: 799px) and (prefers-color-scheme: light)" srcset="./assets/cards/narrow/light/docker-zsh-v1.svg"><source media="(max-width: 799px)" srcset="./assets/cards/narrow/docker-zsh-v1.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/cards/mid/light/docker-zsh-v1.svg"><source media="(max-width: 1199px)" srcset="./assets/cards/mid/docker-zsh-v1.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/docker-zsh-v1.svg"><img src="./assets/cards/docker-zsh-v1.svg" height="92" alt="zsh — batteries-included shell"></picture><br><img src="https://img.shields.io/docker/pulls/cartagodocker/zsh?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="24" alt="zsh pulls"><br><a href="https://hub.docker.com/r/cartagodocker/zsh"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/open-docker-v2.svg"><img height="32" alt="Open zsh on Docker Hub" src="./assets/btn/open-docker-v2.svg"></picture></a></p>
@@ -194,3 +274,12 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <p align="center"><picture><source media="(max-width: 350px) and (prefers-color-scheme: light)" srcset="./assets/cards/tiny/light/docker-nestjs-v1.svg"><source media="(max-width: 350px)" srcset="./assets/cards/tiny/docker-nestjs-v1.svg"><source media="(max-width: 799px) and (prefers-color-scheme: light)" srcset="./assets/cards/narrow/light/docker-nestjs-v1.svg"><source media="(max-width: 799px)" srcset="./assets/cards/narrow/docker-nestjs-v1.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/cards/mid/light/docker-nestjs-v1.svg"><source media="(max-width: 1199px)" srcset="./assets/cards/mid/docker-nestjs-v1.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/docker-nestjs-v1.svg"><img src="./assets/cards/docker-nestjs-v1.svg" height="92" alt="nestjs-cover — NestJS build environment"></picture><br><img src="https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="24" alt="nestjs-cover pulls"><br><a href="https://hub.docker.com/r/cartagodocker/nestjs-cover"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/open-docker-v2.svg"><img height="32" alt="Open nestjs-cover on Docker Hub" src="./assets/btn/open-docker-v2.svg"></picture></a></p>
 
 <p align="center"><picture><source media="(max-width: 350px) and (prefers-color-scheme: light)" srcset="./assets/cards/tiny/light/docker-angular-v1.svg"><source media="(max-width: 350px)" srcset="./assets/cards/tiny/docker-angular-v1.svg"><source media="(max-width: 799px) and (prefers-color-scheme: light)" srcset="./assets/cards/narrow/light/docker-angular-v1.svg"><source media="(max-width: 799px)" srcset="./assets/cards/narrow/docker-angular-v1.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/cards/mid/light/docker-angular-v1.svg"><source media="(max-width: 1199px)" srcset="./assets/cards/mid/docker-angular-v1.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/docker-angular-v1.svg"><img src="./assets/cards/docker-angular-v1.svg" height="92" alt="angular — Angular build environment"></picture><br><img src="https://img.shields.io/docker/pulls/cartagodocker/angular?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="24" alt="angular pulls"><br><a href="https://hub.docker.com/r/cartagodocker/angular"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/open-docker-v2.svg"><img height="32" alt="Open Angular image on Docker Hub" src="./assets/btn/open-docker-v2.svg"></picture></a></p>
+
+---
+
+<p align="center"><sub>Independent work, published in my own time. Professional and client work is not published here.</sub></p>
+<p align="center">
+<a href="https://www.linkedin.com/in/mario-cabrero-volarich"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/linkedin.svg?v=3"><img height="30" alt="LinkedIn profile" src="./assets/btn/linkedin.svg?v=3"></picture></a>
+<a href="https://cartagogit.github.io"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/portfolio.svg?v=3"><img height="30" alt="Portfolio site" src="./assets/btn/portfolio.svg?v=3"></picture></a>
+<a href="https://github.com/CartagoGit?tab=repositories"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/github.svg?v=3"><img height="30" alt="All repositories on GitHub" src="./assets/btn/github.svg?v=3"></picture></a>
+</p>

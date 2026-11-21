@@ -232,6 +232,18 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-actions.svg?v=3"><img height="30" alt="GitHub Actions" src="./assets/btn/tech-actions.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-linux.svg?v=3"><img height="30" alt="Linux" src="./assets/btn/tech-linux.svg?v=3"></picture>
 
+**With AI**
+
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-claude.svg?v=3"><img height="30" alt="Claude" src="./assets/btn/tech-claude.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-codex.svg?v=3"><img height="30" alt="Codex" src="./assets/btn/tech-codex.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-minimax.svg?v=3"><img height="30" alt="MiniMax" src="./assets/btn/tech-minimax.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-grok.svg?v=3"><img height="30" alt="Grok" src="./assets/btn/tech-grok.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-gemini.svg?v=3"><img height="30" alt="Gemini" src="./assets/btn/tech-gemini.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-qwen.svg?v=3"><img height="30" alt="Qwen" src="./assets/btn/tech-qwen.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-glm.svg?v=3"><img height="30" alt="GLM" src="./assets/btn/tech-glm.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mimo.svg?v=3"><img height="30" alt="MiMo" src="./assets/btn/tech-mimo.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mai.svg?v=3"><img height="30" alt="MAI Code" src="./assets/btn/tech-mai.svg?v=3"></picture>
+
 </details>
 
 <details>

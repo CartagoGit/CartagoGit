@@ -166,6 +166,16 @@ BUTTONS = [
     ("brand/gitlab.svg", "GitLab CI", "tech-gitlab"),
     ("brand/github-actions.svg", "GitHub Actions", "tech-actions"),
     ("brand/linux.svg", "Linux", "tech-linux"),
+    # ---- AI assistants ----
+    ("brand/claude.svg", "Claude", "tech-claude"),
+    ("brand/openai.svg", "Codex", "tech-codex"),
+    ("brand/minimax.svg", "MiniMax", "tech-minimax"),
+    ("brand/grok.svg", "Grok", "tech-grok"),
+    ("brand/gemini.svg", "Gemini", "tech-gemini"),
+    ("brand/qwen.svg", "Qwen", "tech-qwen"),
+    ("brand/glm.svg", "GLM", "tech-glm"),
+    ("brand/mimo.svg", "MiMo", "tech-mimo"),
+    ("brand/mai.svg", "MAI Code", "tech-mai"),
 ]
 
 

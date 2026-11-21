@@ -323,6 +323,30 @@ Decisiones de Mario, que se aplican tal cual:
   los muestran a la misma altura.
 - `:focus-visible` con outline de 2px y offset 3px en todo lo interactivo.
 
+### Revision UX externa (aplicada)
+
+Una revision externa del portafolio señalo varios puntos; se aplicaron por orden de impacto:
+
+1. **Navegacion movil.** `.site-nav` se ocultaba en ≤760px sin sustituto. Ahora hay un boton
+   de menu (44×44) que abre un panel con todas las secciones y una accion **Contactar**
+   visible. Se cierra con Escape o al navegar. Ojo: `.mobile-nav[hidden] { display: none }`
+   es necesario porque el `display: grid` de la clase pisa el atributo `hidden`.
+2. **CTAs de conversion.** El hero tenia "Ver el trabajo" y "Que hago" (explorar). Ahora:
+   **Ver proyectos** (primario), **Contactar** y **Ver CV ↗** (enlaza a print-cv).
+3. **Contraste AA.** El boton primario `#4d8dff` con blanco daba 3.2:1. Se oscurecio a
+   `#2b66d9` (5.2:1). `--text-dim` subio en los dos temas (`#7a8db8` oscuro, `#5a6c8c` claro).
+   La microtipografia paso de ~11px a 12px (.75rem). Los iconos del header y los toggles
+   tienen superficie tactil de 44px.
+4. **Casos de estudio.** Cinco trabajos profesionales llevan ahora **El reto** y **Mi
+   contribucion**, con una **pantalla recreada** (mockups de divs con datos ficticios: PDA,
+   movil con fichaje, canvas de firma, TV de almacen, quiosco de juegos). Nada de material
+   del cliente; la forma del problema si se ve. Las tarjetas de caso ocupan dos columnas.
+5. **Accesibilidad.** Los botones de tema (sol/luna) llevan `aria-label` descriptivo. El
+   reveal ya tenia fallback sin IntersectionObserver.
+
+Pendiente de la misma revision (no aplicado, requiere decision de Mario): reducir el volumen
+inicial de tarjetas, y SEO bilingue con URLs diferenciadas por idioma.
+
 ### Idiomas
 
 Cada texto visible lleva su par `(es, en)` y se emite con `i18n()`. La auditoria con el

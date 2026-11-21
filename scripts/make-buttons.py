@@ -29,6 +29,14 @@ TILE_BORDER = "#2b4786"
 ICON_COLOR = "#7fb2ff"
 LABEL = "#e9f0ff"
 
+# Light variant: the same button on a pale tile, for readers whose GitHub is
+# in a light theme. The README serves it through <picture> with a
+# prefers-color-scheme media query, so each reader gets the right one.
+LIGHT_TILE = "#f2f5fb"
+LIGHT_BORDER = "#bfcee6"
+LIGHT_LABEL = "#12233f"
+LIGHT_ICON_COLOR = "#1c5ed4"
+
 HEIGHT = 30
 PAD = 10
 ICON = 15
@@ -161,8 +169,8 @@ BUTTONS = [
 ]
 
 
-def icon_markup(name: str) -> tuple[str, str, str]:
-    """Return (content, view_box, colour) of an existing icon file."""
+def icon_markup(name: str) -> tuple[str, str, str, bool]:
+    """Return (content, view_box, colour, is_raster) of an existing icon file."""
     if name.endswith(".png"):
         import base64
 
@@ -171,7 +179,7 @@ def icon_markup(name: str) -> tuple[str, str, str]:
             f'<image width="128" height="128" '
             f'href="data:image/png;base64,{data}"/>'
         )
-        return inner, "0 0 128 128", ICON_COLOR
+        return inner, "0 0 128 128", ICON_COLOR, True
     raw = (ASSETS / name).read_text()
     view_box = re.search(r'viewBox="([^"]+)"', raw)
     box = view_box.group(1).split() if view_box else ["0", "0", "24", "24"]
@@ -186,11 +194,42 @@ def icon_markup(name: str) -> tuple[str, str, str]:
     # The path fills would win over the colour of the nested svg.
     inner = re.sub(r'\sfill="[^"]*"', "", inner)
     inner = re.sub(r'\sstroke="[^"]*"', "", inner)
-    return inner, " ".join(box), colour
+    return inner, " ".join(box), colour, False
 
 
-def button(icon_file: str, label: str) -> str:
-    inner, view_box, colour = icon_markup(icon_file)
+def _luminance(hex_colour: str) -> float:
+    """Relative luminance, to decide whether a colour reads on a pale tile."""
+    h = hex_colour.lstrip("#")
+    if len(h) == 3:
+        h = "".join(c * 2 for c in h)
+    try:
+        r, g, b = (int(h[i:i + 2], 16) / 255 for i in (0, 2, 4))
+    except ValueError:
+        return 0.5
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+
+# Marks that are near-white lose their shape on a pale tile; they take the
+# dark reading of the brand instead (GitHub goes black, as on github.com).
+LIGHT_OVERRIDES = {
+    "github": "#181717",
+    "model-context-protocol": "#111111",
+    "openai": "#111111",
+    "grok": "#111111",
+}
+
+
+def button(icon_file: str, label: str, light: bool = False) -> str:
+    inner, view_box, colour, is_raster = icon_markup(icon_file)
+    if light and not is_raster:
+        stem = pathlib.Path(icon_file).stem
+        if stem in LIGHT_OVERRIDES:
+            colour = LIGHT_OVERRIDES[stem]
+        elif _luminance(colour) > 0.62:
+            colour = LIGHT_ICON_COLOR
+    tile = LIGHT_TILE if light else TILE
+    border = LIGHT_BORDER if light else TILE_BORDER
+    text_colour = LIGHT_LABEL if light else LABEL
     label_w = text_width(label)
     width = PAD + ICON + GAP + label_w + PAD
     text_x = PAD + ICON + GAP
@@ -199,10 +238,10 @@ def button(icon_file: str, label: str) -> str:
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width:.0f}" height="{HEIGHT}" '
         f'viewBox="0 0 {width:.0f} {HEIGHT}" role="img" aria-label="{label}">'
         f'<rect x="0.5" y="0.5" width="{width - 1:.0f}" height="{HEIGHT - 1}" rx="6" '
-        f'fill="{TILE}" stroke="{TILE_BORDER}"/>'
+        f'fill="{tile}" stroke="{border}"/>'
         f'<svg x="{PAD}" y="{(HEIGHT - ICON) / 2}" width="{ICON}" height="{ICON}" '
         f'viewBox="{view_box}" fill="{colour}">{inner}</svg>'
-        f'<text x="{text_x:.1f}" y="{baseline:.1f}" fill="{LABEL}" '
+        f'<text x="{text_x:.1f}" y="{baseline:.1f}" fill="{text_colour}" '
         f'font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="{FONT_SIZE}" '
         f'font-weight="600">{label}</text>'
         f"</svg>"
@@ -211,10 +250,13 @@ def button(icon_file: str, label: str) -> str:
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "light").mkdir(parents=True, exist_ok=True)
     for icon_file, label, name in BUTTONS:
         path = OUT / f"{name}.svg"
         path.write_text(button(icon_file, label))
-        print("wrote", path.relative_to(ROOT))
+        light_path = OUT / "light" / f"{name}.svg"
+        light_path.write_text(button(icon_file, label, light=True))
+        print("wrote", path.relative_to(ROOT), "+ light")
 
 
 if __name__ == "__main__":

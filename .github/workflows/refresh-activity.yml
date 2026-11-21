@@ -1,0 +1,39 @@
+name: Refresh activity charts
+
+# The activity charts in the README are stored in the repository so the
+# profile does not depend on a third-party service being up. This job keeps
+# them current: every Monday it re-fetches both themes, bakes the entrance
+# animations to their final state and commits the result if anything moved.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch and bake the charts
+        run: python3 scripts/refresh-activity.py
+
+      - name: Commit if the charts moved
+        run: |
+          if [[ -n "$(git status --porcelain assets/activity)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/activity
+            git commit -m "chore: refresh the activity charts"
+            git push
+          else
+            echo "charts unchanged"
+          fi

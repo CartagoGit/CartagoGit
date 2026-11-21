@@ -13,10 +13,10 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/btn/linkedin.svg?v=3" height="30" alt="LinkedIn profile"></a>
-  <a href="https://www.npmjs.com/~cartago-git"><img src="./assets/btn/npm-brand.svg?v=3" height="30" alt="npm packages"></a>
-  <a href="https://hub.docker.com/u/cartagodocker"><img src="./assets/btn/docker.svg?v=3" height="30" alt="Docker Hub images"></a>
-  <a href="https://cartagogit.github.io"><img src="./assets/btn/portfolio.svg?v=3" height="30" alt="Portfolio site"></a>
+  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/linkedin.svg?v=3"><img height="30" alt="LinkedIn profile" src="./assets/btn/linkedin.svg?v=3"></picture></a>
+  <a href="https://www.npmjs.com/~cartago-git"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/npm-brand.svg?v=3"><img height="30" alt="npm packages" src="./assets/btn/npm-brand.svg?v=3"></picture></a>
+  <a href="https://hub.docker.com/u/cartagodocker"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/docker.svg?v=3"><img height="30" alt="Docker Hub images" src="./assets/btn/docker.svg?v=3"></picture></a>
+  <a href="https://cartagogit.github.io"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/portfolio.svg?v=3"><img height="30" alt="Portfolio site" src="./assets/btn/portfolio.svg?v=3"></picture></a>
 </p>
 
 ---
@@ -67,16 +67,16 @@ SOLID architecture, automatic type transformation, validation adapters, benchmar
 </tr>
 <tr>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/DelendAI"><img src="./assets/btn/repo-delendai.svg?v=3" height="30" alt="DelendAI repository"></a>
-<a href="https://github.com/CartagoGit/DelendAI/releases"><img src="./assets/btn/releases.svg?v=3" height="30" alt="DelendAI releases"></a>
+<a href="https://github.com/CartagoGit/DelendAI"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-delendai.svg?v=3"><img height="30" alt="DelendAI repository" src="./assets/btn/repo-delendai.svg?v=3"></picture></a>
+<a href="https://github.com/CartagoGit/DelendAI/releases"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/releases.svg?v=3"><img height="30" alt="DelendAI releases" src="./assets/btn/releases.svg?v=3"></picture></a>
 </td>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/api-source-tanit"><img src="./assets/btn/tanit.svg?v=3" height="30" alt="API Source Tanit repository"></a>
-<a href="https://github.com/CartagoGit/api-source-tanit/releases"><img src="./assets/btn/releases.svg?v=3" height="30" alt="API Source Tanit releases"></a>
+<a href="https://github.com/CartagoGit/api-source-tanit"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tanit.svg?v=3"><img height="30" alt="API Source Tanit repository" src="./assets/btn/tanit.svg?v=3"></picture></a>
+<a href="https://github.com/CartagoGit/api-source-tanit/releases"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/releases.svg?v=3"><img height="30" alt="API Source Tanit releases" src="./assets/btn/releases.svg?v=3"></picture></a>
 </td>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/quickmodel"><img src="./assets/btn/repo-quickmodel.svg?v=3" height="30" alt="QuickModel repository"></a>
-<a href="https://cartagogit.github.io/quickmodel/"><img src="./assets/btn/docs.svg?v=3" height="30" alt="QuickModel documentation"></a>
+<a href="https://github.com/CartagoGit/quickmodel"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-quickmodel.svg?v=3"><img height="30" alt="QuickModel repository" src="./assets/btn/repo-quickmodel.svg?v=3"></picture></a>
+<a href="https://cartagogit.github.io/quickmodel/"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/docs.svg?v=3"><img height="30" alt="QuickModel documentation" src="./assets/btn/docs.svg?v=3"></picture></a>
 </td>
 </tr>
 <tr>
@@ -101,16 +101,16 @@ An Angular application with server-side rendering, unit and integration tests an
 </tr>
 <tr>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/Keyer"><img src="./assets/btn/repo-keyer.svg?v=3" height="30" alt="Keyer repository"></a>
-<a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="./assets/btn/npm.svg?v=3" height="30" alt="Keyer on npm"></a>
+<a href="https://github.com/CartagoGit/Keyer"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-keyer.svg?v=3"><img height="30" alt="Keyer repository" src="./assets/btn/repo-keyer.svg?v=3"></picture></a>
+<a href="https://www.npmjs.com/package/@cartago-git/keyer"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/npm.svg?v=3"><img height="30" alt="Keyer on npm" src="./assets/btn/npm.svg?v=3"></picture></a>
 </td>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/print-cv"><img src="./assets/btn/repo-print-cv.svg?v=3" height="30" alt="Print CV repository"></a>
-<a href="https://cartagogit.github.io/print-cv/"><img src="./assets/btn/live.svg?v=3" height="30" alt="Print CV live app"></a>
+<a href="https://github.com/CartagoGit/print-cv"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-print-cv.svg?v=3"><img height="30" alt="Print CV repository" src="./assets/btn/repo-print-cv.svg?v=3"></picture></a>
+<a href="https://cartagogit.github.io/print-cv/"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/live.svg?v=3"><img height="30" alt="Print CV live app" src="./assets/btn/live.svg?v=3"></picture></a>
 </td>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/portfolio"><img src="./assets/btn/repo-cartago.svg?v=3" height="30" alt="Cartago repository"></a>
-<a href="https://cartagogit.github.io"><img src="./assets/btn/live.svg?v=3" height="30" alt="Cartago live site"></a>
+<a href="https://github.com/CartagoGit/portfolio"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-cartago.svg?v=3"><img height="30" alt="Cartago repository" src="./assets/btn/repo-cartago.svg?v=3"></picture></a>
+<a href="https://cartagogit.github.io"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/live.svg?v=3"><img height="30" alt="Cartago live site" src="./assets/btn/live.svg?v=3"></picture></a>
 </td>
 </tr>
 </table>
@@ -143,13 +143,13 @@ Measured on the repositories linked above. Source lines exclude tests, fixtures 
 
 | Repository | Commits | Source lines | Test lines | Tests over source |
 | --- | ---: | ---: | ---: | ---: |
-| <a href="https://github.com/CartagoGit/DelendAI"><img src="./assets/btn/repo-delendai.svg?v=3" height="30" alt="DelendAI repository"></a> | 17,519 | 638,216 | 461,623 | 72% |
-| <a href="https://github.com/CartagoGit/api-source-tanit"><img src="./assets/btn/tanit.svg?v=3" height="30" alt="API Source Tanit repository"></a> | 1,924 | 91,960 | 78,219 | 85% |
-| <a href="https://github.com/CartagoGit/quickmodel"><img src="./assets/btn/repo-quickmodel.svg?v=3" height="30" alt="QuickModel repository"></a> | 550 | 48,641 | 103,771 | 213% |
-| <a href="https://github.com/CartagoGit/player-club-dynasty"><img src="./assets/btn/repo-pcd.svg?v=3" height="30" alt="Player Club Dynasty repository"></a> | 294 | 36,614 | 13,975 | 38% |
-| <a href="https://github.com/CartagoGit/steam-keys"><img src="./assets/btn/repo-steam-keys.svg?v=3" height="30" alt="Steam Keys repository"></a> | 117 | 33,793 | 11,500 | 34% |
-| <a href="https://github.com/CartagoGit/portfolio"><img src="./assets/btn/repo-cartago.svg?v=3" height="30" alt="Cartago repository"></a> | 164 | 11,870 | 1,047 | 9% |
-| <a href="https://github.com/CartagoGit/print-cv"><img src="./assets/btn/repo-print-cv.svg?v=3" height="30" alt="Print CV repository"></a> | 133 | 2,849 | 230 | 8% |
+| <a href="https://github.com/CartagoGit/DelendAI"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-delendai.svg?v=3"><img height="30" alt="DelendAI repository" src="./assets/btn/repo-delendai.svg?v=3"></picture></a> | 17,519 | 638,216 | 461,623 | 72% |
+| <a href="https://github.com/CartagoGit/api-source-tanit"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tanit.svg?v=3"><img height="30" alt="API Source Tanit repository" src="./assets/btn/tanit.svg?v=3"></picture></a> | 1,924 | 91,960 | 78,219 | 85% |
+| <a href="https://github.com/CartagoGit/quickmodel"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-quickmodel.svg?v=3"><img height="30" alt="QuickModel repository" src="./assets/btn/repo-quickmodel.svg?v=3"></picture></a> | 550 | 48,641 | 103,771 | 213% |
+| <a href="https://github.com/CartagoGit/player-club-dynasty"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-pcd.svg?v=3"><img height="30" alt="Player Club Dynasty repository" src="./assets/btn/repo-pcd.svg?v=3"></picture></a> | 294 | 36,614 | 13,975 | 38% |
+| <a href="https://github.com/CartagoGit/steam-keys"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-steam-keys.svg?v=3"><img height="30" alt="Steam Keys repository" src="./assets/btn/repo-steam-keys.svg?v=3"></picture></a> | 117 | 33,793 | 11,500 | 34% |
+| <a href="https://github.com/CartagoGit/portfolio"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-cartago.svg?v=3"><img height="30" alt="Cartago repository" src="./assets/btn/repo-cartago.svg?v=3"></picture></a> | 164 | 11,870 | 1,047 | 9% |
+| <a href="https://github.com/CartagoGit/print-cv"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-print-cv.svg?v=3"><img height="30" alt="Print CV repository" src="./assets/btn/repo-print-cv.svg?v=3"></picture></a> | 133 | 2,849 | 230 | 8% |
 
 DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,600 Markdown files of architecture decisions and guides.
 
@@ -172,14 +172,14 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 | Project | Focus | Link |
 | --- | --- | --- |
-| NestJS AI API | Typed DTOs, file uploads, streaming and Docker-based delivery for AI-enabled apps. | <a href="https://github.com/CartagoGit/NestGpt"><img src="./assets/btn/repo-nestgpt.svg?v=3" height="30" alt="NestGpt repository"></a> |
-| React front-end | The client that talks to the NestJS AI API. | <a href="https://github.com/CartagoGit/ReactGpt"><img src="./assets/btn/repo-reactgpt.svg?v=3" height="30" alt="ReactGpt repository"></a> |
-| Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | <a href="https://github.com/CartagoGit/zoneless-calculator"><img src="./assets/btn/repo-zoneless.svg?v=3" height="30" alt="zoneless-calculator repository"></a> |
-| Modding and content | Tools and content for modifying games: binary formats, localisation and automation. | <a href="https://github.com/CartagoGit/aoe2-mods"><img src="./assets/btn/repo-aoe2.svg?v=3" height="30" alt="Aoe2 mods repository"></a> <a href="https://github.com/CartagoGit/pcfutbol6-mod"><img src="./assets/btn/repo-pcfutbol.svg?v=3" height="30" alt="PC Fútbol 6 mods repository"></a> |
-| AI-assisted game delivery | A Godot/C# football manager built through a proposal → implement → review → release pipeline. | <a href="https://github.com/CartagoGit/player-club-dynasty"><img src="./assets/btn/repo-pcd.svg?v=3" height="30" alt="Player Club Dynasty repository"></a> |
-| Local-first desktop app | A Tauri 2 + Rust + SQLite manager that keeps game keys off the cloud. | <a href="https://github.com/CartagoGit/steam-keys"><img src="./assets/btn/repo-steam-keys.svg?v=3" height="30" alt="Steam Keys repository"></a> |
-| Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><img src="./assets/btn/repo-template.svg?v=3" height="30" alt="template-angular repository"></a> |
-| Practice repositories | Daily puzzles and katas, one commit per solution. | <a href="https://github.com/CartagoGit/codember-dev"><img src="./assets/btn/repo-codember.svg?v=3" height="30" alt="codember-dev repository"></a> <a href="https://github.com/CartagoGit/codewars"><img src="./assets/btn/repo-codewars.svg?v=3" height="30" alt="codewars repository"></a> |
+| NestJS AI API | Typed DTOs, file uploads, streaming and Docker-based delivery for AI-enabled apps. | <a href="https://github.com/CartagoGit/NestGpt"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-nestgpt.svg?v=3"><img height="30" alt="NestGpt repository" src="./assets/btn/repo-nestgpt.svg?v=3"></picture></a> |
+| React front-end | The client that talks to the NestJS AI API. | <a href="https://github.com/CartagoGit/ReactGpt"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-reactgpt.svg?v=3"><img height="30" alt="ReactGpt repository" src="./assets/btn/repo-reactgpt.svg?v=3"></picture></a> |
+| Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | <a href="https://github.com/CartagoGit/zoneless-calculator"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-zoneless.svg?v=3"><img height="30" alt="zoneless-calculator repository" src="./assets/btn/repo-zoneless.svg?v=3"></picture></a> |
+| Modding and content | Tools and content for modifying games: binary formats, localisation and automation. | <a href="https://github.com/CartagoGit/aoe2-mods"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-aoe2.svg?v=3"><img height="30" alt="Aoe2 mods repository" src="./assets/btn/repo-aoe2.svg?v=3"></picture></a> <a href="https://github.com/CartagoGit/pcfutbol6-mod"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-pcfutbol.svg?v=3"><img height="30" alt="PC Fútbol 6 mods repository" src="./assets/btn/repo-pcfutbol.svg?v=3"></picture></a> |
+| AI-assisted game delivery | A Godot/C# football manager built through a proposal → implement → review → release pipeline. | <a href="https://github.com/CartagoGit/player-club-dynasty"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-pcd.svg?v=3"><img height="30" alt="Player Club Dynasty repository" src="./assets/btn/repo-pcd.svg?v=3"></picture></a> |
+| Local-first desktop app | A Tauri 2 + Rust + SQLite manager that keeps game keys off the cloud. | <a href="https://github.com/CartagoGit/steam-keys"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-steam-keys.svg?v=3"><img height="30" alt="Steam Keys repository" src="./assets/btn/repo-steam-keys.svg?v=3"></picture></a> |
+| Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-template.svg?v=3"><img height="30" alt="template-angular repository" src="./assets/btn/repo-template.svg?v=3"></picture></a> |
+| Practice repositories | Daily puzzles and katas, one commit per solution. | <a href="https://github.com/CartagoGit/codember-dev"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-codember.svg?v=3"><img height="30" alt="codember-dev repository" src="./assets/btn/repo-codember.svg?v=3"></picture></a> <a href="https://github.com/CartagoGit/codewars"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-codewars.svg?v=3"><img height="30" alt="codewars repository" src="./assets/btn/repo-codewars.svg?v=3"></picture></a> |
 
 </details>
 
@@ -188,49 +188,49 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 **Front-end — my base**
 
-<img src="./assets/btn/tech-angular.svg?v=3" height="30" alt="Angular">
-<img src="./assets/btn/tech-ionic.svg?v=3" height="30" alt="Ionic">
-<img src="./assets/btn/tech-material.svg?v=3" height="30" alt="Angular Material">
-<img src="./assets/btn/tech-sass.svg?v=3" height="30" alt="Sass">
-<img src="./assets/btn/tech-typescript.svg?v=3" height="30" alt="TypeScript">
-<img src="./assets/btn/tech-rxjs.svg?v=3" height="30" alt="RxJS">
-<img src="./assets/btn/tech-capacitor.svg?v=3" height="30" alt="Capacitor">
-<img src="./assets/btn/tech-tailwind.svg?v=3" height="30" alt="Tailwind CSS">
-<img src="./assets/btn/tech-vue.svg?v=3" height="30" alt="Vue">
-<img src="./assets/btn/tech-react.svg?v=3" height="30" alt="React">
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-angular.svg?v=3"><img height="30" alt="Angular" src="./assets/btn/tech-angular.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-ionic.svg?v=3"><img height="30" alt="Ionic" src="./assets/btn/tech-ionic.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-material.svg?v=3"><img height="30" alt="Angular Material" src="./assets/btn/tech-material.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-sass.svg?v=3"><img height="30" alt="Sass" src="./assets/btn/tech-sass.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-typescript.svg?v=3"><img height="30" alt="TypeScript" src="./assets/btn/tech-typescript.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-rxjs.svg?v=3"><img height="30" alt="RxJS" src="./assets/btn/tech-rxjs.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-capacitor.svg?v=3"><img height="30" alt="Capacitor" src="./assets/btn/tech-capacitor.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-tailwind.svg?v=3"><img height="30" alt="Tailwind CSS" src="./assets/btn/tech-tailwind.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-vue.svg?v=3"><img height="30" alt="Vue" src="./assets/btn/tech-vue.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-react.svg?v=3"><img height="30" alt="React" src="./assets/btn/tech-react.svg?v=3"></picture>
 
 **Services, data & runtime**
 
-<img src="./assets/btn/tech-nestjs.svg?v=3" height="30" alt="NestJS">
-<img src="./assets/btn/tech-bun.svg?v=3" height="30" alt="Bun">
-<img src="./assets/btn/tech-nodejs.svg?v=3" height="30" alt="Node.js">
-<img src="./assets/btn/tech-postgresql.svg?v=3" height="30" alt="PostgreSQL">
-<img src="./assets/btn/tech-sqlite.svg?v=3" height="30" alt="SQLite">
-<img src="./assets/btn/tech-mongodb.svg?v=3" height="30" alt="MongoDB">
-<img src="./assets/btn/tech-zod.svg?v=3" height="30" alt="Zod">
-<img src="./assets/btn/tech-openapi.svg?v=3" height="30" alt="OpenAPI">
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-nestjs.svg?v=3"><img height="30" alt="NestJS" src="./assets/btn/tech-nestjs.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-bun.svg?v=3"><img height="30" alt="Bun" src="./assets/btn/tech-bun.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-nodejs.svg?v=3"><img height="30" alt="Node.js" src="./assets/btn/tech-nodejs.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-postgresql.svg?v=3"><img height="30" alt="PostgreSQL" src="./assets/btn/tech-postgresql.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-sqlite.svg?v=3"><img height="30" alt="SQLite" src="./assets/btn/tech-sqlite.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mongodb.svg?v=3"><img height="30" alt="MongoDB" src="./assets/btn/tech-mongodb.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-zod.svg?v=3"><img height="30" alt="Zod" src="./assets/btn/tech-zod.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-openapi.svg?v=3"><img height="30" alt="OpenAPI" src="./assets/btn/tech-openapi.svg?v=3"></picture>
 
 **Tooling & AI infrastructure**
 
-<img src="./assets/btn/tech-mcp.svg?v=3" height="30" alt="Model Context Protocol">
-<img src="./assets/btn/tech-tauri.svg?v=3" height="30" alt="Tauri 2">
-<img src="./assets/btn/tech-rust.svg?v=3" height="30" alt="Rust">
-<img src="./assets/btn/tech-godot.svg?v=3" height="30" alt="Godot">
-<img src="./assets/btn/tech-python.svg?v=3" height="30" alt="Python">
-<img src="./assets/btn/tech-storybook.svg?v=3" height="30" alt="Storybook">
-<img src="./assets/btn/tech-primeng.svg?v=3" height="30" alt="PrimeNG">
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mcp.svg?v=3"><img height="30" alt="Model Context Protocol" src="./assets/btn/tech-mcp.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-tauri.svg?v=3"><img height="30" alt="Tauri 2" src="./assets/btn/tech-tauri.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-rust.svg?v=3"><img height="30" alt="Rust" src="./assets/btn/tech-rust.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-godot.svg?v=3"><img height="30" alt="Godot" src="./assets/btn/tech-godot.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-python.svg?v=3"><img height="30" alt="Python" src="./assets/btn/tech-python.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-storybook.svg?v=3"><img height="30" alt="Storybook" src="./assets/btn/tech-storybook.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-primeng.svg?v=3"><img height="30" alt="PrimeNG" src="./assets/btn/tech-primeng.svg?v=3"></picture>
 
 **Quality & delivery**
 
-<img src="./assets/btn/tech-vitest.svg?v=3" height="30" alt="Vitest">
-<img src="./assets/btn/tech-jest.svg?v=3" height="30" alt="Jest">
-<img src="./assets/btn/tech-playwright.svg?v=3" height="30" alt="Playwright">
-<img src="./assets/btn/tech-eslint.svg?v=3" height="30" alt="ESLint">
-<img src="./assets/btn/tech-prettier.svg?v=3" height="30" alt="Prettier">
-<img src="./assets/btn/tech-docker.svg?v=3" height="30" alt="Docker">
-<img src="./assets/btn/tech-gitlab.svg?v=3" height="30" alt="GitLab CI">
-<img src="./assets/btn/tech-actions.svg?v=3" height="30" alt="GitHub Actions">
-<img src="./assets/btn/tech-linux.svg?v=3" height="30" alt="Linux">
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-vitest.svg?v=3"><img height="30" alt="Vitest" src="./assets/btn/tech-vitest.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-jest.svg?v=3"><img height="30" alt="Jest" src="./assets/btn/tech-jest.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-playwright.svg?v=3"><img height="30" alt="Playwright" src="./assets/btn/tech-playwright.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-eslint.svg?v=3"><img height="30" alt="ESLint" src="./assets/btn/tech-eslint.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-prettier.svg?v=3"><img height="30" alt="Prettier" src="./assets/btn/tech-prettier.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-docker.svg?v=3"><img height="30" alt="Docker" src="./assets/btn/tech-docker.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-gitlab.svg?v=3"><img height="30" alt="GitLab CI" src="./assets/btn/tech-gitlab.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-actions.svg?v=3"><img height="30" alt="GitHub Actions" src="./assets/btn/tech-actions.svg?v=3"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-linux.svg?v=3"><img height="30" alt="Linux" src="./assets/btn/tech-linux.svg?v=3"></picture>
 
 </details>
 
@@ -241,14 +241,14 @@ Public development images for reproducible environments. Pull counts are live Do
 
 | Image | Pulls | Link |
 | --- | --- | --- |
-| **nodebun** — Node.js + Bun + fnm | <img src="https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="nodebun pulls"> | <a href="https://hub.docker.com/r/cartagodocker/nodebun"><img src="./assets/btn/img-nodebun.svg?v=3" height="30" alt="nodebun image on Docker Hub"></a> |
-| **zsh** — batteries-included shell | <img src="https://img.shields.io/docker/pulls/cartagodocker/zsh?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="zsh pulls"> | <a href="https://hub.docker.com/r/cartagodocker/zsh"><img src="./assets/btn/img-zsh.svg?v=3" height="30" alt="zsh image on Docker Hub"></a> |
-| **ionic-cover** | <img src="https://img.shields.io/docker/pulls/cartagodocker/ionic-cover?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="ionic-cover pulls"> | <a href="https://hub.docker.com/r/cartagodocker/ionic-cover"><img src="./assets/btn/img-ionic.svg?v=3" height="30" alt="ionic-cover image on Docker Hub"></a> |
-| **nestjs-cover** | <img src="https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="nestjs-cover pulls"> | <a href="https://hub.docker.com/r/cartagodocker/nestjs-cover"><img src="./assets/btn/img-nestjs.svg?v=3" height="30" alt="nestjs-cover image on Docker Hub"></a> |
-| **angular** | <img src="https://img.shields.io/docker/pulls/cartagodocker/angular?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="angular pulls"> | <a href="https://hub.docker.com/r/cartagodocker/angular"><img src="./assets/btn/img-angular.svg?v=3" height="30" alt="angular image on Docker Hub"></a> |
+| **nodebun** — Node.js + Bun + fnm | <img src="https://img.shields.io/docker/pulls/cartagodocker/nodebun?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="nodebun pulls"> | <a href="https://hub.docker.com/r/cartagodocker/nodebun"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/img-nodebun.svg?v=3"><img height="30" alt="nodebun image on Docker Hub" src="./assets/btn/img-nodebun.svg?v=3"></picture></a> |
+| **zsh** — batteries-included shell | <img src="https://img.shields.io/docker/pulls/cartagodocker/zsh?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="zsh pulls"> | <a href="https://hub.docker.com/r/cartagodocker/zsh"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/img-zsh.svg?v=3"><img height="30" alt="zsh image on Docker Hub" src="./assets/btn/img-zsh.svg?v=3"></picture></a> |
+| **ionic-cover** | <img src="https://img.shields.io/docker/pulls/cartagodocker/ionic-cover?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="ionic-cover pulls"> | <a href="https://hub.docker.com/r/cartagodocker/ionic-cover"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/img-ionic.svg?v=3"><img height="30" alt="ionic-cover image on Docker Hub" src="./assets/btn/img-ionic.svg?v=3"></picture></a> |
+| **nestjs-cover** | <img src="https://img.shields.io/docker/pulls/cartagodocker/nestjs-cover?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="nestjs-cover pulls"> | <a href="https://hub.docker.com/r/cartagodocker/nestjs-cover"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/img-nestjs.svg?v=3"><img height="30" alt="nestjs-cover image on Docker Hub" src="./assets/btn/img-nestjs.svg?v=3"></picture></a> |
+| **angular** | <img src="https://img.shields.io/docker/pulls/cartagodocker/angular?style=for-the-badge&logo=docker&logoColor=white&label=pulls&labelColor=0e1a2b&color=2b4786" height="30" alt="angular pulls"> | <a href="https://hub.docker.com/r/cartagodocker/angular"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/img-angular.svg?v=3"><img height="30" alt="angular image on Docker Hub" src="./assets/btn/img-angular.svg?v=3"></picture></a> |
 
 <p align="center">
-  <a href="https://hub.docker.com/u/cartagodocker"><img src="./assets/btn/docker.svg?v=3" height="30" alt="Docker Hub profile"></a>
+  <a href="https://hub.docker.com/u/cartagodocker"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/docker.svg?v=3"><img height="30" alt="Docker Hub profile" src="./assets/btn/docker.svg?v=3"></picture></a>
 </p>
 
 </details>
@@ -256,15 +256,28 @@ Public development images for reproducible environments. Pull counts are live Do
 ## GitHub Activity
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=CartagoGit&theme=github-dark-blue&hide_border=true" alt="GitHub contribution streak" width="495">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/streak-light.svg">
+    <img src="./assets/activity/streak-dark.svg" alt="GitHub contribution streak" width="495">
+  </picture>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=CartagoGit&theme=github-dark&hide_border=true" alt="GitHub contribution activity" width="790">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/graph-light.svg">
+    <img src="./assets/activity/graph-dark.svg" alt="GitHub contribution activity" width="790">
+  </picture>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=CartagoGit&show_icons=true&theme=github-dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub statistics" width="520">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/stats-light.svg">
+    <img src="./assets/activity/stats-dark.svg" alt="GitHub statistics" width="467">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/langs-light.svg">
+    <img src="./assets/activity/langs-dark.svg" alt="Most used languages" width="300">
+  </picture>
 </p>
 
 ---
@@ -274,7 +287,7 @@ Public development images for reproducible environments. Pull counts are live Do
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/btn/linkedin.svg?v=3" height="30" alt="LinkedIn profile"></a>
-  <a href="https://cartagogit.github.io"><img src="./assets/btn/portfolio.svg?v=3" height="30" alt="Portfolio site"></a>
-  <a href="https://github.com/CartagoGit?tab=repositories"><img src="./assets/btn/github.svg?v=3" height="30" alt="All repositories on GitHub"></a>
+  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/linkedin.svg?v=3"><img height="30" alt="LinkedIn profile" src="./assets/btn/linkedin.svg?v=3"></picture></a>
+  <a href="https://cartagogit.github.io"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/portfolio.svg?v=3"><img height="30" alt="Portfolio site" src="./assets/btn/portfolio.svg?v=3"></picture></a>
+  <a href="https://github.com/CartagoGit?tab=repositories"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/github.svg?v=3"><img height="30" alt="All repositories on GitHub" src="./assets/btn/github.svg?v=3"></picture></a>
 </p>

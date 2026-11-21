@@ -89,7 +89,7 @@ def text_width(text: str) -> float:
 # (icon file, label, output name)
 BUTTONS = [
     ("github.svg", "DelendAI", "repo-delendai"),
-    ("github.svg", "API Source Tanit", "repo-tanit"),
+    ("github.svg", "Tanit", "repo-tanit"),
     ("github.svg", "QuickModel", "repo-quickmodel"),
     ("github.svg", "Keyer", "repo-keyer"),
     ("github.svg", "Print CV", "repo-print-cv"),

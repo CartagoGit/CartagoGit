@@ -10,29 +10,29 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/linkedin-profile-badge.svg" alt="LinkedIn profile" height="26"></a>
-  <a href="https://www.npmjs.com/~cartago-git"><img src="https://img.shields.io/badge/npm-%40cartago--git-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm packages" height="26"></a>
-  <a href="https://hub.docker.com/u/cartagodocker"><img src="https://img.shields.io/badge/Docker%20Hub-%E2%86%97-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker Hub images" height="26"></a>
-  <a href="https://cartagogit.github.io"><img src="https://img.shields.io/badge/Portfolio-%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white" alt="Portfolio site" height="26"></a>
+  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/btn/linkedin.svg" height="30" alt="LinkedIn profile"></a>
+  <a href="https://www.npmjs.com/~cartago-git"><img src="./assets/btn/npm-brand.svg" height="30" alt="npm packages"></a>
+  <a href="https://hub.docker.com/u/cartagodocker"><img src="./assets/btn/docker.svg" height="30" alt="Docker Hub images"></a>
+  <a href="https://cartagogit.github.io"><img src="./assets/btn/portfolio.svg" height="30" alt="Portfolio site"></a>
 </p>
 
 ---
 
-## What I do
+## What I build
 
-**Operational front-ends.** ERP, logistics, inventory, workforce: the same screens eight hours a
-day, with permissions that shift by role and rules that have to survive the quarter. My base is
-**Angular with SCSS**, **Ionic** when it needs to reach Android, **Material** for the design
-system.
+**Front-end for operational systems.** ERP, warehouse logistics, workforce and attendance: the same
+screens eight hours a day, with permissions that shift by role and forms that have to survive a
+different way of working every shift. My base is **Angular with SCSS**, **Ionic** when it needs to
+reach Android, **Material** for the design system.
 
 **The part around it.** Mentoring the team, deciding what stays in the front-end and what moves to
 a service, deciding what gets a quality gate and what gets a written decision. GitLab CI,
 GitHub Actions, Docker images with the versions pinned — the same environment on the laptop and
 on the runner.
 
-**The part I do alone.** Developer tooling I needed and could not find: an MCP runtime, a static
-analysis engine for APIs, a serialization library, a secret manager. All of it came out of one of
-my own problems on a Tuesday afternoon.
+**The part I do alone.** Developer tooling I needed and could not find: an MCP server with 62
+capabilities, a static analysis engine for APIs, a serialization library, a secret manager. All of
+it came out of one of my own problems on a Tuesday afternoon.
 
 Everything published here is **independent work** — repositories, libraries, images and
 experiments built in my own time. My professional work is not published here.
@@ -47,28 +47,33 @@ experiments built in my own time. My professional work is not published here.
 <img src="./assets/delendai.svg" width="72" height="72" alt="DelendAI"><br>
 <strong>DelendAI</strong><br>
 <sub>Extensible MCP server core and CLI plugin tooling</sub><br><br>
-A project-agnostic core for building MCP servers and the plugin loader that feeds them. Lazy surface, public errors, private data — wrapped in a full proposal-to-release pipeline.
-<br><br>
-<a href="https://github.com/CartagoGit/DelendAI"><img src="./assets/github.svg" width="15" height="15" alt="" valign="-3"> Repository</a> ·
-<a href="https://github.com/CartagoGit/DelendAI/releases"><img src="./assets/releases.svg" width="15" height="15" alt="" valign="-3"> Releases</a>
+An MCP server you point at a project: 62 isolated plugins, a CLI, nine presets and a proposal → implement → review → release cycle behind 18 CI gates. It knows nothing about your stack.
 </td>
 <td width="33%" align="center" valign="top">
-<img src="./assets/tanit.svg" width="72" height="72" alt="Tanit"><br>
+<img src="./assets/tanit.svg" width="72" height="72" alt="API Source Tanit"><br>
 <strong>API Source Tanit</strong><br>
 <sub>Static API discovery from source code</sub><br><br>
 Points at a project directory and produces a ready-to-import API description. 25 frameworks detected from the code, exported to Postman, Bruno, Insomnia, HAR, OpenAPI or cURL.
-<br><br>
-<a href="https://github.com/CartagoGit/api-source-tanit"><img src="./assets/github.svg" width="15" height="15" alt="" valign="-3"> Repository</a> ·
-<a href="https://github.com/CartagoGit/api-source-tanit/releases"><img src="./assets/releases.svg" width="15" height="15" alt="" valign="-3"> Releases</a>
 </td>
 <td width="33%" align="center" valign="top">
 <img src="./assets/quickmodel.png" width="72" height="72" alt="QuickModel" style="border-radius:12px"><br>
 <strong>QuickModel</strong><br>
 <sub>TypeScript model serialization library</sub><br><br>
 SOLID architecture, automatic type transformation, validation adapters, benchmarks and an MCP server on top. The test suite is larger than the source on purpose.
-<br><br>
-<a href="https://github.com/CartagoGit/quickmodel"><img src="./assets/github.svg" width="15" height="15" alt="" valign="-3"> Repository</a> ·
-<a href="https://cartagogit.github.io/quickmodel/"><img src="./assets/docs.svg" width="15" height="15" alt="" valign="-3"> Docs</a>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%">
+<a href="https://github.com/CartagoGit/DelendAI"><img src="./assets/btn/repo-delendai.svg" height="30" alt="DelendAI repository"></a>
+<a href="https://github.com/CartagoGit/DelendAI/releases"><img src="./assets/btn/releases.svg" height="30" alt="DelendAI releases"></a>
+</td>
+<td align="center" valign="top" width="33%">
+<a href="https://github.com/CartagoGit/api-source-tanit"><img src="./assets/btn/repo-tanit.svg" height="30" alt="API Source Tanit repository"></a>
+<a href="https://github.com/CartagoGit/api-source-tanit/releases"><img src="./assets/btn/releases.svg" height="30" alt="API Source Tanit releases"></a>
+</td>
+<td align="center" valign="top" width="33%">
+<a href="https://github.com/CartagoGit/quickmodel"><img src="./assets/btn/repo-quickmodel.svg" height="30" alt="QuickModel repository"></a>
+<a href="https://cartagogit.github.io/quickmodel/"><img src="./assets/btn/docs.svg" height="30" alt="QuickModel documentation"></a>
 </td>
 </tr>
 <tr>
@@ -76,28 +81,33 @@ SOLID architecture, automatic type transformation, validation adapters, benchmar
 <img src="./assets/keyer.svg" width="72" height="72" alt="Keyer"><br>
 <strong>Keyer</strong><br>
 <sub>Published npm CLI for secrets</sub><br><br>
-Encrypts keys, API keys and `.env` files from the command line. Published on npm and used to keep real credentials out of the repositories and the images.
-<br><br>
-<a href="https://github.com/CartagoGit/Keyer"><img src="./assets/github.svg" width="15" height="15" alt="" valign="-3"> Repository</a> ·
-<a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="./assets/package.svg" width="15" height="15" alt="" valign="-3"> npm</a>
+Encrypts keys, API keys and <code>.env</code> files from the command line. Published on npm and used to keep real credentials out of the repositories and the images.
 </td>
 <td width="33%" align="center" valign="top">
 <img src="./assets/print-cv.svg" width="72" height="72" alt="Print CV"><br>
 <strong>Print CV</strong><br>
 <sub>A CV application you can print</sub><br><br>
 Vue 3 and TypeScript, with the curriculum modelled as validated data, internationalised in English and Spanish, and a print mode designed around real paper.
-<br><br>
-<a href="https://github.com/CartagoGit/print-cv"><img src="./assets/github.svg" width="15" height="15" alt="" valign="-3"> Repository</a> ·
-<a href="https://cartagogit.github.io/print-cv/"><img src="./assets/live.svg" width="15" height="15" alt="" valign="-3"> Live app</a>
 </td>
 <td width="33%" align="center" valign="top">
 <img src="./assets/cartago.svg" width="72" height="72" alt="Cartago"><br>
 <strong>Cartago</strong><br>
 <sub>The site behind this profile</sub><br><br>
 An Angular application with server-side rendering, unit and integration tests and an MCP server wired into the build. Bilingual, it follows the system theme.
-<br><br>
-<a href="https://github.com/CartagoGit/portfolio"><img src="./assets/github.svg" width="15" height="15" alt="" valign="-3"> Repository</a> ·
-<a href="https://cartagogit.github.io"><img src="./assets/live.svg" width="15" height="15" alt="" valign="-3"> Live site</a>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%">
+<a href="https://github.com/CartagoGit/Keyer"><img src="./assets/btn/repo-keyer.svg" height="30" alt="Keyer repository"></a>
+<a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="./assets/btn/npm.svg" height="30" alt="Keyer on npm"></a>
+</td>
+<td align="center" valign="top" width="33%">
+<a href="https://github.com/CartagoGit/print-cv"><img src="./assets/btn/repo-print-cv.svg" height="30" alt="Print CV repository"></a>
+<a href="https://cartagogit.github.io/print-cv/"><img src="./assets/btn/live.svg" height="30" alt="Print CV live app"></a>
+</td>
+<td align="center" valign="top" width="33%">
+<a href="https://github.com/CartagoGit/portfolio"><img src="./assets/btn/repo-cartago.svg" height="30" alt="Cartago repository"></a>
+<a href="https://cartagogit.github.io"><img src="./assets/btn/live.svg" height="30" alt="Cartago live site"></a>
 </td>
 </tr>
 </table>
@@ -107,14 +117,14 @@ An Angular application with server-side rendering, unit and integration tests an
 ## Professional experience
 
 - **Operational front-end delivery.** Business applications for commercial, financial, inventory, logistics and workforce processes. Complex states, permissions, reporting and product rules that have to survive the next release — not demo screens.
-- **Web and Android.** Angular and Ionic applications, packaged for Android with Capacitor. Interfaces designed for repeated, high-context use.
+- **Web and Android.** Angular and Ionic applications, packaged for Android with Capacitor, plus Vue and Quasar for the management panels and progressive web apps for what has to work without being installed. Interfaces designed for repeated, high-context use.
 - **Mentoring and technical decisions.** I mentor the team, choose the architecture and settle the trade-offs: what stays in the front-end, what moves to a service, what gets a gate and what gets a document.
 - **Delivery foundations.** Dockerised development environments, GitLab CI and GitHub Actions pipelines, container images, and focused test coverage on the parts that actually break.
 - **Still writing code.** The assistants do a lot of the typing now; the judgement — what the rule is, where it belongs, how it is proved — is still mine.
 
 ## Beyond the front-end
 
-- **Developer tooling.** An MCP runtime, a model serialization library and a static analysis engine, built because the tools I wanted did not exist.
+- **Developer tooling.** An MCP runtime with 62 capabilities, a model serialization library and a static analysis engine, built because the tools I wanted did not exist.
 - **Backend and runtime.** NestJS, Bun and Node for the services that sit behind the interfaces; SQLite and PostgreSQL for the data.
 - **Games and content.** Local-first desktop apps in Tauri and Rust, games in Godot and C#, and schema-validated content pipelines with localisation.
 - **Infrastructure.** Public Docker images for Angular, Ionic, NestJS, Node/Bun and Zsh, all with pinned version matrices.
@@ -123,18 +133,22 @@ An Angular application with server-side rendering, unit and integration tests an
 
 ## Evidence
 
+**89 repositories** — 68 public and 21 private. **26** of them are active right now, and the
+account has been publishing since October 2021.
+
 Measured on the repositories linked above. Source lines exclude tests, fixtures and generated files; test lines are the test suites themselves.
 
-| Repository | Commits | Source lines | Test lines | Test files | Packages |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| [DelendAI](https://github.com/CartagoGit/DelendAI) | 17,484 | 628,712 | 460,854 | 2,709 | 84 |
-| [API Source Tanit](https://github.com/CartagoGit/api-source-tanit) | 1,876 | 99,398 | 73,489 | 362 | 53 |
-| [QuickModel](https://github.com/CartagoGit/quickmodel) | 550 | 58,636 | 100,258 | 407 | 1 |
-| [Player Club Dynasty](https://github.com/CartagoGit/player-club-dynasty) | 294 | 36,041 | 13,628 | 9 | 2 |
-| [Steam Keys](https://github.com/CartagoGit/steam-keys) | 117 | 33,518 | 11,462 | 50 | 2 |
-| [Aoe2 mods](https://github.com/CartagoGit/aoe2-mods) | 1,123 | 31,838 | 7,382 | 19 | 1 |
-| [Cartago](https://github.com/CartagoGit/portfolio) | 162 | 6,352 | 1,047 | 21 | 2 |
-| [Print CV](https://github.com/CartagoGit/print-cv) | 132 | 2,179 | 230 | 7 | 1 |
+| Repository | Commits | Source lines | Test lines | Tests over source |
+| --- | ---: | ---: | ---: | ---: |
+| [DelendAI](https://github.com/CartagoGit/DelendAI) | 17,519 | 638,216 | 461,623 | 72% |
+| [API Source Tanit](https://github.com/CartagoGit/api-source-tanit) | 1,924 | 91,960 | 78,219 | 85% |
+| [QuickModel](https://github.com/CartagoGit/quickmodel) | 550 | 48,641 | 103,771 | 213% |
+| [Player Club Dynasty](https://github.com/CartagoGit/player-club-dynasty) | 294 | 36,614 | 13,975 | 38% |
+| [Steam Keys](https://github.com/CartagoGit/steam-keys) | 117 | 33,793 | 11,500 | 34% |
+| [Cartago](https://github.com/CartagoGit/portfolio) | 164 | 11,870 | 1,047 | 9% |
+| [Print CV](https://github.com/CartagoGit/print-cv) | 133 | 2,849 | 230 | 8% |
+
+DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,600 Markdown files of architecture decisions and guides.
 
 ---
 
@@ -155,13 +169,13 @@ Measured on the repositories linked above. Source lines exclude tests, fixtures 
 
 | Project | Focus | Link |
 | --- | --- | --- |
-| NestJS AI API | Typed DTOs, file uploads, streaming and Docker-based delivery for AI-enabled apps. | <a href="https://github.com/CartagoGit/NestGpt"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
-| React front-end | The client that talks to the NestJS AI API. | <a href="https://github.com/CartagoGit/ReactGpt"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
-| Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | <a href="https://github.com/CartagoGit/zoneless-calculator"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
-| Modding and content | Tools and content for modifying games: binary formats, localisation and automation. | <a href="https://github.com/CartagoGit/aoe2-mods"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> · <a href="https://github.com/CartagoGit/pcfutbol6-mod"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
-| AI-assisted game delivery | A Godot/C# football manager built through a proposal → implement → review → release pipeline. | <a href="https://github.com/CartagoGit/player-club-dynasty"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
-| Local-first desktop app | A Tauri 2 + Rust + SQLite manager that keeps game keys off the cloud. | <a href="https://github.com/CartagoGit/steam-keys"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
-| Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><img src="./assets/github.svg" width="15" height="15" alt="Repository" valign="-3"> Repository</a> |
+| NestJS AI API | Typed DTOs, file uploads, streaming and Docker-based delivery for AI-enabled apps. | <a href="https://github.com/CartagoGit/NestGpt"><img src="./assets/btn/repo.svg" height="30" alt="NestGpt repository"></a> |
+| React front-end | The client that talks to the NestJS AI API. | <a href="https://github.com/CartagoGit/ReactGpt"><img src="./assets/btn/repo.svg" height="30" alt="ReactGpt repository"></a> |
+| Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | <a href="https://github.com/CartagoGit/zoneless-calculator"><img src="./assets/btn/repo.svg" height="30" alt="zoneless-calculator repository"></a> |
+| Modding and content | Tools and content for modifying games: binary formats, localisation and automation. | <a href="https://github.com/CartagoGit/aoe2-mods"><img src="./assets/btn/repo-aoe2.svg" height="30" alt="Aoe2 mods repository"></a> <a href="https://github.com/CartagoGit/pcfutbol6-mod"><img src="./assets/btn/repo-pcfutbol.svg" height="30" alt="PC Fútbol 6 mods repository"></a> |
+| AI-assisted game delivery | A Godot/C# football manager built through a proposal → implement → review → release pipeline. | <a href="https://github.com/CartagoGit/player-club-dynasty"><img src="./assets/btn/repo-pcd.svg" height="30" alt="Player Club Dynasty repository"></a> |
+| Local-first desktop app | A Tauri 2 + Rust + SQLite manager that keeps game keys off the cloud. | <a href="https://github.com/CartagoGit/steam-keys"><img src="./assets/btn/repo-steam-keys.svg" height="30" alt="Steam Keys repository"></a> |
+| Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><img src="./assets/btn/repo.svg" height="30" alt="template-angular repository"></a> |
 | Practice repositories | Daily puzzles and katas, one commit per solution. | [![codember-dev](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/codember-dev) [![codewars](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/codewars) |
 
 </details>

@@ -68,7 +68,7 @@ SOLID architecture, automatic type transformation, validation adapters, benchmar
 <a href="https://github.com/CartagoGit/DelendAI/releases"><img src="./assets/btn/releases.svg?v=2" height="30" alt="DelendAI releases"></a>
 </td>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/api-source-tanit"><img src="./assets/btn/repo-tanit.svg?v=2" height="30" alt="API Source Tanit repository"></a>
+<a href="https://github.com/CartagoGit/api-source-tanit"><img src="./assets/btn/tanit.svg?v=2" height="30" alt="API Source Tanit repository"></a>
 <a href="https://github.com/CartagoGit/api-source-tanit/releases"><img src="./assets/btn/releases.svg?v=2" height="30" alt="API Source Tanit releases"></a>
 </td>
 <td align="center" valign="top" width="33%">

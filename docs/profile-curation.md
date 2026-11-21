@@ -359,12 +359,17 @@ desplegable lleva una **barra-ficha** (imagen SVG generada por `scripts/make-sum
 icono de la seccion, etiqueta, una pista de contenido ("8 repositories", "40+ technologies",
 "5 public images") y un chevron hacia abajo. En los dos temas, servida con `<picture>`.
 
-**Limitacion de GitHub:** el sanitizador del markdown **elimina `class` y `data-*`**, asi que
-no se puede condicionar el chevron al estado abierto/cerrado desde el README (se intento con
-`details[open] .when-open` y con `data-fold`, y ambos atributos desaparecen). La barra lleva
-un chevron fijo hacia abajo; el triangulo nativo de GitHub a la izquierda ya indica el
-estado. **Transicion al desplegar:** tampoco es posible inyectar CSS en el README de GitHub;
-en el portafolio los `<details>` de caso si tienen una animacion de entrada (`fold-in`).
+**Limitacion de GitHub:** el sanitizador del markdown **elimina `class`, `data-*` y `style`**
+de `<summary>`, `<details>` y `<div>` (solo conserva `style` en `<img>`, y lo inyecta su JS
+en runtime). Por tanto **no se puede ocultar el marcador nativo** (`display:list-item` con
+`::marker`) ni condicionar nada al estado abierto/cerrado desde el README. Se probaron:
+`class="details-reset"` (eliminado), `data-fold` (eliminado), `style="display:block"` en
+summary (eliminado), div envolvente con style (eliminado), margen negativo en img (solo
+funciona inyectado en vivo, no en el HTML servido). **Solucion final:** la barra lleva
+icono + etiqueta + pista de contenido, **sin chevron propio**; el triangulo nativo de GitHub
+es la unica flecha y ya indica el estado (▶ cerrado, ▼ abierto). **Transicion al desplegar:**
+imposible en el README de GitHub; en el portafolio los `<details>` de caso si tienen una
+animacion de entrada (`fold-in`).
 
 ### Tablet y seccion profesional compacta
 

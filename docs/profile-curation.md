@@ -352,6 +352,37 @@ Una revision externa del portafolio señalo varios puntos; se aplicaron por orde
 Pendiente de la misma revision (no aplicado, requiere decision de Mario): reducir el volumen
 inicial de tarjetas, y SEO bilingue con URLs diferenciadas por idioma.
 
+### Tablet y seccion profesional compacta
+
+- **Tablet (761–1000px):** el header completo (marca + seis enlaces + toggles + cuatro iconos
+  de 44px) desbordaba la pagina ~140px y empujaba todo a la izquierda. Ahora el tablet usa el
+  header compacto con el boton de menu. Entre 1000 y 1200px los enlaces del nav llevan
+  `white-space: nowrap` y gaps menores para no partirse en dos lineas. El elemento `html`
+  lleva el fondo (`background: var(--bg)`) para que el canal del scrollbar no sea una franja
+  blanca.
+- **Trabajo profesional:** antes eran siete tarjetas apiladas de ~550px (3339px de seccion,
+  cuatro pantallas). Ahora: **dos casos destacados** lado a lado (logistica y quioscos, los
+  dos con mas peso) y **cinco tarjetas compactas** de un tercio de ancho, con el caso dentro
+  de un `<details>` nativo ("+ Ver el caso") que funciona sin JS. La seccion baja a ~2000px
+  en escritorio. La grilla es de 6 columnas: destacados span 3, compactas span 2.
+
+### Grupo de IA
+
+El grupo "Con la IA" lleva nueve asistentes: Claude, Codex, MiniMax, Grok, **Gemini, Qwen,
+GLM, MiMo y MAI Code**. Los iconos nuevos se bajaron de Iconify (`simple-icons/googlegemini`,
+`logos/qwen-icon`, `token-branded/glm`, `simple-icons/xiaomi` para MiMo, `simple-icons/microsoft`
+para MAI), se les quito el `width="1em"`, se resolvio `currentColor` y se les dio el color de
+su marca (o el azul del sitio cuando el original era demasiado oscuro para la ficha).
+Tambien estan como botones `tech-*` en el README, en los dos temas.
+
+### Español de España
+
+Revision de calcos que sonaban a latinoamericano: "la parte frontal" → **la parte visual**,
+"libreria" → **biblioteca**, "puertas de CI" → **controles de CI**, "asercion" →
+**comprobacion**, "presets" → **configuraciones predefinidas**, "release" → **publicacion**,
+"elegidas a mano" → **seleccionando**, "Repos activos" → **Repositorios activos**, y la
+entrada del nav "Con que" → **Tecnologias**.
+
 ### Idiomas
 
 Cada texto visible lleva su par `(es, en)` y se emite con `i18n()`. La auditoria con el

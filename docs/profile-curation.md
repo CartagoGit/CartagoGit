@@ -177,6 +177,67 @@ perfil. Se dibuja una marca equivalente en SVG propio.
 `assets/mcp-vertex.svg` se elimino: el producto ya no se llama asi y su logo esta en
 `assets/delendai.svg`.
 
+### El color de los iconos
+
+El bug que se veia: los iconos del encabezado del portafolio eran blancos sobre fondo claro,
+y los del stack salian todos blancos porque el CSS los forzaba con
+`filter: brightness(0) invert(1)` para que se vieran en oscuro. Un filtro no puede saber el
+color de la marca, asi que todos quedaban del mismo color.
+
+La solucion tiene dos partes:
+
+1. **El color va en el fichero.** `scripts/normalize-brand-icons.py` escribe el color de la
+   marca en el `<svg>` raiz y quita los `fill` de los `path`, para que hereden del raiz.
+   Angular sale rojo, Vue verde, React azul claro, Sass rosa. Se ejecuta sobre
+   `assets/brand` de los dos repositorios.
+2. **La ficha no cambia con el tema.** El icono pequeno va sobre un fondo navy fijo
+   (`--icon-tile: #0e1a2b`) con borde `#2b4786`, igual en el tema claro y en el oscuro. Asi
+   el blanco de GitHub sigue siendo visible en claro, y el color de cada marca se lee igual
+   en los dos.
+
+Los iconos grandes de las tarjetas de proyecto son marcas completas y siguen sin ficha.
+
+### Los botones del README
+
+GitHub borra todo `style` y todo `<style>` del README, y el lector puede tener el tema claro o
+el oscuro. Un enlace suelto siempre sale morado y no se puede convertir en boton desde el
+markdown. La salida es una **imagen que lleva su propio contraste**: una ficha redondeada con
+fondo fijo, el icono dentro y la etiqueta al lado.
+
+`scripts/make-buttons.py` los genera en `assets/btn/`. La etiqueta lleva el **nombre del
+proyecto**, no la palabra "Repository": con el icono de GitHub ya se sabe que es un repositorio.
+El ancho de la etiqueta se calcula caractero a caractero (`text_width`) porque una media unica
+recortaba las etiquetas largas.
+
+**Alineacion:** los botones van en una fila `<tr>` propia, debajo de la fila de contenido. Si
+van dentro de la misma celda que el texto, cada celda acaba a una altura distinta y los enlaces
+no cuadran. Con la fila aparte, las tres celdas empiezan los botones a la misma altura.
+
+**Cache del proxy:** GitHub sirve las imagenes del README a traves de un proxy que cachea por
+URL completa y **ignora el `?v=2`**. Cuando se cambia un boton ya publicado, hay que renombrar
+el fichero; cambiar el contenido o la query no basta. Por eso `repo-tanit.svg` paso a
+`tanit.svg`.
+
+## Trabajo profesional: donde va y donde no
+
+Decision acordada con Mario:
+
+- **El trabajo de empresa NO va al README de GitHub.** El README del perfil es solo trabajo
+  independiente, verificable y clonable.
+- **El trabajo de empresa SI va al portafolio**, en una seccion propia (`#pro`), porque es lo
+  que sirve para una oferta o una subida de sueldo: demuestra impacto real.
+- **LinkedIn** lleva la trayectoria completa con el nombre del employer.
+
+La seccion del portafolio se redacta en modo «sector + escala + que construi», sin nombres de
+cliente, sin cifras de negocio del employer y sin capturas. Los proyectos que estan en
+`_projects/Beateam` se describen por su funcion: logistica de almacen, control de asistencia,
+firma de recepcion, pantallas de almacen, proyectos y candidatos, ERP de servicios y minijuegos
+para quioscos. Los commits de cada repositorio llevan la firma de Mario, asi que la evidencia
+es real aunque el codigo no se publique.
+
+Los datos que se usan salen de medir el repositorio, no de una estimacion: el numero de commits
+del autor, el rango de fechas y el stack del `package.json`.
+
 ## Mantenimiento por repositorio
 
 Todo repositorio publico que se mantenga debe tener como minimo:
@@ -220,11 +281,13 @@ Decisiones de Mario, que se aplican tal cual:
    fichero. `assets/cartago-banner.png` entra en el repositorio tal cual lo entrega.
 2. **Va encima de "En una linea"**, no detras de la pagina: un bloque `.hero__aside` con la
    imagen por encima del panel de datos.
-3. **Es discreto.** Se muestra a media opacidad, con una mascara radial que disuelve los bordes
-   y deja solo el globo. En tema claro se multiplica contra el fondo, para que el azul marino se
-   funda con la pagina en vez de recortarse como un parche.
-4. **No esta en el fondo del encabezado.** Se elimino la capa `.site-header::before` que lo
-   repetia detras de la navegacion: alli no significaba nada y ensuciaba la barra.
+3. **Es discreto, pero el globo se lee.** Opacidad .72 y una mascara radial amplia centrada
+   hacia la derecha (`ellipse 82% 92% at 54% 50%`), para que el globo no se coma el difuminado.
+   En tema claro se multiplica contra el fondo, para que el azul marino se funda con la pagina
+   en vez de recortarse como un parche.
+4. **No esta en el fondo del encabezado ni del hero.** Se elimino la capa `.site-header::before`
+   que lo repetia detras de la navegacion, y tambien la del `.hero` en tema claro. La imagen
+   solo vive en el `.hero__aside`.
 
 El sitio sigue sin dependencias: se publica desde `main` tal cual en GitHub Pages.
 
@@ -241,6 +304,14 @@ anuncian lo que no esta terminado:
   con render en servidor detras.
 - La ficha de Keyer se queda con lo suyo —cifrar credenciales desde la terminal— y no absorbe la
   de Steam Keys, que es otra cosa: un gestor local de claves de escritorio, en Tauri y SQLite.
+- **DelendAI no es un «runtime MCP».** Es un servidor MCP con 62 plugins aisladas, una CLI,
+  nueve presets y un ciclo de propuesta a release con 18 puertas de CI. La descripcion dice eso.
+- **La seccion de evidencia lleva datos que aportan valor**: 89 repositorios (68 publicos, 21
+  privados), 26 activos, 22.638 commits en los publicos activos, cinco anos publicando desde
+  octubre de 2021. El numero de paquetes que nadie usa no dice nada; el de repositorios y el de
+  anos si.
+- **Los enlaces llevan el nombre del proyecto**, no la palabra «Repositorio». En el portafolio
+  son pills con icono; en el README son botones con el nombre dentro.
 
 ## Trabajo pendiente
 

@@ -24,14 +24,14 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch and bake the charts
-        run: python3 scripts/refresh-activity.py
+        run: python3 scripts/assets/refresh-activity.py
 
       - name: Commit if the charts moved
         run: |
-          if [[ -n "$(git status --porcelain assets/activity)" ]]; then
+          if [[ -n "$(git status --porcelain assets/generated/activity)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add assets/activity
+            git add assets/generated/activity
             git commit -m "chore: refresh the activity charts"
             git push
           else

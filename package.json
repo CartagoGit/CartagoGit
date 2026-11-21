@@ -1,11 +1,16 @@
 {
   "name": "cartagogit-profile",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "audit:workspace": "bun scripts/audit-workspace.ts /home/cartago/_projects",
-    "licenses:mit": "bun scripts/add-mit-license-all-repositories.ts",
-    "typecheck": "tsc --noEmit"
+    "audit:workspace": "bun scripts/repositories/audit-workspace.ts /home/cartago/_projects",
+    "licenses:mit": "bun scripts/repositories/add-mit-license-all-repositories.ts",
+    "typecheck": "tsc --noEmit",
+    "assets:cards": "python3 scripts/assets/generate-cards.py",
+    "assets:headers": "python3 scripts/assets/generate-headers.py",
+    "assets:buttons": "python3 scripts/assets/generate-buttons.py",
+    "assets:activity": "python3 scripts/assets/refresh-activity.py"
   },
   "devDependencies": {
     "@types/bun": "^1.3.2",

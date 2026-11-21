@@ -211,7 +211,7 @@ el oscuro. Un enlace suelto siempre sale morado y no se puede convertir en boton
 markdown. La salida es una **imagen que lleva su propio contraste**: una ficha redondeada con
 fondo fijo, el icono dentro y la etiqueta al lado.
 
-`scripts/make-buttons.py` los genera en `assets/btn/`. Cubren:
+`scripts/assets/generate-buttons.py` los genera en `assets/generated/buttons/`. Cubren:
 
 - **Repositorios** (con el nombre del proyecto, no la palabra "Repository"), releases, docs,
   live, npm, LinkedIn, Docker Hub y el portfolio (con el logo de Cartago dentro).
@@ -238,7 +238,7 @@ URL nueva si fuerza la recarga.
 
 El logo entregado (`assets/cartago.svg`) preside el README: va dentro del `<h1>`, encima del
 nombre, enlazado al portfolio. Para el boton pequeno se rasteriza a 128 px
-(`scripts/make-cartago-thumb.py` → `cartago-128.png`, ~10 KB) porque el SVG original pesa
+(`scripts/assets/generate-cartago-thumbnail.py` → `projects/cartago-128.png`, ~10 KB) porque el SVG original pesa
 290 KB y a 15 px ese detalle no se ve.
 
 ## Trabajo profesional: donde va y donde no
@@ -360,7 +360,7 @@ inicial de tarjetas, y SEO bilingue con URLs diferenciadas por idioma.
 ### Los desplegables del README
 
 Un `<summary>` suelto se leia como texto plano y nadie sabia que se podia abrir. Ahora cada
-desplegable lleva una **barra-ficha** (imagen SVG generada por `scripts/make-summaries.py`):
+desplegable lleva una **barra-ficha** (imagen SVG generada por `scripts/assets/generate-headers.py`):
 icono de la seccion, etiqueta y una pista de contenido ("8 repositories", "40+ technologies",
 "5 public images"), en los dos temas, servida con `<picture>`.
 
@@ -385,7 +385,7 @@ tienen una animacion de entrada (`fold-in`).
 
 **Graficas de actividad:** los SVG de los servicios traen animaciones de entrada; en un
 `<img>` de README algunos renderers no las ejecutan y la grafica sale en blanco o a medias.
-`scripts/refresh-activity.py` ahora **hornea cada animacion en su estado final**: lee el
+`scripts/assets/refresh-activity.py` ahora **hornea cada animacion en su estado final**: lee el
 ultimo frame de cada `@keyframes` (escaner de llaves equilibradas) y aplica esas declaraciones
 a las reglas que la usan, antes de borrar la animacion. Sin esto, la linea de contribucion
 quedaba en `stroke-dashoffset: 5000` (invisible, solo puntos) y la letra del rango quedaba
@@ -435,12 +435,12 @@ bilingues ahora.
 
 GitHub no deja aplicar CSS al README, pero si respeta `<picture>` con
 `media="(prefers-color-scheme: light)"`. Cada boton tiene su variante clara en
-`assets/btn/light/` (ficha `#f2f5fb`, borde `#bfcee6`, etiqueta `#12233f`; las marcas blancas
+`assets/generated/buttons/light/` (ficha `#f2f5fb`, borde `#bfcee6`, etiqueta `#12233f`; las marcas blancas
 pasan a su version oscura — GitHub negro, como en github.com). El README sirve la variante
 correcta por tema con `<picture><source …><img …></picture>`.
 
-Las **graficas de actividad** se guardan en el repositorio (`assets/activity/`), en los dos
-temas, con esquinas redondeadas (12 px) y la paleta de la ficha. `scripts/refresh-activity.py`
+Las **graficas de actividad** se guardan en el repositorio (`assets/generated/activity/`), en los dos
+temas, con esquinas redondeadas (12 px) y la paleta de la ficha. `scripts/assets/refresh-activity.py`
 las descarga y **hornea las animaciones de entrada a su estado final** (opacity 1, font-size
 final, sin keyframes): dentro de un `<img>` algunos renderizadores no ejecutan la animacion y
 la grafica se veia en blanco. Un workflow semanal (`refresh-activity.yml`, lunes 06:00 UTC)

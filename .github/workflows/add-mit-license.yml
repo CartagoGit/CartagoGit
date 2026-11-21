@@ -52,7 +52,7 @@ jobs:
         run: |
           mkdir -p "$WORKSPACE"
           if [ "${{ inputs.apply }}" = "true" ]; then
-            bun scripts/add-mit-license-all-repositories.ts --workspace="$WORKSPACE" --apply
+            bun scripts/repositories/add-mit-license-all-repositories.ts --workspace="$WORKSPACE" --apply
           else
-            bun scripts/add-mit-license-all-repositories.ts --workspace="$WORKSPACE"
+            bun scripts/repositories/add-mit-license-all-repositories.ts --workspace="$WORKSPACE"
           fi

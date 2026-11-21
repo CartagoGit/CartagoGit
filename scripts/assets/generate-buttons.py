@@ -1,0 +1,273 @@
+#!/usr/bin/env python3
+"""Generate the link buttons used in the profile README.
+
+GitHub strips every `style` attribute and every `<style>` block from a README,
+and the reader may be looking at it in a light or a dark theme. So a link
+cannot be restyled from the markdown side, and a bare hyperlink always looks
+like a purple hyperlink.
+
+The way out is an image that carries its own contrast: a rounded tile with a
+fixed fill, the icon inside it and the label next to it. The tile reads the
+same on a white page and on a dark one, and the whole thing looks like a
+button rather than a link.
+
+Run it from the repository root:
+
+    python3 scripts/make-buttons.py
+"""
+import pathlib
+import re
+
+ROOT = pathlib.Path(__file__).resolve().parents[2]
+ASSETS = ROOT / "assets"
+OUT = ASSETS / "generated" / "buttons"
+
+# The tile: a deep navy that belongs to the palette of the portfolio site, with
+# a border that separates it from a white page without glowing on a dark one.
+TILE = "#0e1a2b"
+TILE_BORDER = "#2b4786"
+ICON_COLOR = "#7fb2ff"
+LABEL = "#e9f0ff"
+
+# Light variant: the same button on a pale tile, for readers whose GitHub is
+# in a light theme. The README serves it through <picture> with a
+# prefers-color-scheme media query, so each reader gets the right one.
+LIGHT_TILE = "#f2f5fb"
+LIGHT_BORDER = "#bfcee6"
+LIGHT_LABEL = "#12233f"
+LIGHT_ICON_COLOR = "#1c5ed4"
+
+HEIGHT = 30
+PAD = 10
+ICON = 15
+GAP = 7
+FONT_SIZE = 12.5
+
+# Approximate advance widths in em for Inter at FONT_SIZE. A single average
+# would cut the longer labels short, so the narrow and the wide characters
+# are counted apart.
+_NARROW = "iljtfrI.,:;'|!()[]{}/\\"
+_WIDE = "mwMW@%"
+_GLYPH_W = {
+    " ": 0.28,
+    "I": 0.30,
+    "l": 0.28,
+    "i": 0.28,
+    "j": 0.28,
+    "t": 0.36,
+    "f": 0.34,
+    "r": 0.38,
+    "M": 0.86,
+    "W": 0.86,
+    "m": 0.84,
+    "w": 0.72,
+    ".": 0.28,
+    ",": 0.28,
+    ":": 0.28,
+    ";": 0.28,
+    "'": 0.22,
+    "’": 0.22,
+    "í": 0.28,
+    "ú": 0.56,
+    "ó": 0.56,
+    "é": 0.55,
+    "á": 0.55,
+    "ñ": 0.57,
+}
+
+
+def text_width(text: str) -> float:
+    """Width of a label in pixels, with slack so no font can clip it.
+
+    The reader's browser may fall back to Segoe UI, Helvetica or Arial, all
+    wider than Inter. The estimate is padded so the label always fits.
+    """
+    total = 0.0
+    for ch in text:
+        if ch in _GLYPH_W:
+            total += _GLYPH_W[ch]
+        elif ch in _NARROW:
+            total += 0.36
+        elif ch in _WIDE:
+            total += 0.86
+        elif ch.isupper():
+            total += 0.68
+        elif ch.isdigit():
+            total += 0.56
+        else:
+            total += 0.55
+    return total * FONT_SIZE * 1.22 + 4
+
+# (icon file, label, output name)
+BUTTONS = [
+    ("generated/buttons/github.svg", "DelendAI", "repo-delendai"),
+    ("generated/buttons/github.svg", "Tanit", "tanit"),
+    ("generated/buttons/github.svg", "QuickModel", "repo-quickmodel"),
+    ("generated/buttons/github.svg", "Keyer", "repo-keyer"),
+    ("generated/buttons/github.svg", "Print CV", "repo-print-cv"),
+    ("generated/buttons/github.svg", "Cartago", "repo-cartago"),
+    ("generated/buttons/github.svg", "Aoe2 mods", "repo-aoe2"),
+    ("generated/buttons/github.svg", "PC Fútbol 6", "repo-pcfutbol"),
+    ("generated/buttons/github.svg", "Steam Keys", "repo-steam-keys"),
+    ("generated/buttons/github.svg", "Player Club Dynasty", "repo-pcd"),
+    ("generated/buttons/github.svg", "NestGpt", "repo-nestgpt"),
+    ("generated/buttons/github.svg", "ReactGpt", "repo-reactgpt"),
+    ("generated/buttons/github.svg", "Zoneless calculator", "repo-zoneless"),
+    ("generated/buttons/github.svg", "template-angular", "repo-template"),
+    ("generated/buttons/github.svg", "codember-dev", "repo-codember"),
+    ("generated/buttons/github.svg", "codewars", "repo-codewars"),
+    ("generated/buttons/releases.svg", "Releases", "releases"),
+    ("generated/buttons/docs.svg", "Docs", "docs"),
+    ("generated/buttons/live.svg", "Live", "live"),
+    ("generated/buttons/package.svg", "npm", "npm"),
+    ("brand/github.svg", "GitHub", "github"),
+    ("projects/cartago-128.png", "Portfolio", "portfolio"),
+    ("brand/linkedin.svg", "LinkedIn", "linkedin"),
+    ("brand/npm.svg", "npm", "npm-brand"),
+    ("brand/docker.svg", "Docker Hub", "docker"),
+    # ---- Docker images ----
+    ("brand/docker.svg", "nodebun", "img-nodebun"),
+    ("brand/docker.svg", "zsh", "img-zsh"),
+    ("brand/docker.svg", "ionic-cover", "img-ionic"),
+    ("brand/docker.svg", "nestjs-cover", "img-nestjs"),
+    ("brand/docker.svg", "angular", "img-angular"),
+    # ---- stack badges: same tile, each brand's own colour ----
+    ("brand/angular.svg", "Angular", "tech-angular"),
+    ("brand/ionic.svg", "Ionic", "tech-ionic"),
+    ("brand/material.svg", "Material", "tech-material"),
+    ("brand/sass.svg", "Sass", "tech-sass"),
+    ("brand/typescript.svg", "TypeScript", "tech-typescript"),
+    ("brand/rxjs.svg", "RxJS", "tech-rxjs"),
+    ("brand/capacitor.svg", "Capacitor", "tech-capacitor"),
+    ("brand/tailwindcss.svg", "Tailwind", "tech-tailwind"),
+    ("brand/vue.svg", "Vue", "tech-vue"),
+    ("brand/react.svg", "React", "tech-react"),
+    ("brand/nestjs.svg", "NestJS", "tech-nestjs"),
+    ("brand/bun.svg", "Bun", "tech-bun"),
+    ("brand/nodejs.svg", "Node.js", "tech-nodejs"),
+    ("brand/postgresql.svg", "PostgreSQL", "tech-postgresql"),
+    ("brand/sqlite.svg", "SQLite", "tech-sqlite"),
+    ("brand/mongodb.svg", "MongoDB", "tech-mongodb"),
+    ("brand/zod.svg", "Zod", "tech-zod"),
+    ("brand/openapi.svg", "OpenAPI", "tech-openapi"),
+    ("brand/model-context-protocol.svg", "MCP", "tech-mcp"),
+    ("brand/tauri.svg", "Tauri 2", "tech-tauri"),
+    ("brand/rust.svg", "Rust", "tech-rust"),
+    ("brand/godot.svg", "Godot", "tech-godot"),
+    ("brand/python.svg", "Python", "tech-python"),
+    ("brand/storybook.svg", "Storybook", "tech-storybook"),
+    ("brand/prime-ng.svg", "PrimeNG", "tech-primeng"),
+    ("brand/vitest.svg", "Vitest", "tech-vitest"),
+    ("brand/jest.svg", "Jest", "tech-jest"),
+    ("brand/playwright.svg", "Playwright", "tech-playwright"),
+    ("brand/eslint.svg", "ESLint", "tech-eslint"),
+    ("brand/prettier.svg", "Prettier", "tech-prettier"),
+    ("brand/docker.svg", "Docker", "tech-docker"),
+    ("brand/gitlab.svg", "GitLab CI", "tech-gitlab"),
+    ("brand/github-actions.svg", "GitHub Actions", "tech-actions"),
+    ("brand/linux.svg", "Linux", "tech-linux"),
+    # ---- AI assistants ----
+    ("brand/claude.svg", "Claude", "tech-claude"),
+    ("brand/openai.svg", "Codex", "tech-codex"),
+    ("brand/minimax.svg", "MiniMax", "tech-minimax"),
+    ("brand/grok.svg", "Grok", "tech-grok"),
+    ("brand/gemini.svg", "Gemini", "tech-gemini"),
+    ("brand/qwen.svg", "Qwen", "tech-qwen"),
+    ("brand/glm.svg", "GLM", "tech-glm"),
+    ("brand/mimo.svg", "MiMo", "tech-mimo"),
+    ("brand/mai.svg", "MAI Code", "tech-mai"),
+]
+
+
+def icon_markup(name: str) -> tuple[str, str, str, bool]:
+    """Return (content, view_box, colour, is_raster) of an existing icon file."""
+    if name.endswith(".png"):
+        import base64
+
+        data = base64.b64encode((ASSETS / name).read_bytes()).decode()
+        inner = (
+            f'<image width="128" height="128" '
+            f'href="data:image/png;base64,{data}"/>'
+        )
+        return inner, "0 0 128 128", ICON_COLOR, True
+    raw = (ASSETS / name).read_text()
+    view_box = re.search(r'viewBox="([^"]+)"', raw)
+    box = view_box.group(1).split() if view_box else ["0", "0", "24", "24"]
+    root_fill = re.search(r'<svg[^>]*\sfill="([^"]+)"', raw)
+    colour = root_fill.group(1) if root_fill else ICON_COLOR
+    # Keep only the drawing instructions: the root <svg> attributes are
+    # replaced by the nested one we build ourselves.
+    inner = re.sub(r"^.*?<svg[^>]*>", "", raw, flags=re.S)
+    inner = re.sub(r"</svg>\s*$", "", inner, flags=re.S)
+    # Iconify ships 1em boxes; the size is decided by the nested viewport.
+    inner = re.sub(r'\s(width|height)="[^"]*"', "", inner)
+    # The path fills would win over the colour of the nested svg.
+    inner = re.sub(r'\sfill="[^"]*"', "", inner)
+    inner = re.sub(r'\sstroke="[^"]*"', "", inner)
+    return inner, " ".join(box), colour, False
+
+
+def _luminance(hex_colour: str) -> float:
+    """Relative luminance, to decide whether a colour reads on a pale tile."""
+    h = hex_colour.lstrip("#")
+    if len(h) == 3:
+        h = "".join(c * 2 for c in h)
+    try:
+        r, g, b = (int(h[i:i + 2], 16) / 255 for i in (0, 2, 4))
+    except ValueError:
+        return 0.5
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+
+# Marks that are near-white lose their shape on a pale tile; they take the
+# dark reading of the brand instead (GitHub goes black, as on github.com).
+LIGHT_OVERRIDES = {
+    "github": "#181717",
+    "model-context-protocol": "#111111",
+    "openai": "#111111",
+    "grok": "#111111",
+}
+
+
+def button(icon_file: str, label: str, light: bool = False) -> str:
+    inner, view_box, colour, is_raster = icon_markup(icon_file)
+    if light and not is_raster:
+        stem = pathlib.Path(icon_file).stem
+        if stem in LIGHT_OVERRIDES:
+            colour = LIGHT_OVERRIDES[stem]
+        elif _luminance(colour) > 0.62:
+            colour = LIGHT_ICON_COLOR
+    tile = LIGHT_TILE if light else TILE
+    border = LIGHT_BORDER if light else TILE_BORDER
+    text_colour = LIGHT_LABEL if light else LABEL
+    label_w = text_width(label)
+    width = PAD + ICON + GAP + label_w + PAD
+    text_x = PAD + ICON + GAP
+    baseline = HEIGHT / 2 + FONT_SIZE * 0.35
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width:.0f}" height="{HEIGHT}" '
+        f'viewBox="0 0 {width:.0f} {HEIGHT}" role="img" aria-label="{label}">'
+        f'<rect x="0.5" y="0.5" width="{width - 1:.0f}" height="{HEIGHT - 1}" rx="6" '
+        f'fill="{tile}" stroke="{border}"/>'
+        f'<svg x="{PAD}" y="{(HEIGHT - ICON) / 2}" width="{ICON}" height="{ICON}" '
+        f'viewBox="{view_box}" fill="{colour}">{inner}</svg>'
+        f'<text x="{text_x:.1f}" y="{baseline:.1f}" fill="{text_colour}" '
+        f'font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="{FONT_SIZE}" '
+        f'font-weight="600">{label}</text>'
+        f"</svg>"
+    )
+
+
+def main():
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "light").mkdir(parents=True, exist_ok=True)
+    for icon_file, label, name in BUTTONS:
+        path = OUT / f"{name}.svg"
+        path.write_text(button(icon_file, label))
+        light_path = OUT / "light" / f"{name}.svg"
+        light_path.write_text(button(icon_file, label, light=True))
+        print("wrote", path.relative_to(ROOT), "+ light")
+
+
+if __name__ == "__main__":
+    main()

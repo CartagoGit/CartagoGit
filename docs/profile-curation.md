@@ -283,11 +283,13 @@ Decisiones de Mario, que se aplican tal cual:
    imagen por encima del panel de datos.
 3. **Es discreto, pero el globo se lee.** Opacidad .72 y una mascara radial amplia centrada
    hacia la derecha (`ellipse 82% 92% at 54% 50%`), para que el globo no se coma el difuminado.
-   En tema claro se multiplica contra el fondo, para que el azul marino se funda con la pagina
-   en vez de recortarse como un parche.
+   En tema claro la imagen se queda como lo que es —una imagen enmarcada con borde y sombra—
+   porque multiplicarla contra el fondo claro la volvia plateada.
 4. **No esta en el fondo del encabezado ni del hero.** Se elimino la capa `.site-header::before`
    que lo repetia detras de la navegacion, y tambien la del `.hero` en tema claro. La imagen
    solo vive en el `.hero__aside`.
+5. **Los iconos pequenos no llevan `loading="lazy"`.** Son SVG de menos de un kilobyte y el
+   navegador integrado no los cargaba hasta hacer scroll sobre ellos. Cargan con la pagina.
 
 El sitio sigue sin dependencias: se publica desde `main` tal cual en GitHub Pages.
 

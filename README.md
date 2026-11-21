@@ -10,10 +10,10 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/btn/linkedin.svg" height="30" alt="LinkedIn profile"></a>
-  <a href="https://www.npmjs.com/~cartago-git"><img src="./assets/btn/npm-brand.svg" height="30" alt="npm packages"></a>
-  <a href="https://hub.docker.com/u/cartagodocker"><img src="./assets/btn/docker.svg" height="30" alt="Docker Hub images"></a>
-  <a href="https://cartagogit.github.io"><img src="./assets/btn/portfolio.svg" height="30" alt="Portfolio site"></a>
+  <a href="https://www.linkedin.com/in/mario-cabrero-volarich"><img src="./assets/btn/linkedin.svg?v=2" height="30" alt="LinkedIn profile"></a>
+  <a href="https://www.npmjs.com/~cartago-git"><img src="./assets/btn/npm-brand.svg?v=2" height="30" alt="npm packages"></a>
+  <a href="https://hub.docker.com/u/cartagodocker"><img src="./assets/btn/docker.svg?v=2" height="30" alt="Docker Hub images"></a>
+  <a href="https://cartagogit.github.io"><img src="./assets/btn/portfolio.svg?v=2" height="30" alt="Portfolio site"></a>
 </p>
 
 ---
@@ -64,16 +64,16 @@ SOLID architecture, automatic type transformation, validation adapters, benchmar
 </tr>
 <tr>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/DelendAI"><img src="./assets/btn/repo-delendai.svg" height="30" alt="DelendAI repository"></a>
-<a href="https://github.com/CartagoGit/DelendAI/releases"><img src="./assets/btn/releases.svg" height="30" alt="DelendAI releases"></a>
+<a href="https://github.com/CartagoGit/DelendAI"><img src="./assets/btn/repo-delendai.svg?v=2" height="30" alt="DelendAI repository"></a>
+<a href="https://github.com/CartagoGit/DelendAI/releases"><img src="./assets/btn/releases.svg?v=2" height="30" alt="DelendAI releases"></a>
 </td>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/api-source-tanit"><img src="./assets/btn/repo-tanit.svg" height="30" alt="API Source Tanit repository"></a>
-<a href="https://github.com/CartagoGit/api-source-tanit/releases"><img src="./assets/btn/releases.svg" height="30" alt="API Source Tanit releases"></a>
+<a href="https://github.com/CartagoGit/api-source-tanit"><img src="./assets/btn/repo-tanit.svg?v=2" height="30" alt="API Source Tanit repository"></a>
+<a href="https://github.com/CartagoGit/api-source-tanit/releases"><img src="./assets/btn/releases.svg?v=2" height="30" alt="API Source Tanit releases"></a>
 </td>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/quickmodel"><img src="./assets/btn/repo-quickmodel.svg" height="30" alt="QuickModel repository"></a>
-<a href="https://cartagogit.github.io/quickmodel/"><img src="./assets/btn/docs.svg" height="30" alt="QuickModel documentation"></a>
+<a href="https://github.com/CartagoGit/quickmodel"><img src="./assets/btn/repo-quickmodel.svg?v=2" height="30" alt="QuickModel repository"></a>
+<a href="https://cartagogit.github.io/quickmodel/"><img src="./assets/btn/docs.svg?v=2" height="30" alt="QuickModel documentation"></a>
 </td>
 </tr>
 <tr>
@@ -98,16 +98,16 @@ An Angular application with server-side rendering, unit and integration tests an
 </tr>
 <tr>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/Keyer"><img src="./assets/btn/repo-keyer.svg" height="30" alt="Keyer repository"></a>
-<a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="./assets/btn/npm.svg" height="30" alt="Keyer on npm"></a>
+<a href="https://github.com/CartagoGit/Keyer"><img src="./assets/btn/repo-keyer.svg?v=2" height="30" alt="Keyer repository"></a>
+<a href="https://www.npmjs.com/package/@cartago-git/keyer"><img src="./assets/btn/npm.svg?v=2" height="30" alt="Keyer on npm"></a>
 </td>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/print-cv"><img src="./assets/btn/repo-print-cv.svg" height="30" alt="Print CV repository"></a>
-<a href="https://cartagogit.github.io/print-cv/"><img src="./assets/btn/live.svg" height="30" alt="Print CV live app"></a>
+<a href="https://github.com/CartagoGit/print-cv"><img src="./assets/btn/repo-print-cv.svg?v=2" height="30" alt="Print CV repository"></a>
+<a href="https://cartagogit.github.io/print-cv/"><img src="./assets/btn/live.svg?v=2" height="30" alt="Print CV live app"></a>
 </td>
 <td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/portfolio"><img src="./assets/btn/repo-cartago.svg" height="30" alt="Cartago repository"></a>
-<a href="https://cartagogit.github.io"><img src="./assets/btn/live.svg" height="30" alt="Cartago live site"></a>
+<a href="https://github.com/CartagoGit/portfolio"><img src="./assets/btn/repo-cartago.svg?v=2" height="30" alt="Cartago repository"></a>
+<a href="https://cartagogit.github.io"><img src="./assets/btn/live.svg?v=2" height="30" alt="Cartago live site"></a>
 </td>
 </tr>
 </table>
@@ -169,13 +169,13 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 | Project | Focus | Link |
 | --- | --- | --- |
-| NestJS AI API | Typed DTOs, file uploads, streaming and Docker-based delivery for AI-enabled apps. | <a href="https://github.com/CartagoGit/NestGpt"><img src="./assets/btn/repo.svg" height="30" alt="NestGpt repository"></a> |
-| React front-end | The client that talks to the NestJS AI API. | <a href="https://github.com/CartagoGit/ReactGpt"><img src="./assets/btn/repo.svg" height="30" alt="ReactGpt repository"></a> |
-| Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | <a href="https://github.com/CartagoGit/zoneless-calculator"><img src="./assets/btn/repo.svg" height="30" alt="zoneless-calculator repository"></a> |
-| Modding and content | Tools and content for modifying games: binary formats, localisation and automation. | <a href="https://github.com/CartagoGit/aoe2-mods"><img src="./assets/btn/repo-aoe2.svg" height="30" alt="Aoe2 mods repository"></a> <a href="https://github.com/CartagoGit/pcfutbol6-mod"><img src="./assets/btn/repo-pcfutbol.svg" height="30" alt="PC Fútbol 6 mods repository"></a> |
-| AI-assisted game delivery | A Godot/C# football manager built through a proposal → implement → review → release pipeline. | <a href="https://github.com/CartagoGit/player-club-dynasty"><img src="./assets/btn/repo-pcd.svg" height="30" alt="Player Club Dynasty repository"></a> |
-| Local-first desktop app | A Tauri 2 + Rust + SQLite manager that keeps game keys off the cloud. | <a href="https://github.com/CartagoGit/steam-keys"><img src="./assets/btn/repo-steam-keys.svg" height="30" alt="Steam Keys repository"></a> |
-| Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><img src="./assets/btn/repo.svg" height="30" alt="template-angular repository"></a> |
+| NestJS AI API | Typed DTOs, file uploads, streaming and Docker-based delivery for AI-enabled apps. | <a href="https://github.com/CartagoGit/NestGpt"><img src="./assets/btn/repo.svg?v=2" height="30" alt="NestGpt repository"></a> |
+| React front-end | The client that talks to the NestJS AI API. | <a href="https://github.com/CartagoGit/ReactGpt"><img src="./assets/btn/repo.svg?v=2" height="30" alt="ReactGpt repository"></a> |
+| Zoneless Angular | Angular without zone.js, exercised by unit and integration tests. | <a href="https://github.com/CartagoGit/zoneless-calculator"><img src="./assets/btn/repo.svg?v=2" height="30" alt="zoneless-calculator repository"></a> |
+| Modding and content | Tools and content for modifying games: binary formats, localisation and automation. | <a href="https://github.com/CartagoGit/aoe2-mods"><img src="./assets/btn/repo-aoe2.svg?v=2" height="30" alt="Aoe2 mods repository"></a> <a href="https://github.com/CartagoGit/pcfutbol6-mod"><img src="./assets/btn/repo-pcfutbol.svg?v=2" height="30" alt="PC Fútbol 6 mods repository"></a> |
+| AI-assisted game delivery | A Godot/C# football manager built through a proposal → implement → review → release pipeline. | <a href="https://github.com/CartagoGit/player-club-dynasty"><img src="./assets/btn/repo-pcd.svg?v=2" height="30" alt="Player Club Dynasty repository"></a> |
+| Local-first desktop app | A Tauri 2 + Rust + SQLite manager that keeps game keys off the cloud. | <a href="https://github.com/CartagoGit/steam-keys"><img src="./assets/btn/repo-steam-keys.svg?v=2" height="30" alt="Steam Keys repository"></a> |
+| Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><img src="./assets/btn/repo.svg?v=2" height="30" alt="template-angular repository"></a> |
 | Practice repositories | Daily puzzles and katas, one commit per solution. | [![codember-dev](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/codember-dev) [![codewars](https://img.shields.io/badge/Repository_%E2%86%97-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/CartagoGit/codewars) |
 
 </details>

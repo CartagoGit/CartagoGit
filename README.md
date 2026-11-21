@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.png" alt="Mario Cabrero Volarich — Cartago" width="100%" style="border-radius: 14px; border: 1px solid #1e2f57;">
+  <img src="./assets/site/banner.png" alt="Mario Cabrero Volarich — Cartago" width="100%" style="border-radius: 14px; border: 1px solid #1e2f57;">
 </p>
 
 <h1 align="center">

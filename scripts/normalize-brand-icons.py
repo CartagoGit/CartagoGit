@@ -81,22 +81,23 @@ SKIP = {"steam-keys"}
 def normalise(path: pathlib.Path, colour: str) -> None:
     raw = path.read_text()
 
-    # The root element: the colour goes here, so every path inherits it.
-    def root(match: re.Match) -> str:
-        tag = match.group(0)
-        tag = re.sub(r'\sfill="[^"]*"', "", tag)
-        return tag[:-1] + f' fill="{colour}">'
+    match = re.search(r"<svg[^>]*>", raw)
+    if match is None:
+        return
+    tag = re.sub(r'\sfill="[^"]*"', "", match.group(0))
+    tag = tag[:-1] + f' fill="{colour}">'
 
-    raw = re.sub(r"<svg[^>]*>", root, raw, count=1)
+    head = tag
+    body = raw[match.end():]
 
     # Path and shape fills would win over the root one.
-    raw = re.sub(r'\sfill="[^"]*"', "", raw)
-    raw = re.sub(r'\sstroke="[^"]*"', "", raw)
+    body = re.sub(r'\sfill="[^"]*"', "", body)
+    body = re.sub(r'\sstroke="[^"]*"', "", body)
 
     # A `currentColor` left behind would resolve to black inside an <img>.
-    raw = raw.replace("currentColor", colour)
+    body = body.replace("currentColor", colour)
 
-    path.write_text(raw)
+    path.write_text(head + body)
 
 
 def main():

@@ -168,7 +168,10 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 ---
 
 <details>
-<summary><strong>More projects</strong></summary>
+<summary>
+<span class="when-closed"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects.svg"><img src="./assets/summary/more-projects.svg" alt="More projects — expand" height="38"></picture></span>
+<span class="when-open"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-open.svg"><img src="./assets/summary/more-projects-open.svg" alt="More projects — collapse" height="38"></picture></span>
+</summary>
 
 | Project | Focus | Link |
 | --- | --- | --- |
@@ -184,7 +187,10 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 </details>
 
 <details>
-<summary><strong>Core stack</strong></summary>
+<summary>
+<span class="when-closed"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack.svg"><img src="./assets/summary/core-stack.svg" alt="Core stack — expand" height="38"></picture></span>
+<span class="when-open"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-open.svg"><img src="./assets/summary/core-stack-open.svg" alt="Core stack — collapse" height="38"></picture></span>
+</summary>
 
 **Front-end — my base**
 
@@ -247,7 +253,10 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 </details>
 
 <details>
-<summary><strong>Docker images</strong></summary>
+<summary>
+<span class="when-closed"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images.svg"><img src="./assets/summary/docker-images.svg" alt="Docker images — expand" height="38"></picture></span>
+<span class="when-open"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-open.svg"><img src="./assets/summary/docker-images-open.svg" alt="Docker images — collapse" height="38"></picture></span>
+</summary>
 
 Public development images for reproducible environments. Pull counts are live Docker Hub values.
 

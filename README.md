@@ -125,6 +125,8 @@ An Angular application with server-side rendering, unit and integration tests an
 - **Delivery foundations.** Dockerised development environments, GitLab CI and GitHub Actions pipelines, container images, and focused test coverage on the parts that actually break.
 - **AI-assisted, human-owned.** I use AI assistants for implementation; the architecture decisions, the code review and the acceptance criteria are mine.
 
+---
+
 <p id="beyond-the-front-end"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/beyond-front-end-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/beyond-front-end-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/beyond-front-end-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/beyond-front-end-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/beyond-front-end-v6.svg"><img src="./assets/summary/beyond-front-end-v6.svg" alt="Beyond the front-end" height="44"></picture></p>
 
 - **Developer tooling.** An MCP server with 62 capabilities, a model serialization library and a static analysis engine, built because the tools I wanted did not exist.
@@ -209,7 +211,16 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 | Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-template.svg?v=3"><img height="30" alt="template-angular repository" src="./assets/btn/repo-template.svg?v=3"></picture></a> |
 | Practice repositories | Daily puzzles and katas, one commit per solution. | <a href="https://github.com/CartagoGit/codember-dev"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-codember.svg?v=3"><img height="30" alt="codember-dev repository" src="./assets/btn/repo-codember.svg?v=3"></picture></a> <a href="https://github.com/CartagoGit/codewars"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-codewars.svg?v=3"><img height="30" alt="codewars repository" src="./assets/btn/repo-codewars.svg?v=3"></picture></a> |
 
-<p id="core-stack"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/core-stack-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/core-stack-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/core-stack-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/core-stack-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v6.svg"><img src="./assets/summary/core-stack-v6.svg" alt="Core stack" height="44"></picture></p>
+---
+
+<p id="core-stack"><picture>
+  <source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/core-stack-v6.svg">
+  <source media="(max-width: 499px)" srcset="./assets/summary/narrow/core-stack-v6.svg">
+  <source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/core-stack-v6.svg">
+  <source media="(max-width: 1199px)" srcset="./assets/summary/mid/core-stack-v6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v6.svg">
+  <img src="./assets/summary/core-stack-v6.svg" alt="Core stack" height="44">
+</picture></p>
 
 **Front-end — my base**
 
@@ -268,7 +279,15 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-glm.svg?v=3"><img height="30" alt="GLM" src="./assets/btn/tech-glm.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mimo.svg?v=3"><img height="30" alt="MAI Code" src="./assets/btn/tech-mai.svg?v=3"></picture>
 
-<p id="docker-images"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/docker-images-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/docker-images-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/docker-images-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/docker-images-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v6.svg"><img src="./assets/summary/docker-images-v6.svg" alt="Docker images" height="44"></picture></p>
+---
+
+<p id="docker-images"><picture>
+  <source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/docker-images-v6.svg">
+  <source media="(max-width: 499px)" srcset="./assets/summary/narrow/docker-images-v6.svg">
+  <source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/docker-images-v6.svg">
+  <source media="(max-width: 1199px)" srcset="./assets/summary/mid/docker-images-v6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v6.svg">
+  <img src="./assets/summary/docker-images-v6.svg" alt="Docker images" height="44"></picture></p>
 
 Public development images for reproducible environments. Pull counts are live Docker Hub values.
 

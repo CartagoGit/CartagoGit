@@ -21,7 +21,7 @@
 
 ---
 
-<p id="what-i-build"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/what-i-build-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/what-i-build-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/what-i-build-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/what-i-build-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/what-i-build-v6.svg"><img src="./assets/summary/what-i-build-v6.svg" alt="What I build" height="44"></picture></p>
+<p id="what-i-build"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/what-i-build-v7.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/what-i-build-v7.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/what-i-build-v7.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/what-i-build-v7.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/what-i-build-v7.svg"><img src="./assets/summary/what-i-build-v7.svg" alt="What I build" height="44"></picture></p>
 
 **Front-end for operational systems.** ERP, warehouse logistics, workforce and attendance: the same
 screens eight hours a day, with role-based permissions, complex validated forms and listings that
@@ -42,82 +42,29 @@ experiments built in my own time. My professional work is not published here.
 
 ---
 
-<p id="featured-projects"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/featured-projects-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/featured-projects-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/featured-projects-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/featured-projects-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/featured-projects-v6.svg"><img src="./assets/summary/featured-projects-v6.svg" alt="Featured Projects" height="44"></picture></p>
+<p id="featured-projects"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/featured-projects-v7.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/featured-projects-v7.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/featured-projects-v7.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/featured-projects-v7.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/featured-projects-v7.svg"><img src="./assets/summary/featured-projects-v7.svg" alt="Featured Projects" height="54"></picture></p>
 
-<table>
-<tr>
-<td width="33%" align="center" valign="top">
-<img src="./assets/delendai.svg" width="72" height="72" alt="DelendAI"><br>
-<strong>DelendAI</strong><br>
-<sub>Extensible MCP server core and CLI plugin tooling</sub><br><br>
-An MCP server you point at a project: 62 isolated plugins, a CLI, nine presets and a proposal → implement → review → release cycle behind 18 CI gates. It knows nothing about your stack.
-</td>
-<td width="33%" align="center" valign="top">
-<img src="./assets/tanit.svg" width="72" height="72" alt="API Source Tanit"><br>
-<strong>API Source Tanit</strong><br>
-<sub>Static API discovery from source code</sub><br><br>
-Points at a project directory and produces a ready-to-import API description. 25 frameworks detected from the code, exported to Postman, Bruno, Insomnia, HAR, OpenAPI or cURL.
-</td>
-<td width="33%" align="center" valign="top">
-<img src="./assets/quickmodel-rounded.png" width="72" height="72" alt="QuickModel"><br>
-<strong>QuickModel</strong><br>
-<sub>TypeScript model serialization library</sub><br><br>
-SOLID architecture, automatic type transformation, validation adapters, benchmarks and an MCP server on top. The test suite is larger than the source on purpose.
-</td>
-</tr>
-<tr>
-<td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/DelendAI"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-delendai.svg?v=3"><img height="30" alt="DelendAI repository" src="./assets/btn/repo-delendai.svg?v=3"></picture></a>
-<a href="https://github.com/CartagoGit/DelendAI/releases"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/releases.svg?v=3"><img height="30" alt="DelendAI releases" src="./assets/btn/releases.svg?v=3"></picture></a>
-</td>
-<td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/api-source-tanit"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tanit.svg?v=3"><img height="30" alt="API Source Tanit repository" src="./assets/btn/tanit.svg?v=3"></picture></a>
-<a href="https://github.com/CartagoGit/api-source-tanit/releases"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/releases.svg?v=3"><img height="30" alt="API Source Tanit releases" src="./assets/btn/releases.svg?v=3"></picture></a>
-</td>
-<td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/quickmodel"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-quickmodel.svg?v=3"><img height="30" alt="QuickModel repository" src="./assets/btn/repo-quickmodel.svg?v=3"></picture></a>
-<a href="https://cartagogit.github.io/quickmodel/"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/docs.svg?v=3"><img height="30" alt="QuickModel documentation" src="./assets/btn/docs.svg?v=3"></picture></a>
-</td>
-</tr>
-<tr>
-<td width="33%" align="center" valign="top">
-<img src="./assets/keyer.svg" width="72" height="72" alt="Keyer"><br>
-<strong>Keyer</strong><br>
-<sub>Published npm CLI for secrets</sub><br><br>
-Encrypts keys, API keys and <code>.env</code> files from the command line. Published on npm and used to keep real credentials out of the repositories and the images.
-</td>
-<td width="33%" align="center" valign="top">
-<img src="./assets/print-cv.svg" width="72" height="72" alt="Print CV"><br>
-<strong>Print CV</strong><br>
-<sub>A CV application you can print</sub><br><br>
-Vue 3 and TypeScript, with the curriculum modelled as validated data, internationalised in English and Spanish, and a print mode designed around real paper.
-</td>
-<td width="33%" align="center" valign="top">
-<img src="./assets/cartago.svg" width="72" height="72" alt="Cartago"><br>
-<strong>Cartago</strong><br>
-<sub>The site behind this profile</sub><br><br>
-An Angular application with server-side rendering, unit and integration tests and an MCP server wired into the build. Bilingual, it follows the system theme.
-</td>
-</tr>
-<tr>
-<td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/Keyer"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-keyer.svg?v=3"><img height="30" alt="Keyer repository" src="./assets/btn/repo-keyer.svg?v=3"></picture></a>
-<a href="https://www.npmjs.com/package/@cartago-git/keyer"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/npm.svg?v=3"><img height="30" alt="Keyer on npm" src="./assets/btn/npm.svg?v=3"></picture></a>
-</td>
-<td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/print-cv"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-print-cv.svg?v=3"><img height="30" alt="Print CV repository" src="./assets/btn/repo-print-cv.svg?v=3"></picture></a>
-<a href="https://cartagogit.github.io/print-cv/"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/live.svg?v=3"><img height="30" alt="Print CV live app" src="./assets/btn/live.svg?v=3"></picture></a>
-</td>
-<td align="center" valign="top" width="33%">
-<a href="https://github.com/CartagoGit/portfolio"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-cartago.svg?v=3"><img height="30" alt="Cartago repository" src="./assets/btn/repo-cartago.svg?v=3"></picture></a>
-<a href="https://cartagogit.github.io"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/live.svg?v=3"><img height="30" alt="Cartago live site" src="./assets/btn/live.svg?v=3"></picture></a>
-</td>
-</tr>
-</table>
+<p align="center">
+<a href="https://github.com/CartagoGit/DelendAI"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/project-delendai-v1.svg"><img src="./assets/cards/project-delendai-v1.svg" alt="DelendAI — extensible MCP server core" width="250" height="176"></picture></a>
+<a href="https://github.com/CartagoGit/api-source-tanit"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/project-tanit-v1.svg"><img src="./assets/cards/project-tanit-v1.svg" alt="API Source Tanit — static API discovery" width="250" height="176"></picture></a>
+<a href="https://github.com/CartagoGit/quickmodel"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/project-quickmodel-v1.svg"><img src="./assets/cards/project-quickmodel-v1.svg" alt="QuickModel — TypeScript serialization" width="250" height="176"></picture></a>
+<a href="https://github.com/CartagoGit/Keyer"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/project-keyer-v1.svg"><img src="./assets/cards/project-keyer-v1.svg" alt="Keyer — published secrets CLI" width="250" height="176"></picture></a>
+<a href="https://github.com/CartagoGit/print-cv"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/project-print-cv-v1.svg"><img src="./assets/cards/project-print-cv-v1.svg" alt="Print CV — print-ready CV application" width="250" height="176"></picture></a>
+<a href="https://github.com/CartagoGit/portfolio"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/project-cartago-v1.svg"><img src="./assets/cards/project-cartago-v1.svg" alt="Cartago — the site behind this profile" width="250" height="176"></picture></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/CartagoGit/DelendAI/releases"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/releases.svg?v=3"><img height="30" alt="DelendAI releases" src="./assets/btn/releases.svg?v=3"></picture></a>
+  <a href="https://github.com/CartagoGit/api-source-tanit/releases"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/releases.svg?v=3"><img height="30" alt="API Source Tanit releases" src="./assets/btn/releases.svg?v=3"></picture></a>
+  <a href="https://cartagogit.github.io/quickmodel/"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/docs.svg?v=3"><img height="30" alt="QuickModel documentation" src="./assets/btn/docs.svg?v=3"></picture></a>
+  <a href="https://www.npmjs.com/package/@cartago-git/keyer"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/npm.svg?v=3"><img height="30" alt="Keyer on npm" src="./assets/btn/npm.svg?v=3"></picture></a>
+  <a href="https://cartagogit.github.io/print-cv/"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/live.svg?v=3"><img height="30" alt="Print CV live app" src="./assets/btn/live.svg?v=3"></picture></a>
+  <a href="https://cartagogit.github.io"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/live.svg?v=3"><img height="30" alt="Cartago live site" src="./assets/btn/live.svg?v=3"></picture></a>
+</p>
 
 ---
 
-<p id="professional-experience"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/professional-experience-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/professional-experience-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/professional-experience-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/professional-experience-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/professional-experience-v6.svg"><img src="./assets/summary/professional-experience-v6.svg" alt="Professional experience" height="44"></picture></p>
+<p id="professional-experience"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/professional-experience-v7.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/professional-experience-v7.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/professional-experience-v7.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/professional-experience-v7.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/professional-experience-v7.svg"><img src="./assets/summary/professional-experience-v7.svg" alt="Professional experience" height="44"></picture></p>
 
 - **Operational front-end delivery.** Business applications for commercial, financial, inventory, logistics and workforce processes. Complex states, role-based permissions, reporting and business rules that must not break between releases.
 - **Web and Android.** Angular and Ionic applications, packaged for Android with Capacitor, plus Vue and Quasar for the management panels and progressive web apps for what has to work without being installed. Interfaces designed for repeated, high-context use.
@@ -127,7 +74,7 @@ An Angular application with server-side rendering, unit and integration tests an
 
 ---
 
-<p id="beyond-the-front-end"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/beyond-front-end-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/beyond-front-end-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/beyond-front-end-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/beyond-front-end-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/beyond-front-end-v6.svg"><img src="./assets/summary/beyond-front-end-v6.svg" alt="Beyond the front-end" height="44"></picture></p>
+<p id="beyond-the-front-end"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/beyond-front-end-v7.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/beyond-front-end-v7.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/beyond-front-end-v7.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/beyond-front-end-v7.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/beyond-front-end-v7.svg"><img src="./assets/summary/beyond-front-end-v7.svg" alt="Beyond the front-end" height="44"></picture></p>
 
 - **Developer tooling.** An MCP server with 62 capabilities, a model serialization library and a static analysis engine, built because the tools I wanted did not exist.
 - **Backend and runtime.** NestJS, Bun and Node for the services that sit behind the interfaces; SQLite and PostgreSQL for the data.
@@ -136,28 +83,25 @@ An Angular application with server-side rendering, unit and integration tests an
 
 ---
 
-<p id="evidence"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/evidence-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/evidence-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/evidence-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/evidence-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/evidence-v6.svg"><img src="./assets/summary/evidence-v6.svg" alt="Evidence" height="44"></picture></p>
+<p id="evidence"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/evidence-v7.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/evidence-v7.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/evidence-v7.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/evidence-v7.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/evidence-v7.svg"><img src="./assets/summary/evidence-v7.svg" alt="Evidence" height="44"></picture></p>
 
-**89 repositories** — 68 public and 21 private. **26** of them are active right now, and the
-account has been publishing since October 2021.
+<p align="center">
+  <a href="https://github.com/CartagoGit/DelendAI"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/evidence-delendai-v1.svg"><img src="./assets/cards/evidence-delendai-v1.svg" alt="DelendAI — 17,519 commits, 638K source lines, 462K test lines, 72% test ratio" width="250" height="126"></picture></a>
+  <a href="https://github.com/CartagoGit/api-source-tanit"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/evidence-tanit-v1.svg"><img src="./assets/cards/evidence-tanit-v1.svg" alt="API Source Tanit — 1,924 commits, 92K source lines, 78K test lines, 85% test ratio" width="250" height="126"></picture></a>
+  <a href="https://github.com/CartagoGit/quickmodel"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/evidence-quickmodel-v1.svg"><img src="./assets/cards/evidence-quickmodel-v1.svg" alt="QuickModel — 550 commits, 49K source lines, 104K test lines, 213% test ratio" width="250" height="126"></picture></a>
+  <a href="https://github.com/CartagoGit/player-club-dynasty"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/evidence-pcd-v1.svg"><img src="./assets/cards/evidence-pcd-v1.svg" alt="Player Club Dynasty — 294 commits, 37K source lines, 14K test lines, 38% test ratio" width="250" height="126"></picture></a>
+  <a href="https://github.com/CartagoGit/steam-keys"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/evidence-steam-keys-v1.svg"><img src="./assets/cards/evidence-steam-keys-v1.svg" alt="Steam Keys — 117 commits, 34K source lines, 12K test lines, 34% test ratio" width="250" height="126"></picture></a>
+  <a href="https://github.com/CartagoGit/portfolio"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/evidence-portfolio-v1.svg"><img src="./assets/cards/evidence-portfolio-v1.svg" alt="Cartago — 164 commits, 12K source lines, 1K test lines, 9% test ratio" width="250" height="126"></picture></a>
+  <a href="https://github.com/CartagoGit/print-cv"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/cards/light/evidence-print-cv-v1.svg"><img src="./assets/cards/evidence-print-cv-v1.svg" alt="Print CV — 133 commits, 3K source lines, 230 test lines, 8% test ratio" width="250" height="126"></picture></a>
+</p>
 
-Measured on the repositories linked above. Source lines exclude tests, fixtures and generated files; test lines are the test suites themselves.
-
-| Repository | Commits | Source lines | Test lines | Tests over source |
-| --- | ---: | ---: | ---: | ---: |
-| <a href="https://github.com/CartagoGit/DelendAI"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-delendai.svg?v=3"><img height="30" alt="DelendAI repository" src="./assets/btn/repo-delendai.svg?v=3"></picture></a> | 17,519 | 638,216 | 461,623 | 72% |
-| <a href="https://github.com/CartagoGit/api-source-tanit"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tanit.svg?v=3"><img height="30" alt="API Source Tanit repository" src="./assets/btn/tanit.svg?v=3"></picture></a> | 1,924 | 91,960 | 78,219 | 85% |
-| <a href="https://github.com/CartagoGit/quickmodel"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-quickmodel.svg?v=3"><img height="30" alt="QuickModel repository" src="./assets/btn/repo-quickmodel.svg?v=3"></picture></a> | 550 | 48,641 | 103,771 | 213% |
-| <a href="https://github.com/CartagoGit/player-club-dynasty"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-pcd.svg?v=3"><img height="30" alt="Player Club Dynasty repository" src="./assets/btn/repo-pcd.svg?v=3"></picture></a> | 294 | 36,614 | 13,975 | 38% |
-| <a href="https://github.com/CartagoGit/steam-keys"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-steam-keys.svg?v=3"><img height="30" alt="Steam Keys repository" src="./assets/btn/repo-steam-keys.svg?v=3"></picture></a> | 117 | 33,793 | 11,500 | 34% |
-| <a href="https://github.com/CartagoGit/portfolio"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-cartago.svg?v=3"><img height="30" alt="Cartago repository" src="./assets/btn/repo-cartago.svg?v=3"></picture></a> | 164 | 11,870 | 1,047 | 9% |
-| <a href="https://github.com/CartagoGit/print-cv"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-print-cv.svg?v=3"><img height="30" alt="Print CV repository" src="./assets/btn/repo-print-cv.svg?v=3"></picture></a> | 133 | 2,849 | 230 | 8% |
+**89 repositories** — 68 public and 21 private. **26** active. Source lines exclude tests, fixtures and generated files; test lines are the suites themselves.
 
 DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,600 Markdown files of architecture decisions and guides.
 
 ---
 
-<p id="how-i-work"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/how-i-work-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/how-i-work-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/how-i-work-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/how-i-work-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/how-i-work-v6.svg"><img src="./assets/summary/how-i-work-v6.svg" alt="How I work" height="44"></picture></p>
+<p id="how-i-work"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/how-i-work-v7.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/how-i-work-v7.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/how-i-work-v7.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/how-i-work-v7.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/how-i-work-v7.svg"><img src="./assets/summary/how-i-work-v7.svg" alt="How I work" height="44"></picture></p>
 
 - **Proposals before code.** Every non-trivial change starts as a written proposal with a goal, a design, slices, acceptance criteria and a risk section. Nothing lands without a machine-checkable acceptance test.
 - **Tests as a ratchet.** Coverage thresholds only ever move upwards, and the script that enforces them fails the build when they slip.
@@ -169,7 +113,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 ---
 
-<p id="github-activity"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/github-activity-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/github-activity-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/github-activity-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/github-activity-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/github-activity-v6.svg"><img src="./assets/summary/github-activity-v6.svg" alt="GitHub Activity" height="44"></picture></p>
+<p id="github-activity"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/github-activity-v7.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/github-activity-v7.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/github-activity-v7.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/github-activity-v7.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/github-activity-v7.svg"><img src="./assets/summary/github-activity-v7.svg" alt="GitHub Activity" height="54"></picture></p>
 
 <p align="center">
   <picture>
@@ -198,7 +142,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 ---
 
-<p id="more-projects"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/more-projects-v6.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/more-projects-v6.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/more-projects-v6.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/more-projects-v6.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-v6.svg"><img src="./assets/summary/more-projects-v6.svg" alt="More projects" height="44"></picture></p>
+<p id="more-projects"><picture><source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/more-projects-v7.svg"><source media="(max-width: 499px)" srcset="./assets/summary/narrow/more-projects-v7.svg"><source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/more-projects-v7.svg"><source media="(max-width: 1199px)" srcset="./assets/summary/mid/more-projects-v7.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-v7.svg"><img src="./assets/summary/more-projects-v7.svg" alt="More projects" height="44"></picture></p>
 
 | Project | Focus | Link |
 | --- | --- | --- |
@@ -214,12 +158,12 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 ---
 
 <p id="core-stack"><picture>
-  <source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/core-stack-v6.svg">
-  <source media="(max-width: 499px)" srcset="./assets/summary/narrow/core-stack-v6.svg">
-  <source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/core-stack-v6.svg">
-  <source media="(max-width: 1199px)" srcset="./assets/summary/mid/core-stack-v6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v6.svg">
-  <img src="./assets/summary/core-stack-v6.svg" alt="Core stack" height="44">
+  <source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/core-stack-v7.svg">
+  <source media="(max-width: 499px)" srcset="./assets/summary/narrow/core-stack-v7.svg">
+  <source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/core-stack-v7.svg">
+  <source media="(max-width: 1199px)" srcset="./assets/summary/mid/core-stack-v7.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v7.svg">
+  <img src="./assets/summary/core-stack-v7.svg" alt="Core stack" height="44">
 </picture></p>
 
 **Front-end — my base**
@@ -235,6 +179,8 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-vue.svg?v=3"><img height="30" alt="Vue" src="./assets/btn/tech-vue.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-react.svg?v=3"><img height="30" alt="React" src="./assets/btn/tech-react.svg?v=3"></picture>
 
+<br>
+
 **Services, data & runtime**
 
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-nestjs.svg?v=3"><img height="30" alt="NestJS" src="./assets/btn/tech-nestjs.svg?v=3"></picture>
@@ -246,6 +192,8 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-zod.svg?v=3"><img height="30" alt="Zod" src="./assets/btn/tech-zod.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-openapi.svg?v=3"><img height="30" alt="OpenAPI" src="./assets/btn/tech-openapi.svg?v=3"></picture>
 
+<br>
+
 **Tooling & AI infrastructure**
 
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mcp.svg?v=3"><img height="30" alt="Model Context Protocol" src="./assets/btn/tech-mcp.svg?v=3"></picture>
@@ -255,6 +203,8 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-python.svg?v=3"><img height="30" alt="Python" src="./assets/btn/tech-python.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-storybook.svg?v=3"><img height="30" alt="Storybook" src="./assets/btn/tech-storybook.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-primeng.svg?v=3"><img height="30" alt="PrimeNG" src="./assets/btn/tech-primeng.svg?v=3"></picture>
+
+<br>
 
 **Quality & delivery**
 
@@ -267,6 +217,8 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-gitlab.svg?v=3"><img height="30" alt="GitLab CI" src="./assets/btn/tech-gitlab.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-actions.svg?v=3"><img height="30" alt="GitHub Actions" src="./assets/btn/tech-actions.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-linux.svg?v=3"><img height="30" alt="Linux" src="./assets/btn/tech-linux.svg?v=3"></picture>
+
+<br>
 
 **With AI**
 
@@ -282,12 +234,12 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 ---
 
 <p id="docker-images"><picture>
-  <source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/docker-images-v6.svg">
-  <source media="(max-width: 499px)" srcset="./assets/summary/narrow/docker-images-v6.svg">
-  <source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/docker-images-v6.svg">
-  <source media="(max-width: 1199px)" srcset="./assets/summary/mid/docker-images-v6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v6.svg">
-  <img src="./assets/summary/docker-images-v6.svg" alt="Docker images" height="44"></picture></p>
+  <source media="(max-width: 499px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/docker-images-v7.svg">
+  <source media="(max-width: 499px)" srcset="./assets/summary/narrow/docker-images-v7.svg">
+  <source media="(max-width: 1199px) and (prefers-color-scheme: light)" srcset="./assets/summary/mid/light/docker-images-v7.svg">
+  <source media="(max-width: 1199px)" srcset="./assets/summary/mid/docker-images-v7.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v7.svg">
+  <img src="./assets/summary/docker-images-v7.svg" alt="Docker images" height="44"></picture></p>
 
 Public development images for reproducible environments. Pull counts are live Docker Hub values.
 

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="176" viewBox="0 0 250 176" role="img" aria-label="Keyer: Published secrets CLI"><defs><linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e9eef7"/></linearGradient></defs><rect x=".5" y=".5" width="249" height="175" rx="12" fill="url(#tile)" stroke="#bfcee6"/><svg x="20" y="18" width="52" height="52" viewBox="0 0 64 64">
+        <!-- Keyer: a brass key on a deep navy badge. The key is drawn as one
+             silhouette with a real hole in the bow, so the mark reads as a key
+             even at favicon size. -->
+        <defs>
+                <linearGradient id="keyer-brass" x1="14" y1="10" x2="50" y2="54" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ffd166"/>
+                        <stop offset="1" stop-color="#d99413"/>
+                </linearGradient>
+        </defs>
+        <rect rx="14" fill="#0e1a2b"/>
+        <rect x="1" y="1" rx="13" fill="none" stroke="#ffd166" stroke-width="2" opacity=".5"/>
+        <g transform="translate(32 32) rotate(-38) scale(0.8) translate(-32 -32)">
+                <!-- the bow: a ring with the hole cut out -->
+                <path fill="url(#keyer-brass)" fill-rule="evenodd"
+                        d="M32 4 a12 12 0 1 0 0 24 a12 12 0 0 0 0 -24 Z
+                           M32 10 a6 6 0 1 1 0 12 a6 6 0 0 1 0 -12 Z"/>
+                <!-- the shaft -->
+                <rect x="28" y="24" rx="2" fill="url(#keyer-brass)"/>
+                <!-- the teeth -->
+                <rect x="36" y="38" rx="2" fill="url(#keyer-brass)"/>
+                <rect x="36" y="48" rx="2" fill="url(#keyer-brass)"/>
+        </g>
+</svg><text x="86" y="39" fill="#12233f" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Keyer</text><text x="86" y="59" fill="#1c5ed4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="600">Published secrets CLI</text><line x1="20" y1="86" x2="230" y2="86" stroke="#bfcee6"/><text x="20" y="111" fill="#475a7c" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">Encrypts keys and .env files · npm</text><rect x="20" y="133" width="92" height="25" rx="7" fill="#1c5ed4" fill-opacity=".14"/><text x="66" y="150" text-anchor="middle" fill="#1c5ed4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="700">OPEN REPOSITORY</text><text x="230" y="150" text-anchor="end" fill="#475a7c" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">↗</text></svg>

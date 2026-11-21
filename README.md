@@ -167,8 +167,42 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 
 ---
 
-<details>
-<summary dir="rtl" align="left"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-v2.svg"><img src="./assets/summary/more-projects-v2.svg" alt="More projects" width="93%" height="38"></picture></summary>
+<a href="#more-projects"><picture><source media="(max-width: 599px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/more-projects-v3.svg"><source media="(max-width: 599px)" srcset="./assets/summary/narrow/more-projects-v3.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/more-projects-v3.svg"><img src="./assets/summary/more-projects-v3.svg" alt="More projects — 8 repositories" height="44"></picture></a>
+
+<a href="#core-stack"><picture><source media="(max-width: 599px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/core-stack-v3.svg"><source media="(max-width: 599px)" srcset="./assets/summary/narrow/core-stack-v3.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v3.svg"><img src="./assets/summary/core-stack-v3.svg" alt="Core stack — 40+ technologies" height="44"></picture></a>
+
+<a href="#docker-images"><picture><source media="(max-width: 599px) and (prefers-color-scheme: light)" srcset="./assets/summary/narrow/light/docker-images-v3.svg"><source media="(max-width: 599px)" srcset="./assets/summary/narrow/docker-images-v3.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v3.svg"><img src="./assets/summary/docker-images-v3.svg" alt="Docker images — 5 public images" height="44"></picture></a>
+
+## GitHub Activity
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/streak-light.svg">
+    <img src="./assets/activity/streak-dark.svg" alt="GitHub contribution streak" width="495">
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/graph-light.svg">
+    <img src="./assets/activity/graph-dark.svg" alt="GitHub contribution activity" width="790">
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/stats-light.svg">
+    <img src="./assets/activity/stats-dark.svg" alt="GitHub statistics" width="467">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/langs-light.svg">
+    <img src="./assets/activity/langs-dark.svg" alt="Most used languages" width="300">
+  </picture>
+</p>
+
+---
+
+## More projects
 
 | Project | Focus | Link |
 | --- | --- | --- |
@@ -181,10 +215,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 | Workspace template | The Angular workspace every new app starts from. | <a href="https://github.com/CartagoGit/template-angular"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-template.svg?v=3"><img height="30" alt="template-angular repository" src="./assets/btn/repo-template.svg?v=3"></picture></a> |
 | Practice repositories | Daily puzzles and katas, one commit per solution. | <a href="https://github.com/CartagoGit/codember-dev"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-codember.svg?v=3"><img height="30" alt="codember-dev repository" src="./assets/btn/repo-codember.svg?v=3"></picture></a> <a href="https://github.com/CartagoGit/codewars"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/repo-codewars.svg?v=3"><img height="30" alt="codewars repository" src="./assets/btn/repo-codewars.svg?v=3"></picture></a> |
 
-</details>
-
-<details>
-<summary dir="rtl" align="left"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/core-stack-v2.svg"><img src="./assets/summary/core-stack-v2.svg" alt="Core stack" width="93%" height="38"></picture></summary>
+## Core stack
 
 **Front-end — my base**
 
@@ -244,10 +275,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mimo.svg?v=3"><img height="30" alt="MiMo" src="./assets/btn/tech-mimo.svg?v=3"></picture>
 <picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/tech-mai.svg?v=3"><img height="30" alt="MAI Code" src="./assets/btn/tech-mai.svg?v=3"></picture>
 
-</details>
-
-<details>
-<summary dir="rtl" align="left"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/summary/light/docker-images-v2.svg"><img src="./assets/summary/docker-images-v2.svg" alt="Docker images" width="93%" height="38"></picture></summary>
+## Docker images
 
 Public development images for reproducible environments. Pull counts are live Docker Hub values.
 
@@ -261,35 +289,6 @@ Public development images for reproducible environments. Pull counts are live Do
 
 <p align="center">
   <a href="https://hub.docker.com/u/cartagodocker"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn/light/docker.svg?v=3"><img height="30" alt="Docker Hub profile" src="./assets/btn/docker.svg?v=3"></picture></a>
-</p>
-
-</details>
-
-## GitHub Activity
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/streak-light.svg">
-    <img src="./assets/activity/streak-dark.svg" alt="GitHub contribution streak" width="495">
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/graph-light.svg">
-    <img src="./assets/activity/graph-dark.svg" alt="GitHub contribution activity" width="790">
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/stats-light.svg">
-    <img src="./assets/activity/stats-dark.svg" alt="GitHub statistics" width="467">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="./assets/activity/langs-light.svg">
-    <img src="./assets/activity/langs-dark.svg" alt="Most used languages" width="300">
-  </picture>
 </p>
 
 ---

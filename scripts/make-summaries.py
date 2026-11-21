@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
-"""Generate the summary bars for the README's <details> sections.
+"""Generate the section link bars for the README.
 
-GitHub strips every style from a README, so a bare <summary> reads as
-plain text and nobody knows it can be opened. The way out is the same as
-with the link buttons: an image that carries its own tile, icon, label
-and content hint.
+GitHub's native <details> marker cannot be hidden (the sanitizer strips
+every style/class, and the marker is tied to the first <summary>, which
+is also the only element that toggles). A floating triangle next to a
+button reads as broken, so the sections are plain anchored headings at
+the bottom of the README and these bars are premium link buttons:
+gradient tile, icon chip, bold label and a content-count badge pinned to
+the right edge. No arrows anywhere.
 
-The native disclosure triangle cannot be hidden, but it CAN be moved to
-the right edge — where an accordion's chevron belongs — with
-`<summary dir="rtl" align="left">` plus `width="93%"` on the image:
-GitHub keeps those three attributes, the marker takes the last ~26px of
-the line and the bar fills the rest. The bar is drawn WITHOUT a viewBox
-so that stretching it to the column width only widens the background
-rect; icon and text keep their pixel size. The intrinsic width is kept
-under ~270px so narrow phones never scale the image down.
+The bar is drawn at two fixed sizes, served through <picture media>:
+820px for desktop columns and 280px for phones. Fixed sizes matter: an
+SVG without a viewBox served through <img> is stretched by the browser
+when CSS resizes it, which distorts the text; with a viewBox everything
+scales uniformly and the text shrinks on phones. Two hand-laid sizes
+keep every glyph at its intended pixel size on every screen.
 
     python3 scripts/make-summaries.py
 """
-import base64
 import pathlib
 import re
 
@@ -25,33 +25,38 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
 OUT = ASSETS / "summary"
 
-TILE = "#0e1a2b"
+TILE_TOP = "#13253f"
+TILE_BOTTOM = "#0c1727"
 TILE_BORDER = "#2b4786"
 LABEL = "#e9f0ff"
 HINT = "#7fb2ff"
+CHIP_OPACITY = "0.16"
 
-LIGHT_TILE = "#f2f5fb"
+LIGHT_TOP = "#ffffff"
+LIGHT_BOTTOM = "#e9eef7"
 LIGHT_BORDER = "#bfcee6"
 LIGHT_LABEL = "#12233f"
 LIGHT_HINT = "#1c5ed4"
+LIGHT_CHIP_OPACITY = "0.10"
 
-HEIGHT = 38
-PAD = 12
-ICON = 18
-GAP = 8
-FONT_SIZE = 14
+HEIGHT = 44
+PAD = 10
+CHIP = 28
+ICON = 16
+GAP = 10
+FONT_SIZE = 15
 HINT_SIZE = 11
-# Room for GitHub's native disclosure marker, which sits on the same line
-# at the right edge of the bar (summary dir="rtl" + img width="93%").
-MARKER = 24
+BADGE_PAD = 10
+BADGE_HEIGHT = 22
+RIGHT_PAD = 12
 
 # (section icon, label, hint, output name)
-# Names carry a -v2 suffix: GitHub's image proxy caches by full URL and
+# Names carry a -v3 suffix: GitHub's image proxy caches by full URL and
 # ignores query strings, so a changed asset must be renamed to be seen.
 SECTIONS = [
-    ("section-more-projects.svg", "More projects", "8 repositories", "more-projects-v2"),
-    ("section-core-stack.svg", "Core stack", "40+ technologies", "core-stack-v2"),
-    ("section-docker-images.svg", "Docker images", "5 public images", "docker-images-v2"),
+    ("section-more-projects.svg", "More projects", "8 repositories", "more-projects-v3"),
+    ("section-core-stack.svg", "Core stack", "40+ technologies", "core-stack-v3"),
+    ("section-docker-images.svg", "Docker images", "5 public images", "docker-images-v3"),
 ]
 
 
@@ -88,45 +93,57 @@ def icon_inner(name: str) -> tuple[str, str]:
     return inner, view_box
 
 
-def bar(icon_file: str, label: str, hint: str, light: bool) -> str:
-    tile = LIGHT_TILE if light else TILE
+def bar(icon_file: str, label: str, hint: str, light: bool, width: int) -> str:
+    top = LIGHT_TOP if light else TILE_TOP
+    bottom = LIGHT_BOTTOM if light else TILE_BOTTOM
     border = LIGHT_BORDER if light else TILE_BORDER
     text_colour = LIGHT_LABEL if light else LABEL
     hint_colour = LIGHT_HINT if light else HINT
+    chip_opacity = LIGHT_CHIP_OPACITY if light else CHIP_OPACITY
 
     inner, view_box = icon_inner(icon_file)
-    label_w = text_width(label)
-    hint_w = text_width(hint, HINT_SIZE)
-    # Intrinsic width: content plus the marker slot. Kept under ~270px so
-    # a 390px phone (284px column at 97%) never scales the image down.
-    # No viewBox on the root: user units == CSS pixels, so when the README
-    # stretches the image to the column width only the background rect grows.
-    width = PAD + ICON + GAP + label_w + GAP + hint_w + MARKER + PAD
+    badge_w = text_width(hint, HINT_SIZE) + BADGE_PAD * 2
     baseline = HEIGHT / 2 + FONT_SIZE * 0.35
-    hint_x = PAD + ICON + GAP + label_w + GAP
+    badge_baseline = (HEIGHT - BADGE_HEIGHT) / 2 + BADGE_HEIGHT / 2 + HINT_SIZE * 0.35
+    label_x = PAD + CHIP + GAP
+    badge_x = width - RIGHT_PAD - badge_w
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width:.0f}" height="{HEIGHT}">'
-        f'<rect x="0.5" y="0.5" width="99%" height="{HEIGHT - 1}" rx="8" '
-        f'fill="{tile}" stroke="{border}"/>'
-        f'<svg x="{PAD}" y="{(HEIGHT - ICON) / 2}" width="{ICON}" height="{ICON}" '
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{HEIGHT}" '
+        f'viewBox="0 0 {width} {HEIGHT}">'
+        f'<defs><linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">'
+        f'<stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bottom}"/>'
+        f"</linearGradient></defs>"
+        f'<rect x="0.5" y="0.5" width="{width - 1}" height="{HEIGHT - 1}" rx="10" '
+        f'fill="url(#tile)" stroke="{border}"/>'
+        f'<rect x="{PAD}" y="{(HEIGHT - CHIP) / 2}" width="{CHIP}" height="{CHIP}" rx="8" '
+        f'fill="{hint_colour}" fill-opacity="{chip_opacity}"/>'
+        f'<svg x="{PAD + (CHIP - ICON) / 2}" y="{(HEIGHT - ICON) / 2}" width="{ICON}" height="{ICON}" '
         f'viewBox="{view_box}" fill="{hint_colour}">{inner}</svg>'
-        f'<text x="{PAD + ICON + GAP}" y="{baseline:.1f}" fill="{text_colour}" '
+        f'<text x="{label_x}" y="{baseline:.1f}" fill="{text_colour}" '
         f'font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="{FONT_SIZE}" '
         f'font-weight="700">{label}</text>'
-        f'<text x="{hint_x:.1f}" y="{baseline:.1f}" fill="{hint_colour}" '
+        f'<rect x="{badge_x:.1f}" y="{(HEIGHT - BADGE_HEIGHT) / 2}" width="{badge_w:.1f}" '
+        f'height="{BADGE_HEIGHT}" rx="{BADGE_HEIGHT / 2}" fill="{hint_colour}" fill-opacity="{chip_opacity}"/>'
+        f'<text x="{badge_x + badge_w / 2:.1f}" y="{badge_baseline:.1f}" text-anchor="middle" fill="{hint_colour}" '
         f'font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="{HINT_SIZE}" '
         f'font-weight="600">{hint}</text>'
         f"</svg>"
     )
 
 
+# Desktop bars fill the profile column; phone bars fit a 390px viewport
+# (293px of content) without any downscaling.
+WIDTHS = [("", 820), ("narrow/", 280)]
+
+
 def main() -> None:
-    OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "light").mkdir(parents=True, exist_ok=True)
-    for icon_file, label, hint, name in SECTIONS:
-        (OUT / f"{name}.svg").write_text(bar(icon_file, label, hint, light=False))
-        (OUT / "light" / f"{name}.svg").write_text(bar(icon_file, label, hint, light=True))
-        print("wrote", name, "(dark + light)")
+    for prefix, width in WIDTHS:
+        out = OUT / prefix if prefix else OUT
+        (out / "light").mkdir(parents=True, exist_ok=True)
+        for icon_file, label, hint, name in SECTIONS:
+            (out / f"{name}.svg").write_text(bar(icon_file, label, hint, False, width))
+            (out / "light" / f"{name}.svg").write_text(bar(icon_file, label, hint, True, width))
+        print("wrote", prefix or "wide/", "bars (dark + light)")
 
 
 if __name__ == "__main__":

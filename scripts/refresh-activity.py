@@ -70,18 +70,75 @@ CHARTS = {
 }
 
 
+def _keyframe_blocks(css: str) -> list[tuple[str, str, int, int]]:
+    """Find @keyframes blocks by counting braces, not by guessing indentation."""
+    blocks = []
+    for match in re.finditer(r"@keyframes\s+([\w-]+)\s*\{", css):
+        depth = 1
+        i = match.end()
+        while i < len(css) and depth:
+            if css[i] == "{":
+                depth += 1
+            elif css[i] == "}":
+                depth -= 1
+            i += 1
+        blocks.append((match.group(1), css[match.end():i - 1], match.start(), i))
+    return blocks
+
+
+def _final_states(css: str) -> dict[str, dict[str, str]]:
+    """Read each @keyframes block and keep the declarations of its last frame.
+
+    Removing an animation is not enough: the property it animated stays at
+    the *initial* value, which is usually the hidden one. The contribution
+    line, for instance, sits at stroke-dashoffset: 5000 until `dash` brings
+    it to 0 — strip the animation and the line disappears, leaving only the
+    dots. The rank letter is drawn at translate(-5px, 5px) by its keyframes,
+    so without them it sits off-centre inside its circle.
+    """
+    states: dict[str, dict[str, str]] = {}
+    for name, body, _start, _end in _keyframe_blocks(css):
+        frames = re.findall(r"(?:from|to|\d+%)\s*\{([^{}]*)\}", body)
+        if not frames:
+            continue
+        decls = {}
+        for decl in frames[-1].split(";"):
+            if ":" in decl:
+                prop, value = decl.split(":", 1)
+                decls[prop.strip()] = value.strip()
+        states[name] = decls
+    return states
+
+
 def bake(svg: str) -> str:
-    """Freeze every animation at its final state."""
+    """Freeze every animation at the state it ends in."""
+    style_match = re.search(r"<style>(.*?)</style>", svg, re.S)
+    css = style_match.group(1) if style_match else ""
+    finals = _final_states(css)
+
+    def settle(body: str) -> str:
+        """Apply the final frame of every animation the rule declares."""
+        for name in re.findall(r"animation:\s*([\w-]+)", body):
+            for prop, value in finals.get(name, {}).items():
+                if re.search(rf"{re.escape(prop)}\s*:", body):
+                    body = re.sub(
+                        rf"{re.escape(prop)}\s*:[^;}}]*", f"{prop}: {value}", body
+                    )
+                else:
+                    body = body.rstrip().rstrip(";") + f"; {prop}: {value};"
+        body = re.sub(r"animation:[^;}]*;?", "", body)
+        body = re.sub(r"animation-delay:[^;}]*;?", "", body)
+        body = re.sub(r"opacity:\s*0(?:\.\d+)?\s*;?", "opacity: 1;", body)
+        return body
+
     # Drop the keyframes: they only describe the entrance.
-    svg = re.sub(r"@keyframes[^}]*\{(?:[^{}]*\{[^}]*\})*[^}]*\}", "", svg)
+    for _name, _body, start, end in reversed(_keyframe_blocks(svg)):
+        svg = svg[:start] + svg[end:]
 
     # Class rules also hide elements until the animation runs
     # (.stagger { opacity: 0; animation: ... }). Bake those too.
     def rule_fix(match: re.Match) -> str:
-        body = match.group(1)
-        body = re.sub(r"animation:[^;}]*;?", "", body)
-        body = re.sub(r"opacity:\s*0(?:\.\d+)?\s*;?", "opacity: 1;", body)
-        return "{" + body + "}"
+        return "{" + settle(match.group(1)) + "}"
 
     svg = re.sub(r"\{([^{}]*)\}", rule_fix, svg)
 

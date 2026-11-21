@@ -2,12 +2,7 @@
                 style='isolation: isolate' viewBox='0 0 495 195' width='495px' height='195px' direction='ltr'>
         <style>
             
-                80% { font-size: 34px; opacity: 1; }
-                100% { font-size: 28px; opacity: 1; }
-            }
             
-                100% { opacity: 1; }
-            }
         </style>
         <defs>
             <clipPath id='outer_rectangle'>

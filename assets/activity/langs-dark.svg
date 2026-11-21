@@ -14,23 +14,14 @@
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
             fill: #7FB2FF;
-            
-          }
+             opacity: 1;}
           @supports(-moz-appearance: auto) {
             /* Selector detects Firefox */
             .header { font-size: 15.5px; }
           }
           
     
-      to {
-        width: calc(100%-100px);
-      }
-    }
     
-      to {
-        width: 100%;
-      }
-    }
     .stat {
       font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #C3D1D9;
     }
@@ -48,25 +39,15 @@
       
     }
     #rect-mask rect{
-      
-    }
+       width: calc(100%-100px);}
     .lang-progress{
-      
-    }
+       width: 100%;}
     
 
           
       /* Animations */
       
-        to {
-          transform: translate(-5px, 5px) scale(1);
-        }
-      }
       
-        to {
-          opacity: 1;
-        }
-      }
     
           
         </style>
@@ -118,7 +99,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="180.95"
+          width="181.02"
           height="8"
           fill="#3178c6"
         />
@@ -126,9 +107,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="180.95"
+          x="181.02"
           y="0"
-          width="39.95"
+          width="39.86"
           height="8"
           fill="#f1e05a"
         />
@@ -136,9 +117,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="220.89999999999998"
+          x="220.88"
           y="0"
-          width="18.509999999999998"
+          width="18.53"
           height="8"
           fill="#663399"
         />
@@ -146,9 +127,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="229.40999999999997"
+          x="229.41"
           y="0"
-          width="18.28"
+          width="18.310000000000002"
           height="8"
           fill="#e34c26"
         />
@@ -156,9 +137,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="237.68999999999997"
+          x="237.72"
           y="0"
-          width="15.2"
+          width="15.190000000000001"
           height="8"
           fill="#7355dd"
         />
@@ -166,9 +147,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="242.88999999999996"
+          x="242.91"
           y="0"
-          width="14.309999999999999"
+          width="14.3"
           height="8"
           fill="#c6538c"
         />
@@ -176,7 +157,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="247.19999999999996"
+          x="247.21"
           y="0"
           width="11.46"
           height="8"
@@ -186,7 +167,7 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="248.65999999999997"
+          x="248.67000000000002"
           y="0"
           width="11.34"
           height="8"
@@ -199,28 +180,28 @@
     <g class="stagger" style="">
       <circle cx="5" cy="6" r="5" fill="#3178c6" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        TypeScript 72.38%
+        TypeScript 72.41%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="">
       <circle cx="5" cy="6" r="5" fill="#f1e05a" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        JavaScript 15.98%
+        JavaScript 15.94%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="">
       <circle cx="5" cy="6" r="5" fill="#663399" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        CSS 3.40%
+        CSS 3.41%
       </text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="">
       <circle cx="5" cy="6" r="5" fill="#e34c26" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        HTML 3.31%
+        HTML 3.32%
       </text>
     </g>
   </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
@@ -234,7 +215,7 @@
     <g class="stagger" style="">
       <circle cx="5" cy="6" r="5" fill="#c6538c" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        SCSS 1.73%
+        SCSS 1.72%
       </text>
     </g>
   </g><g transform="translate(0, 50)">

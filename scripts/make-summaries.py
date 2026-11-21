@@ -4,11 +4,16 @@
 GitHub strips every style from a README, so a bare <summary> reads as
 plain text and nobody knows it can be opened. The way out is the same as
 with the link buttons: an image that carries its own tile, icon, label
-and a chevron that says "this opens".
+and content hint.
 
-A second variant with the chevron pointing up is served through
-`details[open] .when-open` — GitHub keeps that selector working, so the
-bar itself tells you whether the section is open or closed.
+The native disclosure triangle cannot be hidden, but it CAN be moved to
+the right edge — where an accordion's chevron belongs — with
+`<summary dir="rtl" align="left">` plus `width="97%"` on the image:
+GitHub keeps those three attributes, the marker takes the last ~26px of
+the line and the bar fills the rest. The bar is drawn WITHOUT a viewBox
+so that stretching it to the column width only widens the background
+rect; icon and text keep their pixel size. The intrinsic width is kept
+under ~270px so narrow phones never scale the image down.
 
     python3 scripts/make-summaries.py
 """
@@ -35,8 +40,9 @@ PAD = 14
 ICON = 18
 GAP = 9
 FONT_SIZE = 14
-CHEVRON = 16
-CHEVRON_GAP = 12
+# Room for GitHub's native disclosure marker, which sits on the same line
+# at the right edge of the bar (summary dir="rtl" + img width="97%").
+MARKER = 26
 
 # (section icon, label, hint, output name)
 SECTIONS = [
@@ -66,7 +72,7 @@ def text_width(text: str) -> float:
     return total * FONT_SIZE * 1.22 + 4
 
 
-def icon_inner(name: str, colour: str) -> tuple[str, str]:
+def icon_inner(name: str) -> tuple[str, str]:
     raw = (ASSETS / "brand" / name).read_text()
     box = re.search(r'viewBox="([^"]+)"', raw)
     view_box = box.group(1) if box else "0 0 24 24"
@@ -77,35 +83,24 @@ def icon_inner(name: str, colour: str) -> tuple[str, str]:
     return inner, view_box
 
 
-def chevron(direction: str, colour: str) -> str:
-    # A simple V, drawn here so the rotation is exact.
-    if direction == "down":
-        path = "M4 6 L8 10 L12 6"
-    else:
-        path = "M4 10 L8 6 L12 10"
-    return (
-        f'<svg viewBox="0 0 16 16" width="{CHEVRON}" height="{CHEVRON}">'
-        f'<path d="{path}" fill="none" stroke="{colour}" stroke-width="2" '
-        f'stroke-linecap="round" stroke-linejoin="round"/></svg>'
-    )
-
-
-def bar(icon_file: str, label: str, hint: str, direction: str, light: bool) -> str:
+def bar(icon_file: str, label: str, hint: str, light: bool) -> str:
     tile = LIGHT_TILE if light else TILE
     border = LIGHT_BORDER if light else TILE_BORDER
     text_colour = LIGHT_LABEL if light else LABEL
     hint_colour = LIGHT_HINT if light else HINT
 
-    inner, view_box = icon_inner(icon_file, hint_colour)
+    inner, view_box = icon_inner(icon_file)
     label_w = text_width(label)
     hint_w = text_width(hint) * 0.82
-    width = PAD + ICON + GAP + label_w + GAP + hint_w + PAD
+    # Intrinsic width: content plus the marker slot. No viewBox on the
+    # root: user units == CSS pixels, so when the README stretches the
+    # image to the column width only the background rect grows.
+    width = PAD + ICON + GAP + label_w + GAP + hint_w + MARKER + PAD
     baseline = HEIGHT / 2 + FONT_SIZE * 0.35
     hint_x = PAD + ICON + GAP + label_w + GAP
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width:.0f}" height="{HEIGHT}" '
-        f'viewBox="0 0 {width:.0f} {HEIGHT}" role="img" aria-label="{label}">'
-        f'<rect x="0.5" y="0.5" width="{width - 1:.0f}" height="{HEIGHT - 1}" rx="8" '
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width:.0f}" height="{HEIGHT}">'
+        f'<rect x="0.5" y="0.5" width="99%" height="{HEIGHT - 1}" rx="8" '
         f'fill="{tile}" stroke="{border}"/>'
         f'<svg x="{PAD}" y="{(HEIGHT - ICON) / 2}" width="{ICON}" height="{ICON}" '
         f'viewBox="{view_box}" fill="{hint_colour}">{inner}</svg>'
@@ -123,13 +118,9 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "light").mkdir(parents=True, exist_ok=True)
     for icon_file, label, hint, name in SECTIONS:
-        for direction in ("down",):
-            suffix = "" if direction == "down" else "-open"
-            path = OUT / f"{name}{suffix}.svg"
-            path.write_text(bar(icon_file, label, hint, direction, light=False))
-            light_path = OUT / "light" / f"{name}{suffix}.svg"
-            light_path.write_text(bar(icon_file, label, hint, direction, light=True))
-        print("wrote", name, "(closed + open, dark + light)")
+        (OUT / f"{name}.svg").write_text(bar(icon_file, label, hint, light=False))
+        (OUT / "light" / f"{name}.svg").write_text(bar(icon_file, label, hint, light=True))
+        print("wrote", name, "(dark + light)")
 
 
 if __name__ == "__main__":

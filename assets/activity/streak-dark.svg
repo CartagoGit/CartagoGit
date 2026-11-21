@@ -2,12 +2,7 @@
                 style='isolation: isolate' viewBox='0 0 495 195' width='495px' height='195px' direction='ltr'>
         <style>
             
-                80% { font-size: 34px; opacity: 1; }
-                100% { font-size: 28px; opacity: 1; }
-            }
             
-                100% { opacity: 1; }
-            }
         </style>
         <defs>
             <clipPath id='outer_rectangle'>
@@ -31,7 +26,7 @@
                 <!-- Total Contributions big number -->
                 <g transform='translate(82.5, 48)'>
                     <text x='0' y='32' stroke-width='0' text-anchor='middle' fill='#58A6FF' stroke='none' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='28px' font-style='normal' style='opacity: 1;'>
-                        26,032
+                        25,887
                     </text>
                 </g>
 

@@ -24,9 +24,9 @@
 ## What I build
 
 **Front-end for operational systems.** ERP, warehouse logistics, workforce and attendance: the same
-screens eight hours a day, with permissions that shift by role and forms that have to survive a
-different way of working every shift. My base is **Angular with SCSS**, **Ionic** when it needs to
-reach Android, **Material** for the design system.
+screens eight hours a day, with role-based permissions, complex validated forms and listings that
+stay fast with years of data. My base is **Angular with SCSS**, **Ionic** when it needs to reach
+Android, **Material** for the design system.
 
 **Around the front-end.** Mentoring the team, deciding what stays in the front-end and what moves to
 a service, deciding what gets a quality gate and what gets a written decision. GitLab CI,
@@ -119,15 +119,15 @@ An Angular application with server-side rendering, unit and integration tests an
 
 ## Professional experience
 
-- **Operational front-end delivery.** Business applications for commercial, financial, inventory, logistics and workforce processes. Complex states, permissions, reporting and product rules that have to survive the next release — not demo screens.
+- **Operational front-end delivery.** Business applications for commercial, financial, inventory, logistics and workforce processes. Complex states, role-based permissions, reporting and business rules that must not break between releases.
 - **Web and Android.** Angular and Ionic applications, packaged for Android with Capacitor, plus Vue and Quasar for the management panels and progressive web apps for what has to work without being installed. Interfaces designed for repeated, high-context use.
 - **Mentoring and technical decisions.** I mentor the team, choose the architecture and settle the trade-offs: what stays in the front-end, what moves to a service, what gets a gate and what gets a document.
 - **Delivery foundations.** Dockerised development environments, GitLab CI and GitHub Actions pipelines, container images, and focused test coverage on the parts that actually break.
-- **Still writing code.** The assistants do a lot of the typing now; the judgement — what the rule is, where it belongs, how it is proved — is still mine.
+- **AI-assisted, human-owned.** I use AI assistants for implementation; the architecture decisions, the code review and the acceptance criteria are mine.
 
 ## Beyond the front-end
 
-- **Developer tooling.** An MCP runtime with 62 capabilities, a model serialization library and a static analysis engine, built because the tools I wanted did not exist.
+- **Developer tooling.** An MCP server with 62 capabilities, a model serialization library and a static analysis engine, built because the tools I wanted did not exist.
 - **Backend and runtime.** NestJS, Bun and Node for the services that sit behind the interfaces; SQLite and PostgreSQL for the data.
 - **Games and content.** Local-first desktop apps in Tauri and Rust, games in Godot and C#, and schema-validated content pipelines with localisation.
 - **Infrastructure.** Public Docker images for Angular, Ionic, NestJS, Node/Bun and Zsh, all with pinned version matrices.
@@ -160,7 +160,7 @@ DelendAI alone carries 62 first-party plugins, 18 CI workflows and more than 1,6
 - **Proposals before code.** Every non-trivial change starts as a written proposal with a goal, a design, slices, acceptance criteria and a risk section. Nothing lands without a machine-checkable acceptance test.
 - **Tests as a ratchet.** Coverage thresholds only ever move upwards, and the script that enforces them fails the build when they slip.
 - **Quality gates, not opinions.** Lint, typecheck, tests, generated-file drift, catalogue consistency and i18n parity run in CI — 18 workflows in the runtime core alone.
-- **Documentation as code.** Architecture decisions are numbered and committed next to the code they explain; the runtime core carries more than 2,000 Markdown files.
+- **Documentation as code.** Architecture decision records (ADRs) are numbered and committed next to the code they explain; the runtime core carries more than 2,000 Markdown files.
 - **AI-assisted delivery, human-owned decisions.** Work is routed through a proposal → implement → review → release pipeline where the agent proposes and the gates decide.
 - **Bun first.** `bun` is the daily runtime for scripts, tests and workspaces; Node.js remains supported where production demands it.
 - **Local-first and private by default.** Keys, databases and secrets stay on the machine, and repositories ship the `.gitignore` that guarantees it.

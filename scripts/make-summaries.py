@@ -127,7 +127,7 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "light").mkdir(parents=True, exist_ok=True)
     for icon_file, label, hint, name in SECTIONS:
-        for direction in ("down", "up"):
+        for direction in ("down",):
             suffix = "" if direction == "down" else "-open"
             path = OUT / f"{name}{suffix}.svg"
             path.write_text(bar(icon_file, label, hint, direction, light=False))

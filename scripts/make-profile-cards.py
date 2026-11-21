@@ -46,6 +46,38 @@ PROJECTS = [
     ("cartago", "Cartago", "The site behind this profile", "Angular SSR · tests · bilingual", "assets/cartago.svg"),
 ]
 
+MORE_PROJECTS = [
+    ("nestgpt", "NestGpt", "AI-enabled NestJS API", "DTOs · uploads · streaming · Docker", "assets/brand/nestjs.svg"),
+    ("reactgpt", "ReactGpt", "React front-end", "Client for the NestJS AI API", "assets/brand/react.svg"),
+    ("zoneless", "Zoneless Angular", "Angular without zone.js", "Unit and integration tests", "assets/brand/angular.svg"),
+    ("aoe2", "Aoe2 mods", "Game modding tools", "Binary formats · localisation · automation", "assets/brand/mods.svg"),
+    ("pcfutbol", "PC Fútbol 6 mods", "Game content pipeline", "Schemas · assets · automation", "assets/brand/mods.svg"),
+    ("pcd", "Player Club Dynasty", "Godot/C# football manager", "Proposal → implement → review", "assets/brand/godot.svg"),
+    ("steam-keys", "Steam Keys", "Local-first desktop app", "Tauri 2 · Rust · SQLite", "assets/brand/steam-keys.svg"),
+    ("template-angular", "Angular template", "Workspace starter", "Architecture ready for new apps", "assets/brand/angular.svg"),
+    ("codember", "Codember", "Daily puzzle solutions", "Consistent small challenges", "assets/brand/typescript.svg"),
+    ("codewars", "Codewars", "Practice repository", "Focused katas and one solution per commit", "assets/brand/typescript.svg"),
+]
+
+DOCKER_IMAGES = [
+    ("nodebun", "nodebun", "Node.js + Bun + fnm", "Pinned multi-runtime environment"),
+    ("zsh", "zsh", "Batteries-included shell", "Daily CLI environment"),
+    ("ionic", "ionic-cover", "Ionic build environment", "Angular + Capacitor tooling"),
+    ("nestjs", "nestjs-cover", "NestJS build environment", "Typed services and CI"),
+    ("angular", "angular", "Angular build environment", "Reproducible front-end delivery"),
+]
+
+EXTRA_EVIDENCE = [
+    ("keyer", "Keyer", "Published npm CLI", "Security", "assets/keyer.svg"),
+    ("nestgpt", "NestGpt", "Typed AI API", "NestJS", "assets/brand/nestjs.svg"),
+    ("reactgpt", "ReactGpt", "API client", "React", "assets/brand/react.svg"),
+    ("zoneless", "Zoneless Angular", "Unit + integration tests", "Angular", "assets/brand/angular.svg"),
+    ("template", "Angular template", "Reusable workspace", "Tooling", "assets/brand/angular.svg"),
+    ("codember", "Codember", "Daily puzzle work", "Practice", "assets/brand/typescript.svg"),
+    ("codewars", "Codewars", "Focused katas", "Practice", "assets/brand/typescript.svg"),
+    ("keyer-npm", "Keyer on npm", "Public package", "Distribution", "assets/brand/npm.svg"),
+]
+
 
 def embedded_asset(path: str, x: int, y: int, size: int) -> str:
     """Embed the complete original image so no nested SVG styles are lost."""
@@ -75,6 +107,23 @@ def project_card(name: str, title: str, subtitle: str, detail: str, asset: str, 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{title}: {subtitle}"><defs><linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bottom}"/></linearGradient></defs><rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="12" fill="url(#tile)" stroke="{border}"/>{icon}<text x="84" y="37" fill="{text}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{title_size}" font-weight="700">{title}</text><text x="84" y="58" fill="{accent}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{subtitle_size}" font-weight="600">{subtitle}</text><line x1="16" y1="82" x2="{width-16}" y2="82" stroke="{border}"/><text x="18" y="105" fill="{muted}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{detail_size}">{detail}</text></svg>'''
 
 
+def compact_card(title: str, subtitle: str, detail: str, asset: str, light: bool, width: int) -> str:
+    top, bottom, border, text, muted, accent = (LIGHT_TOP, LIGHT_BOTTOM, LIGHT_BORDER, LIGHT_TEXT, LIGHT_MUTED, LIGHT_ACCENT) if light else (DARK_TOP, DARK_BOTTOM, DARK_BORDER, DARK_TEXT, DARK_MUTED, DARK_ACCENT)
+    title, subtitle, detail = map(html.escape, (title, subtitle, detail))
+    icon = embedded_asset(asset, 14, 12, 42)
+    height = 92
+    subtitle_size = 10.5 if width < 400 else 11.5
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{title}: {subtitle}"><defs><linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bottom}"/></linearGradient></defs><rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="10" fill="url(#tile)" stroke="{border}"/>{icon}<text x="68" y="30" fill="{text}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">{title}</text><text x="68" y="49" fill="{accent}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{subtitle_size}" font-weight="600">{subtitle}</text><line x1="14" y1="64" x2="{width-14}" y2="64" stroke="{border}"/><text x="16" y="82" fill="{muted}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10.5">{detail}</text></svg>'''
+
+
+def docker_card(title: str, subtitle: str, detail: str, light: bool, width: int) -> str:
+    return compact_card(title, subtitle, detail, "assets/brand/docker.svg", light, width)
+
+
+def evidence_focus_card(title: str, subtitle: str, detail: str, asset: str, light: bool, width: int) -> str:
+    return compact_card(title, subtitle, detail, asset, light, width)
+
+
 def action_button(label: str, icon_path: str, light: bool) -> str:
     background = "#f5f8fd" if light else "#12223a"
     border = "#bfcee6" if light else "#2b4786"
@@ -90,6 +139,18 @@ def main() -> None:
         for p in PROJECTS:
             (out / f"project-{p[0]}-v3.svg").write_text(project_card(*p, light=False, width=width))
             (out / "light" / f"project-{p[0]}-v3.svg").write_text(project_card(*p, light=True, width=width))
+        for card in MORE_PROJECTS:
+            name, title, subtitle, detail, asset = card
+            (out / f"more-{name}-v1.svg").write_text(compact_card(title, subtitle, detail, asset, False, width))
+            (out / "light" / f"more-{name}-v1.svg").write_text(compact_card(title, subtitle, detail, asset, True, width))
+        for card in DOCKER_IMAGES:
+            name, title, subtitle, detail = card
+            (out / f"docker-{name}-v1.svg").write_text(docker_card(title, subtitle, detail, False, width))
+            (out / "light" / f"docker-{name}-v1.svg").write_text(docker_card(title, subtitle, detail, True, width))
+        for card in EXTRA_EVIDENCE:
+            name, title, subtitle, detail, asset = card
+            (out / f"evidence-focus-{name}-v1.svg").write_text(evidence_focus_card(title, subtitle, detail, asset, False, width))
+            (out / "light" / f"evidence-focus-{name}-v1.svg").write_text(evidence_focus_card(title, subtitle, detail, asset, True, width))
     for e in EVIDENCE:
         (OUT / f"evidence-{e[0]}-v2.svg").write_text(evidence_card(*e, light=False))
         (OUT / "light" / f"evidence-{e[0]}-v2.svg").write_text(evidence_card(*e, light=True))
@@ -99,7 +160,7 @@ def main() -> None:
     ]:
         (ASSETS / "btn" / f"{name}.svg").write_text(action_button(label, icon_path, False))
         (ASSETS / "btn" / "light" / f"{name}.svg").write_text(action_button(label, icon_path, True))
-    print(f"wrote {len(PROJECTS)} responsive project cards + {len(EVIDENCE)} evidence cards + 2 action buttons")
+    print(f"wrote {len(PROJECTS)} featured, {len(MORE_PROJECTS)} more, {len(DOCKER_IMAGES)} docker and {len(EVIDENCE)+len(EXTRA_EVIDENCE)} evidence cards")
 
 
 if __name__ == "__main__":

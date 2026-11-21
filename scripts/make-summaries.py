@@ -1,21 +1,13 @@
 #!/usr/bin/env python3
-"""Generate the section link bars for the README.
+"""Generate visual section-title bars for every H2 in the README.
 
-GitHub's native <details> marker cannot be hidden (the sanitizer strips
-every style/class, and the marker is tied to the first <summary>, which
-is also the only element that toggles). A floating triangle next to a
-button reads as broken, so the sections are plain anchored headings at
-the bottom of the README and these bars are premium link buttons:
-gradient tile, icon chip, bold label and a content-count badge pinned to
-the right edge. No arrows anywhere.
+Each bar is used inside a real <h2>, so GitHub keeps semantic headings,
+anchor links and a consistent visual hierarchy. There are three fixed
+widths for desktop, tablet and phones, with light/dark versions.
 
-The bar is drawn at three fixed sizes, served through <picture media>:
-820px for desktop columns, 600px for tablet-width columns and 340px for
-phones. Fixed sizes matter: an SVG without a viewBox served through
-<img> is stretched by the browser when CSS resizes it, which distorts
-the text; with a viewBox everything scales uniformly and the text
-shrinks on phones. Hand-laid sizes keep every glyph at its intended
-pixel size on every screen.
+GitHub can render interactive <details>, but the native marker cannot
+be hidden or styled. These title bars therefore behave as section titles,
+not fake accordions: content is always visible directly underneath.
 
     python3 scripts/make-summaries.py
 """
@@ -51,13 +43,19 @@ BADGE_PAD = 10
 BADGE_HEIGHT = 22
 RIGHT_PAD = 12
 
-# (section icon, label, hint, output name)
-# Names carry a -v3 suffix: GitHub's image proxy caches by full URL and
-# ignores query strings, so a changed asset must be renamed to be seen.
+# (section icon, label, compact hint, output name)
+# Every heading has a fresh -v4 asset name to bypass GitHub's image cache.
 SECTIONS = [
-    ("section-more-projects.svg", "More projects", "8 repositories", "more-projects-v3"),
-    ("section-core-stack.svg", "Core stack", "40+ technologies", "core-stack-v3"),
-    ("section-docker-images.svg", "Docker images", "5 public images", "docker-images-v3"),
+    ("angular.svg", "What I build", "Delivery", "what-i-build-v4"),
+    ("section-more-projects.svg", "Featured Projects", "6 highlighted", "featured-projects-v4"),
+    ("package.svg", "Professional experience", "10+ years", "professional-experience-v4"),
+    ("model-context-protocol.svg", "Beyond the front-end", "Tools + runtime", "beyond-front-end-v4"),
+    ("github.svg", "Evidence", "89 repositories", "evidence-v4"),
+    ("docs.svg", "How I work", "7 principles", "how-i-work-v4"),
+    ("github-actions.svg", "GitHub Activity", "Live snapshots", "github-activity-v4"),
+    ("section-more-projects.svg", "More projects", "8 repositories", "more-projects-v4"),
+    ("section-core-stack.svg", "Core stack", "40+ technologies", "core-stack-v4"),
+    ("section-docker-images.svg", "Docker images", "5 public images", "docker-images-v4"),
 ]
 
 

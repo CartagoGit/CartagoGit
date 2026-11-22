@@ -99,6 +99,19 @@ Release checklist (do it in one commit on `main`):
    `main` and the tag together.
 6. Open the render at github.com/CartagoGit and check it in desktop
    and mobile widths: zero broken images, no horizontal overflow.
+7. **Rehydrate `develop`.** The release commit exists only on `main`,
+   so `develop` is behind right after every publish. Merge `main`
+   back into `develop` and push, so the next change starts from the
+   released state:
+
+   ```bash
+   git checkout develop
+   git merge main
+   git push origin develop
+   ```
+
+   Never skip this step: branching off a stale `develop` replays
+   released changes and can produce conflicting release commits.
 
 ## Assets and cache
 
